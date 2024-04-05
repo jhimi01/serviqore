@@ -1,0 +1,20 @@
+.contactsection h1::before {
+  content: " ";
+  position: absolute;
+  width: 15%;
+  height: 7px;
+  background: #008d66;
+  bottom: 0;
+  left: 0;
+}
+
+.contactMap::before {
+  position: absolute;
+  content: " ";
+  width: 200px;
+  height: 200px;
+  background: #008d66;
+  right: -25px;
+  top: -25px;
+  z-index: -1;
+}
