@@ -1,6 +1,10 @@
 import React from "react";
 import "./Contact.css";
-import { FaMagnifyingGlassLocation, FaMapLocationDot, FaPhoneVolume } from "react-icons/fa6";
+import {
+  FaMagnifyingGlassLocation,
+  FaMapLocationDot,
+  FaPhoneVolume,
+} from "react-icons/fa6";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -28,14 +32,9 @@ const Contact = () => {
               placeholder="Type here"
               className="input rounded-none input-bordered w-full"
             />
-            <input
-              type="text"
-              placeholder="Type here"
-              className="input rounded-none input-bordered w-full"
-            />
             <textarea
               className="textarea rounded-none textarea-bordered"
-              placeholder="Bio"
+              placeholder="Message"
             ></textarea>
             <input
               type="submit"
@@ -64,32 +63,37 @@ const Contact = () => {
         <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
           <FaMagnifyingGlassLocation className="text-primary text-5xl" />
           <div>
-            <h4 className="font-semibold text-[16px] leading-[16px] text-black">Location</h4>
+            <h4 className="font-semibold text-[16px] leading-[16px] text-black">
+              Location
+            </h4>
             <p className="text-[#646464] font-normal text-[14px] leading-[16px]">
               Unit B7, House 19, Road 8, Shekhertek, Mohammadpur, Dhaka - 1207
             </p>
           </div>
         </div>
         <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
-          <MdEmail  className="text-primary text-5xl" />
+          <MdEmail className="text-primary text-5xl" />
           <div>
-            <h4 className="font-semibold text-[16px] leading-[16px] text-black">Email</h4>
+            <h4 className="font-semibold text-[16px] leading-[16px] text-black">
+              Email
+            </h4>
             <p className="text-[#646464] font-normal text-[14px] leading-[16px]">
-             info@serviqore.com
+               info@serviqore.com
             </p>
           </div>
         </div>
         <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
           <MdLocalPhone className="text-primary  text-5xl" />
           <div>
-            <h4 className="font-semibold text-[16px] leading-[16px] text-black">Phone</h4>
+            <h4 className="font-semibold text-[16px] leading-[16px] text-black">
+              Phone
+            </h4>
             <p className="text-[#646464] font-normal text-[14px] leading-[16px]">
-            +880 1896 191700
+              +880 1896 191700
             </p>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

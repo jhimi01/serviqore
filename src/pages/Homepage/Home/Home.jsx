@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import bgSlider from "../../../assets/1 fast response 1.png";
 import "./Home.css";
+import "animate.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,6 +13,7 @@ import BpoParadiam from "../BpoParadiam/BpoParadiam";
 import Testimonials from "../Testimonials/Testimonials";
 import Serviqore from "../Serviqore/Serviqore";
 import FaqSection from "../FaqSection/FaqSection";
+import ClientsLogo from "../ClientsLogo/ClientsLogo";
 
 const Home = () => {
   return (
@@ -54,7 +56,7 @@ const Home = () => {
             <div className="md:flex items-center py-10">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="text-[64px] text-primary font-bold leading-[65px]">
+                <h1 className=" text-[64px] text-primary font-bold leading-[65px]">
                   Save up to <br /> 50%
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[16px] mt-5">
@@ -117,6 +119,8 @@ const Home = () => {
       </div>
 
       <BpoParadiam />
+
+      <ClientsLogo />
 
       <Testimonials />
 
