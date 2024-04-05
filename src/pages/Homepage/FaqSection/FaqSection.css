@@ -1,0 +1,5 @@
+.collapse-title:after{
+    color: #008D66 !important;
+    /* font-weight: 900 !important; */
+    font-size: 25px !important;
+}
