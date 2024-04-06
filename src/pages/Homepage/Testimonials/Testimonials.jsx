@@ -24,6 +24,7 @@ const Testimonials = () => {
           slidesPerView={1}
           spaceBetween={10}
           centeredSlides={true}
+          loop={true}
           autoplay={{
             delay: 4500,
             disableOnInteraction: false,

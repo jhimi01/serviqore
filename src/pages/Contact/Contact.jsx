@@ -22,20 +22,35 @@ const Contact = () => {
           </p>
 
           <form className="flex flex-col gap-4 mt-5">
-            <input
-              type="text"
-              placeholder="Type here"
-              className="input rounded-none input-bordered w-full"
-            />
-            <input
-              type="email"
-              placeholder="Type here"
-              className="input rounded-none input-bordered w-full"
-            />
-            <textarea
-              className="textarea rounded-none textarea-bordered"
-              placeholder="Message"
-            ></textarea>
+            <label className="relative">
+              <input
+                type="text"
+                // placeholder="Type here"
+                className="input rounded-none input-bordered w-full"
+              />
+              <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
+                name
+              </span>
+            </label>
+            <label className="relative">
+              <input
+                type="email"
+                className="input rounded-none input-bordered w-full"
+              />
+              <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
+                email
+              </span>
+            </label>
+            <label className="relative">
+              <textarea
+                className="textarea rounded-none textarea-bordered peer-focus:border-0  w-full"
+                rows={3}
+              ></textarea>
+              <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
+                message
+              </span>
+            </label>
+
             <input
               type="submit"
               className="w-full bg-primary text-white rounded py-2 font-bold hover:opacity-90 cursor-pointer"
@@ -59,7 +74,7 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
-      <div className="flex mt-20">
+      <div className="flex mt-14">
         <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
           <FaMagnifyingGlassLocation className="text-primary text-5xl" />
           <div>

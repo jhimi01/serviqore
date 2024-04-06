@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import footerLogo from "../../../assets/footerlogo.png";
-import './Footer.css';
+import "./Footer.css";
 import {
   FaFacebook,
   FaInstagram,
@@ -32,18 +32,21 @@ const Footer = () => {
         <a className="link link-hover">Terms of Services</a>
         <a className="link link-hover">Privacy Policy</a>
       </nav>
-      <form className='w-9/12'>
+      <form className="w-9/12">
         <h6 className="font-bold text-xl text-white">Stay up to date</h6>
         <fieldset className="form-control w-80">
           <div className="join relative w-9/12">
-            <input
-              type="text"
-              placeholder="Your email address"
-              className="py-2 w-full px-4 rounded bg-[#fbfbfb38] text-white"
-            />
+            <label className="relative focus-within:text-transparent cursor-text">
+              <input
+                type="text"
+                className="py-2 w-full px-4 rounded bg-[#fbfbfb38] text-white focus:outline-none"
+              />
+              <span className="absolute left-1 top-2 px-1 capitalize tracking-wide">
+                Your email address
+              </span>
+            </label>
             <button>
-             
-              <span className="absolute top-2 right-2">
+              <span className="absolute top-3 right-14">
                 <FaRegPaperPlane />
               </span>
             </button>
@@ -63,7 +66,7 @@ const Footer = () => {
             <FaTelegram />
           </a>
           <a className="link link-hover">
-            <FaYoutube />{" "}
+            <FaYoutube />
           </a>
           <a className="link link-hover">
             <FaLinkedin />

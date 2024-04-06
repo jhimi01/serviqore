@@ -14,11 +14,17 @@ import Testimonials from "../Testimonials/Testimonials";
 import Serviqore from "../Serviqore/Serviqore";
 import FaqSection from "../FaqSection/FaqSection";
 import ClientsLogo from "../ClientsLogo/ClientsLogo";
+import { FaMessage } from "react-icons/fa6";
+import { IoSettings } from "react-icons/io5";
+
+
 
 const Home = () => {
   return (
     <>
-      <div className="bg-backgroundGray herosection px-5 md:px-28">
+      <div className=" herosection px-5 md:px-28 ">
+    
+
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -110,7 +116,7 @@ const Home = () => {
                 </p>
               </div>
               {/* image side */}
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 relative">
                 <img src={bgSlider} />
               </div>
             </div>
