@@ -63,10 +63,10 @@ const NavigationBar = () => {
 
   return (
     <div style={{boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}} className=" mx-auto fixed top-0 left-0 right-0 z-50 bg-white">
-<div className="md:w-10/12 mx-auto navbar">
+<div className="md:w-10/12 w-11/12 mx-auto navbar">
 
 
-    <div className="navbar-start">
+    <div className="navbar-start flex-row-reverse w-full lg:w-1/2 justify-between">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -86,7 +86,7 @@ const NavigationBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 right-0 z-[2] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <Navigation />
           </ul>
