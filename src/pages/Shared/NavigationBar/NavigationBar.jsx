@@ -46,26 +46,8 @@ const NavigationBar = () => {
       >
         Blogs
       </NavLink>
-      <NavLink
-        to="/career"
-        className={({ isActive }) => `
-            navigationlink ${
-              isActive ? "text-white rounded bg-primary" : "hover:text-primary"
-            }
-            `}
-      >
-        Career
-      </NavLink>
-      <NavLink
-        to="/faq"
-        className={({ isActive }) => `
-            navigationlink ${
-              isActive ? "text-white rounded bg-primary" : "hover:text-primary"
-            }
-            `}
-      >
-        FAQ
-      </NavLink>
+   
+    
       <NavLink
         to="/contact"
         className={({ isActive }) => `

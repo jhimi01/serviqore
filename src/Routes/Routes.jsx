@@ -4,9 +4,8 @@ import Home from "../pages/Homepage/Home/Home";
 import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
 import Blogs from "../pages/Blogs/Blogs";
-import Career from "../pages/Career/Career";
-import Faq from "../pages/Faq/Faq";
 import Contact from "../pages/Contact/Contact";
+import BlogsDetails from "../pages/Blogs/BlogsDetails";
 
 
 
@@ -32,13 +31,9 @@ export const router = createBrowserRouter([
             element: <Blogs />
         },
         {
-            path: '/career',
-            element: <Career />
-        },
-        {
-            path: '/faq',
-            element: <Faq />
-        },
+            path:'/blog/:id',
+            element: <BlogsDetails></BlogsDetails>
+          },
         {
             path: '/contact',
             element: <Contact />
