@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import blogimg from "../../assets/blogimg.png";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
+
+  useEffect(()=>{
+    window.scroll(0, 0)
+  },[])
 
   const blogPosts = [
     {
@@ -65,7 +69,7 @@ const Blogs = () => {
           inspiration.
         </p>
       </div>
-      <div className="lg:w-10/12 w-11/12 mx-auto mt-10">
+      <div className="lg:w-10/12 w-11/12 mx-auto my-10">
         <h1 className="text-black font-semibold text-[36px] mb-5">
           Recent Blog posts
         </h1>

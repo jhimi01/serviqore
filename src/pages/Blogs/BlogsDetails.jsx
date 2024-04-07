@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import blogimg from "../../assets/details.png"; 
 const BlogsDetails = () => {
+
+    useEffect(()=>{
+        window.scroll(0, 0)
+      },[])
+
     const blogPost =  {
         _id: 1,
         image: blogimg,
@@ -9,7 +14,7 @@ const BlogsDetails = () => {
         title: "The Impact of Artificial Intelligence on Society",
         description:
           "Artificial intelligence (AI) is rapidly transforming various aspects of society, from healthcare to finance. This article explores the profound implications of AI on our lives.Artificial intelligence (AI) is rapidly transforming various aspects of society, from healthcare to finance. This article explores the profound implications of AI on our lives.Artificial intelligence (AI) is rapidly transforming various aspects of society, from healthcare to finance. This article explores the profound implications of AI on our lives.",
-        tags: ["Artificial Intelligence", "Technology", "Society"],
+          tags: ["tag", "tag", "tag", "tag", "tag"],
       };
 
     return (

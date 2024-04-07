@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import aboutpic from "../../assets/aboutside.png";
 import bussinessgrowth from "../../assets/bussinessGrowth.png";
 import uniteforces from "../../assets/uniteforces.png";
@@ -10,6 +10,10 @@ import { Helmet } from "react-helmet";
 
 const About = () => {
   const [counter, setCounterOn] = useState(false);
+
+  useEffect(()=>{
+    window.scroll(0, 0)
+  },[])
 
   return (
     <div className="mt-16">

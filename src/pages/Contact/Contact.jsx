@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import {
   FaMagnifyingGlassLocation,
@@ -10,6 +10,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
+
+  useEffect(()=>{
+    window.scroll(0, 0)
+  },[])
+
+
   return (
     <div className="md:w-9/12 contactsection my-20 w-11/12 mt-32 mx-auto">
        <Helmet>

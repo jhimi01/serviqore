@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import BpoParadiam from "../BpoParadiam/BpoParadiam";
 import Testimonials from "../Testimonials/Testimonials";
 import Serviqore from "../Serviqore/Serviqore";
@@ -17,16 +17,22 @@ import ClientsLogo from "../ClientsLogo/ClientsLogo";
 import { FaMessage } from "react-icons/fa6";
 import { IoSettings } from "react-icons/io5";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 
 
 const Home = () => {
+
+  useEffect(()=>{
+    window.scroll(0, 0)
+  },[])
+
   return (
     <>
     <Helmet>
         <title>serviqore</title>
     </Helmet>
-      <div className=" herosection px-5 md:px-28 mt-16 ">
+      <div className="bg-backgroundGray px-5 md:px-28 mt-16 ">
     
 
         <Swiper
@@ -34,9 +40,14 @@ const Home = () => {
           pagination={{
             clickable: true,
           }}
+          loop={true}
+          autoplay={{
+            delay: 8000,
+            disableOnInteraction: false,
+          }}
           navigation={false}
           centeredSlides={false}
-          modules={[Pagination]}
+          modules={[Autoplay, Pagination]}
           className="mySwiper"
         >
           {/* firts slider */}
