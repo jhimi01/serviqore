@@ -6,12 +6,16 @@ import BpoParadiam from "../Homepage/BpoParadiam/BpoParadiam";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import Testimonials from "../Homepage/Testimonials/Testimonials";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const [counter, setCounterOn] = useState(false);
 
   return (
-    <div className="">
+    <div className="mt-16">
+       <Helmet>
+        <title>about | serviqore</title>
+    </Helmet>
       <div className="md:flex items-center bg-backgroundGray py-8 px-5 md:px-28">
         <div className="md:w-1/2">
           <h1 className="font-bold text-[54px] leading-[61px] text-primary">
@@ -35,7 +39,7 @@ const About = () => {
 
       {/* cunter section */}
       <div>
-        <div className="flex flex-wrap px-1 items-center justify-center gap-20 my-20">
+        <div className="flex flex-wrap px-1 items-center justify-center gap-20 mt-20 ">
           <div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
@@ -77,7 +81,7 @@ const About = () => {
             </h5>
           </div>
         </div>
-        <p className="mb-20 px-5 md:px-28 text-center text-textMuted text-[14px] leading-[20px] font-normal">
+        <p className="mb-20 mt-10 px-5 md:px-28 text-center text-textMuted text-[14px] leading-[20px] font-normal">
           We've cultivated collaborative partnerships with 200+ security
           professionals and 50+ job sites, enhancing service customization and
           client satisfaction. Through streamlined operations, we maximize

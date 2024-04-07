@@ -7,10 +7,14 @@ import {
 } from "react-icons/fa6";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
-    <div className="md:w-9/12 contactsection my-20 w-11/12 mx-auto">
+    <div className="md:w-9/12 contactsection my-20 w-11/12 mt-32 mx-auto">
+       <Helmet>
+        <title>contact | serviqore</title>
+    </Helmet>
       <div className="md:flex justify-between gap-20">
         {/* form side */}
         <div className="md:w-1/2">

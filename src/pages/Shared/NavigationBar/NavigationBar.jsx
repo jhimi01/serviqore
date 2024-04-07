@@ -80,8 +80,11 @@ const NavigationBar = () => {
   );
 
   return (
-    <div className="navbar md:w-10/12 mx-auto">
-      <div className="navbar-start">
+    <div style={{boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}} className=" mx-auto fixed top-0 left-0 right-0 z-50 bg-white">
+<div className="md:w-10/12 mx-auto navbar">
+
+
+    <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -107,7 +110,6 @@ const NavigationBar = () => {
           </ul>
         </div>
         <a className="cursor-pointer" href="/">
-          {" "}
           <img src={logo} alt="Example" />
         </a>
       </div>
@@ -116,6 +118,9 @@ const NavigationBar = () => {
           <Navigation />
         </ul>
       </div>
+</div>
+
+
     </div>
   );
 };

@@ -16,13 +16,17 @@ import FaqSection from "../FaqSection/FaqSection";
 import ClientsLogo from "../ClientsLogo/ClientsLogo";
 import { FaMessage } from "react-icons/fa6";
 import { IoSettings } from "react-icons/io5";
+import { Helmet } from "react-helmet";
 
 
 
 const Home = () => {
   return (
     <>
-      <div className=" herosection px-5 md:px-28 ">
+    <Helmet>
+        <title>serviqore</title>
+    </Helmet>
+      <div className=" herosection px-5 md:px-28 mt-16 ">
     
 
         <Swiper
