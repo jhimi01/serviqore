@@ -6,7 +6,6 @@ const Serviqore = () => {
   return (
     <div className="text-center md:w-10/12 w-11/12 mx-auto">
       <div>
-        {" "}
         <h1 className="font-semibold text-[36px] text-black">
           Partner with Serviqore
         </h1>

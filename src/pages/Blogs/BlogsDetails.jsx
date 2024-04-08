@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import blogimg from "/images/details.png";
+import { Helmet } from "react-helmet";
 const BlogsDetails = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
-  const blogPost = {
+  const blogPost ={
     _id: 1,
     image: blogimg,
     author: "John Doe",
@@ -13,11 +14,14 @@ const BlogsDetails = () => {
     title: "The Impact of Artificial Intelligence on Society",
     description:
       "Artificial intelligence (AI) is rapidly transforming various aspects of society, from healthcare to finance. This article explores the profound implications of AI on our lives.Artificial intelligence (AI) is rapidly transforming various aspects of society, from healthcare to finance. This article explores the profound implications of AI on our lives.Artificial intelligence (AI) is rapidly transforming various aspects of society, from healthcare to finance. This article explores the profound implications of AI on our lives.",
-    tags: ["tag", "tag", "tag", "tag", "tag"],
+    tags: ["Artificial Intelligence", "Technology", "Society"],
   };
 
   return (
     <div className="my-24 md:w-9/12 w-11/12 mx-auto">
+       <Helmet>
+        <title>Blog Details | serviqore</title>
+      </Helmet>
       <h2 className="font-bold text-3xl py-5">{blogPost.title}</h2>
       <div className="w-full">
         <img
