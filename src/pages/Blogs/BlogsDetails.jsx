@@ -7,7 +7,7 @@ const BlogsDetails = () => {
     window.scroll(0, 0);
   }, []);
 
-  const blogPost ={
+  const blogPost = {
     _id: 1,
     image: blogimg5,
     author: "John Doe",
@@ -20,20 +20,22 @@ const BlogsDetails = () => {
 
   return (
     <div className="my-24 md:w-9/12 w-11/12 mx-auto">
-       <Helmet>
+      <Helmet>
         <title>Blog Details | serviqore</title>
       </Helmet>
-      {/* <h2 className="font-bold text-3xl py-5">{blogPost.title}</h2> */}
       <div className="w-5/6 h-5/6 mx-auto relative">
+      <h2 className="font-bold mx-auto text-3xl py-5">{blogPost.title} :</h2>
         <img
           className="w-full h-full rounded hover:shadow-md"
           src={blogPost.image}
           alt={blogPost.title}
         />
-        <h2 className="font-bold text-6xl absolute bottom-0 left-6 w-[40%]  py-5">{blogPost.title}</h2>
+        <h2 className="font-bold text-6xl absolute bottom-0 left-6 w-[40%]  py-5">
+          {blogPost.title}
+        </h2>
       </div>
       <div>
-        <p className="text-black font-semibold text-xl mt-5">
+        <p className="text-secondary font-semibold text-xl mt-5">
           By {blogPost.author} | {blogPost.date}
         </p>
         <p className="text-textMuted my-3">{blogPost.description}</p>

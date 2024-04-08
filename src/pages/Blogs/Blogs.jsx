@@ -85,13 +85,13 @@ const Blogs = () => {
             <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full group-hover:scale-95 group-hover:shadow-md transition ease-linear   object-cover mb-4 rounded-lg"
+                  className="w-full group-hover:scale-95 group-hover:shadow-md transition ease-linear   object-cover mb-2 rounded-lg"
                 />
                 <h2 className="text-lg absolute bottom-0 left-4 w-[40%] text-[#353448] font-bold mb-2">
                   {post.title}
                 </h2>
             </div>
-                <p className="text-sm text-gray-600 mb-2">
+                <p className="text-xs text-gray-600 mb-2">
                   By {post.author} | {post.date}
                 </p>
                 <p className="text-sm text-gray-700 mb-4">

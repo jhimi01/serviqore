@@ -11,9 +11,9 @@ import { Helmet } from "react-helmet";
 const About = () => {
   const [counter, setCounterOn] = useState(false);
 
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <div className="mt-16">

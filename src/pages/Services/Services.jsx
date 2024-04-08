@@ -12,9 +12,9 @@ import work3 from "/images/serviceicon/work3.png";
 import work4 from "/images/serviceicon/work4.png";
 
 const Services = () => {
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   const services = [
     {
@@ -83,7 +83,7 @@ const Services = () => {
           {services.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-[#D8E6D6] rounded-lg py-4 px-6"
+              className="flex hover:shadow-lg flex-col items-center bg-[#D8E6D6] rounded-lg py-4 px-6"
             >
               <img className="h-14 w-14 mt-2" src={item.icon} alt="serviceicon" />
               <h3 className="text-lg font-semibold text-secondary mt-3 mb-2 text-center">
