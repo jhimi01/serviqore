@@ -3,7 +3,9 @@ import { Helmet } from "react-helmet";
 // import blogimg from "/images/blogimg3.png";
 import blogimg4 from "/images/blogimg4.png";
 import blogimg5 from "/images/blogimg5.png";
-import blogimg6 from "/images/blogimg6.png";
+// import blogimg6 from "/images/blogimg7.png";
+import blogimg6 from "/images/blogimgtext.png";
+// import blogimg6 from "/images/blogimg6.png";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
@@ -44,7 +46,7 @@ const Blogs = () => {
     },
     {
       _id: 4,
-      image: blogimg5,
+      image: blogimg6,
       author: "Emily Lee",
       date: "April 1, 2024",
       title: "The Art of Mindfulness: Finding Peace in a Busy World",
@@ -79,14 +81,16 @@ const Blogs = () => {
           {blogPosts.map((post, index) => (
             <Link to={`/blog/${post._id}`} key={post.id}>
               <div key={index} className="rounded-lg group hover:shadow-md p-3">
-                <img
+            <div className="relative">
+            <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full group-hover:scale-95 group-hover:shadow-md transition ease-linear  object-cover mb-4 rounded-lg"
+                  className="w-full group-hover:scale-95 group-hover:shadow-md transition ease-linear   object-cover mb-4 rounded-lg"
                 />
-                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                <h2 className="text-lg absolute bottom-0 left-4 w-[40%] text-[#353448] font-bold mb-2">
                   {post.title}
                 </h2>
+            </div>
                 <p className="text-sm text-gray-600 mb-2">
                   By {post.author} | {post.date}
                 </p>

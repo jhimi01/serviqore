@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 // import blogimg5 from "/images/blogimg5.png";
-import blogimg5 from "/images/blogimg6.png";
+import blogimg5 from "/images/blogimgtext.png";
 import { Helmet } from "react-helmet";
 const BlogsDetails = () => {
   useEffect(() => {
@@ -23,13 +23,14 @@ const BlogsDetails = () => {
        <Helmet>
         <title>Blog Details | serviqore</title>
       </Helmet>
-      <h2 className="font-bold text-3xl py-5">{blogPost.title}</h2>
-      <div className="w-full">
+      {/* <h2 className="font-bold text-3xl py-5">{blogPost.title}</h2> */}
+      <div className="w-5/6 h-5/6 mx-auto relative">
         <img
           className="w-full h-full rounded hover:shadow-md"
           src={blogPost.image}
           alt={blogPost.title}
         />
+        <h2 className="font-bold text-6xl absolute bottom-0 left-6 w-[40%]  py-5">{blogPost.title}</h2>
       </div>
       <div>
         <p className="text-black font-semibold text-xl mt-5">
