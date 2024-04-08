@@ -1,11 +1,11 @@
 import React from "react";
-import areas from "../../../assets/clientslogo/arseas.png";
-import amguards from "../../../assets/clientslogo/amguards.png";
-import allstarts from "../../../assets/clientslogo/all star.png";
-import trycker from "../../../assets/clientslogo/try.png";
-import aoe from "../../../assets/clientslogo/AOE.png";
-import boi from "../../../assets/clientslogo/BOI.png";
-import thewlft from "../../../assets/clientslogo/the weft.png";
+import areas from "/images/clientslogo/arseas.png";
+import amguards from "/images/clientslogo/amguards.png";
+import allstarts from "/images/clientslogo/all star.png";
+import trycker from "/images/clientslogo/try.png";
+import aoe from "/images/clientslogo/AOE.png";
+import boi from "/images/clientslogo/BOI.png";
+import thewlft from "/images/clientslogo/the weft.png";
 import "./ClientsLogo.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";

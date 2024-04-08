@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import mark from "../../../assets/“.png";
+import mark from "/images/“.png";
 import "./Testimonials.css";
 
 // Import Swiper styles

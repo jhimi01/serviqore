@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../../../assets/about 2 1.png";
+import aboutimg from "/images/about 2 1.png";
 
 const BpoParadiam = () => {
   return (

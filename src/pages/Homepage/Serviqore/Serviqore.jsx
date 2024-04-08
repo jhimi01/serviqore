@@ -1,5 +1,5 @@
 import React from "react";
-import group from "../../../assets/Group.png";
+import group from "/images/Group.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Serviqore = () => {

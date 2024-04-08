@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import blogimg from "../../assets/details.png";
+import blogimg from "/images/details.png";
 const BlogsDetails = () => {
   useEffect(() => {
     window.scroll(0, 0);

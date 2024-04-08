@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import aboutpic from "../../assets/aboutside.png";
-import bussinessgrowth from "../../assets/bussinessGrowth.png";
-import uniteforces from "../../assets/uniteforces.png";
+import aboutpic from "/images/aboutside.png";
+import bussinessgrowth from "/images/bussinessGrowth.png";
+import uniteforces from "/images/uniteforces.png";
 import BpoParadiam from "../Homepage/BpoParadiam/BpoParadiam";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";

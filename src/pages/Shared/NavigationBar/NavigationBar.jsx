@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./NavigationBar.css";
-import logo from "../../../assets/Vector.png";
+import logo from "/images/Vector.png";
 import { TiThMenuOutline } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
 

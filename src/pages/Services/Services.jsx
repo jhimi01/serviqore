@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import serviceimg from "../../assets/serviceimg.png";
-import serviceicon1 from "../../assets/serviceicon/servicicon1.png";
-import serviceicon2 from "../../assets/serviceicon/servicicon2.png";
-import serviceicon3 from "../../assets/serviceicon/servicicon3.png";
-import serviceicon4 from "../../assets/serviceicon/servicicon4.png";
-import serviceicon5 from "../../assets/serviceicon/servicicon5.png";
-import work1 from "../../assets/serviceicon/work1.png";
-import work2 from "../../assets/serviceicon/work2.png";
-import work3 from "../../assets/serviceicon/work3.png";
-import work4 from "../../assets/serviceicon/work4.png";
+import serviceimg from "/images/serviceimg.png";
+import serviceicon1 from "/images/serviceicon/servicicon1.png";
+import serviceicon2 from "/images/serviceicon/servicicon2.png";
+import serviceicon3 from "/images/serviceicon/servicicon3.png";
+import serviceicon4 from "/images/serviceicon/servicicon4.png";
+import serviceicon5 from "/images/serviceicon/servicicon5.png";
+import work1 from "/images/serviceicon/work1.png";
+import work2 from "/images/serviceicon/work2.png";
+import work3 from "/images/serviceicon/work3.png";
+import work4 from "/images/serviceicon/work4.png";
 
 const Services = () => {
   useEffect(() => {
