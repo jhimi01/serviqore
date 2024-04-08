@@ -4,10 +4,9 @@ import blogimg from "../../assets/blogimg.png";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
-
-  useEffect(()=>{
-    window.scroll(0, 0)
-  },[])
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   const blogPosts = [
     {
@@ -53,12 +52,12 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="mt-20">
+    <div className="mt-5 md:mt-20">
       <Helmet>
         <title>blogs | serviqore</title>
       </Helmet>
 
-      <div className="bg-[#F9FDFC] py-16 px-20 text-center">
+      <div className="bg-[#F9FDFC] py-14 px-5 md:px-20 text-center">
         <h1 className="text-primary font-semibold text-[64px] leading-[76px] ">
           Blogs
         </h1>
@@ -88,8 +87,10 @@ const Blogs = () => {
                 <p className="text-sm text-gray-600 mb-2">
                   By {post.author} | {post.date}
                 </p>
-                <p className="text-sm text-gray-700 mb-4">{post.description.slice(0, 250)}...</p>
-               
+                <p className="text-sm text-gray-700 mb-4">
+                  {post.description.slice(0, 250)}...
+                </p>
+
                 <div className="flex flex-wrap">
                   {post.tags.map((tag, index) => (
                     <span

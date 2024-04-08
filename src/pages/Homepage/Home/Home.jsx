@@ -14,27 +14,20 @@ import Testimonials from "../Testimonials/Testimonials";
 import Serviqore from "../Serviqore/Serviqore";
 import FaqSection from "../FaqSection/FaqSection";
 import ClientsLogo from "../ClientsLogo/ClientsLogo";
-import { FaMessage } from "react-icons/fa6";
-import { IoSettings } from "react-icons/io5";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 
-
-
 const Home = () => {
-
-  useEffect(()=>{
-    window.scroll(0, 0)
-  },[])
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>serviqore</title>
-    </Helmet>
+      </Helmet>
       <div className="bg-backgroundGray px-5 md:px-28 mt-16 ">
-    
-
         <Swiper
           spaceBetween={30}
           pagination={{

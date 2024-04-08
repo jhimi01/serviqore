@@ -11,15 +11,15 @@ import { Helmet } from "react-helmet";
 const About = () => {
   const [counter, setCounterOn] = useState(false);
 
-  useEffect(()=>{
-    window.scroll(0, 0)
-  },[])
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <div className="mt-16">
-       <Helmet>
+      <Helmet>
         <title>about | serviqore</title>
-    </Helmet>
+      </Helmet>
       <div className="md:flex items-center bg-backgroundGray py-8 px-5 md:px-28">
         <div className="md:w-1/2">
           <h1 className="font-bold text-3xl sm:text-[54px] sm:leading-[61px] text-primary">

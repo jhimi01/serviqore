@@ -11,6 +11,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,11 +21,21 @@ const Footer = () => {
         <p>Copyright © 2024 Serviqore All rights reserved</p>
       </nav>
       <nav>
-        <h6 className="font-bold text-xl text-white">Home</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Services</a>
-        <a className="link link-hover">Blogs</a>
-        <a className="link link-hover">Contact us</a>
+        <Link to="/" className="font-bold text-xl text-white">
+          Home
+        </Link>
+        <Link to="/about" className="link link-hover">
+          About us
+        </Link>
+        <Link to="services" className="link link-hover">
+          Services
+        </Link>
+        <Link to="/blogs" className="link link-hover">
+          Blogs
+        </Link>
+        <Link to="/contact" className="link link-hover">
+          Contact us
+        </Link>
       </nav>
       <nav>
         <h6 className="font-bold text-xl text-white">Support</h6>
