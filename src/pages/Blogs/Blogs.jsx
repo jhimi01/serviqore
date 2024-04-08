@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import blogimg from "/images/blogimg.png";
+// import blogimg from "/images/blogimg3.png";
+import blogimg4 from "/images/blogimg4.png";
+import blogimg5 from "/images/blogimg5.png";
+import blogimg6 from "/images/blogimg6.png";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
@@ -11,7 +14,7 @@ const Blogs = () => {
   const blogPosts = [
     {
       _id: 1,
-      image: blogimg,
+      image: blogimg6,
       author: "John Doe",
       date: "April 7, 2024",
       title: "The Impact of Artificial Intelligence on Society",
@@ -21,7 +24,7 @@ const Blogs = () => {
     },
     {
       _id: 2,
-      image: blogimg,
+      image: blogimg6,
       author: "Jane Smith",
       date: "April 5, 2024",
       title: "10 Healthy Habits to Boost Your Productivity",
@@ -31,7 +34,7 @@ const Blogs = () => {
     },
     {
       _id: 3,
-      image: blogimg,
+      image: blogimg6,
       author: "Alex Johnson",
       date: "April 3, 2024",
       title: "Exploring the Wonders of Space Travel",
@@ -41,7 +44,7 @@ const Blogs = () => {
     },
     {
       _id: 4,
-      image: blogimg,
+      image: blogimg5,
       author: "Emily Lee",
       date: "April 1, 2024",
       title: "The Art of Mindfulness: Finding Peace in a Busy World",
@@ -72,14 +75,14 @@ const Blogs = () => {
         <h1 className="text-black font-semibold text-[36px] mb-5">
           Recent Blog posts
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {blogPosts.map((post, index) => (
             <Link to={`/blog/${post._id}`} key={post.id}>
               <div key={index} className="rounded-lg group hover:shadow-md p-3">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full group-hover:scale-95 group-hover:shadow-md transition ease-linear h-52 object-cover mb-4 rounded-lg"
+                  className="w-full group-hover:scale-95 group-hover:shadow-md transition ease-linear  object-cover mb-4 rounded-lg"
                 />
                 <h2 className="text-lg font-semibold text-gray-800 mb-2">
                   {post.title}
@@ -88,7 +91,7 @@ const Blogs = () => {
                   By {post.author} | {post.date}
                 </p>
                 <p className="text-sm text-gray-700 mb-4">
-                  {post.description.slice(0, 250)}...
+                  {post.description.slice(0, 150)}...
                 </p>
 
                 <div className="flex flex-wrap">

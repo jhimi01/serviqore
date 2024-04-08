@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import {
   FaMagnifyingGlassLocation,
@@ -10,24 +10,38 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
+  const [message, setMessage] = useState("");
+  const [wordCount, setWordCount] = useState(0);
+  const [limitedWord, setLimitedWord] = useState(300)
 
-  useEffect(()=>{
-    window.scroll(0, 0)
-  },[])
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
+  const handleMessageChange = (event) => {
+    let messageText = event.target.value;
+    // Limiting the message to 500 words
+    const words = messageText.trim().split(/\s+/);
+    if (words.length >= limitedWord) {
+      messageText = words.slice(0, limitedWord).join(" ");
+    }
+    setMessage(messageText);
+    // Update word count
+    setWordCount(words.length);
+  };
 
   return (
     <div className="md:w-9/12 contactsection my-20 w-11/12 mt-32 mx-auto">
-       <Helmet>
+      <Helmet>
         <title>contact | serviqore</title>
-    </Helmet>
+      </Helmet>
       <div className="md:flex justify-between gap-20">
         {/* form side */}
         <div className="md:w-1/2">
-          <h1 className="text-black relative font-semibold text-[36px] leading-[76px] mb-4">
+          <h1 className="text-black relative font-semibold text-[36px] leading-[76px] ">
             Contact us
           </h1>
-          <p className="text-[#959595] text-[16px] font-normal leading-[16px]">
+          <p className="text-textMuted my-7 text-[16px] font-normal leading-[16px]">
             Reach out to us for any query
           </p>
 
@@ -39,7 +53,7 @@ const Contact = () => {
                 className="input rounded-none input-bordered w-full"
               />
               <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
-                name
+                full name
               </span>
             </label>
             <label className="relative">
@@ -53,9 +67,14 @@ const Contact = () => {
             </label>
             <label className="relative">
               <textarea
-                className="textarea rounded-none textarea-bordered peer-focus:border-0  w-full"
-                rows={3}
+                className="textarea  rounded-none textarea-bordered leading-5 pt-3  resize-none w-full"
+                rows={6}
+                value={message}
+                onChange={handleMessageChange}
               ></textarea>
+              <span className="text-textMuted right-3 absolute tracking-wide bottom-3">
+                {wordCount}/{limitedWord}
+              </span>
               <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
                 message
               </span>
@@ -78,9 +97,9 @@ const Contact = () => {
             width="100%"
             height="450"
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
@@ -88,32 +107,32 @@ const Contact = () => {
         <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
           <FaMagnifyingGlassLocation className="text-primary text-5xl" />
           <div>
-            <h4 className="font-semibold text-[16px] leading-[16px] text-black">
+            <h4 className="font-semibold text-[16px] leading-[20px] text-black">
               Location
             </h4>
-            <p className="text-[#646464] font-normal text-[14px] leading-[16px]">
-              Unit B7, House 19, Road 8, Shekhertek, Mohammadpur, Dhaka - 1207
+            <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+              House 19, Road 8, Shekhertek, Mohammadpur, Dhaka - 1207
             </p>
           </div>
         </div>
         <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
           <MdEmail className="text-primary text-5xl" />
           <div>
-            <h4 className="font-semibold text-[16px] leading-[16px] text-black">
+            <h4 className="font-semibold text-[16px] leading-[20px] text-black">
               Email
             </h4>
-            <p className="text-[#646464] font-normal text-[14px] leading-[16px]">
-               info@serviqore.com
+            <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+              info@serviqore.com
             </p>
           </div>
         </div>
         <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
           <MdLocalPhone className="text-primary  text-5xl" />
           <div>
-            <h4 className="font-semibold text-[16px] leading-[16px] text-black">
+            <h4 className="font-semibold text-[16px] leading-[20px] text-black">
               Phone
             </h4>
-            <p className="text-[#646464] font-normal text-[14px] leading-[16px]">
+            <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
               +880 1896 191700
             </p>
           </div>

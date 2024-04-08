@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import blogimg from "/images/details.png";
+// import blogimg5 from "/images/blogimg5.png";
+import blogimg5 from "/images/blogimg6.png";
 import { Helmet } from "react-helmet";
 const BlogsDetails = () => {
   useEffect(() => {
@@ -8,7 +9,7 @@ const BlogsDetails = () => {
 
   const blogPost ={
     _id: 1,
-    image: blogimg,
+    image: blogimg5,
     author: "John Doe",
     date: "April 7, 2024",
     title: "The Impact of Artificial Intelligence on Society",

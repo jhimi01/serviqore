@@ -48,10 +48,10 @@ const Home = () => {
             <div className="md:flex items-center py-10">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="text-[64px] text-primary font-bold leading-[65px]">
+                <h1 className="text-[60px] text-primary font-bold leading-[65px]">
                   Response within 2 minutes
                 </h1>
-                <p className="text-textMuted font-normal text-[16px] leading-[16px] mt-5">
+                <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
                   No more waiting in uncertainty. Experience peace of mind
                   knowing that our remote monitoring ensures instant
                   coordination and dispatching, including escalation to relevant
@@ -70,10 +70,10 @@ const Home = () => {
             <div className="md:flex items-center py-10">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className=" text-[64px] text-primary font-bold leading-[65px]">
-                  Save up to <br /> 50%
+                <h1 className=" text-[55px] text-primary font-bold leading-[65px]">
+                  Save up to <br /> <span className="text-[80px]">50%</span>
                 </h1>
-                <p className="text-textMuted font-normal text-[16px] leading-[16px] mt-5">
+                <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
                   Maximize efficiency, minimize costs. Our remote monitoring
                   slashes expenses by up to 50% compared to in-house solutions,
                   delivering top-tier security without the hefty price tag.
@@ -91,10 +91,10 @@ const Home = () => {
             <div className="md:flex items-center py-10">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="text-[64px] text-primary font-bold leading-[65px]">
-                  24/7 <br /> Vigilance
+                <h1 className="text-[60px] text-primary font-bold leading-[65px]">
+                  24/7 <br /> <span className="text-[50px]">Vigilance</span>
                 </h1>
-                <p className="text-textMuted font-normal text-[16px] leading-[16px] mt-5">
+                <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
                   Rest easy knowing your security guards are performing duties
                   as protocols describe. Our remote monitoring provides 24/7
                   vigilance, eliminating vulnerabilities and safeguarding
@@ -113,10 +113,10 @@ const Home = () => {
             <div className="md:flex items-center py-10">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="text-[64px] text-primary font-bold leading-[65px]">
-                  Transparent <br /> Accountability
+                <h1 className="text-[60px] text-primary font-bold leading-[65px]">
+                  Transparent Accountability
                 </h1>
-                <p className="text-textMuted font-normal text-[16px] leading-[16px] mt-5">
+                <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
                   Ensure guard performance with crystal-clear transparency. Our
                   monitoring service ensures transparent accountability,
                   guaranteeing adherence to protocols and efficient patrols for

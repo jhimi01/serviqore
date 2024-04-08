@@ -1,10 +1,6 @@
 import React from "react";
 import './FaqSection.css'
 
-// box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-// box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-// .collapse-plus
-
 const FaqSection = () => {
   return (
     <div className="md:w-10/12 w-11/12 mx-auto my-14">
@@ -13,7 +9,7 @@ const FaqSection = () => {
       </h1>
       <div className="collapse overflow-visible collapse-plus rounded-none mb-1" >
         <input type="radio" name="my-accordion-3" defaultChecked />
-        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-[#7D7D7D] bg-[#F5F5F5]">
+        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-secondary bg-[#F5F5F5]">
           What is a Remote Security Dispatch Center?
         </div>
         <div  className="collapse-content mt-3 bg-white p-0">
@@ -28,7 +24,7 @@ const FaqSection = () => {
 
       <div className="collapse overflow-visible collapse-plus rounded-none mb-1" >
         <input type="radio" name="my-accordion-3" />
-        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-[#7D7D7D] bg-[#F5F5F5]">
+        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-secondary bg-[#F5F5F5]">
           How does the Remote Security Dispatch Center operate?
         </div>
         <div  className="collapse-content mt-3 bg-white p-0">
@@ -44,7 +40,7 @@ const FaqSection = () => {
 
       <div className="collapse overflow-visible collapse-plus rounded-none mb-1" >
         <input type="radio" name="my-accordion-3" />
-        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-[#7D7D7D] bg-[#F5F5F5]">
+        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-secondary bg-[#F5F5F5]">
           What types of security incidents can the Remote Security Dispatch Center handle?
         </div>
         <div  className="collapse-content mt-3 bg-white p-0">
@@ -56,7 +52,7 @@ const FaqSection = () => {
 
       <div className="collapse overflow-visible collapse-plus rounded-none mb-1" >
         <input type="radio" name="my-accordion-3" />
-        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-[#7D7D7D] bg-[#F5F5F5]">
+        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-secondary bg-[#F5F5F5]">
         How does the Remote Security Dispatch Center respond to security incidents?
         </div>
         <div  className="collapse-content mt-3 bg-white p-0">
@@ -68,7 +64,7 @@ const FaqSection = () => {
 
       <div className="collapse overflow-visible collapse-plus rounded-none mb-1" >
         <input type="radio" name="my-accordion-3" />
-        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-[#7D7D7D] bg-[#F5F5F5]">
+        <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }} className="collapse-title rounded-xl text-xl font-medium text-secondary bg-[#F5F5F5]">
         Is the Remote Security Dispatch Center staffed 24/7?
         </div>
         <div  className="collapse-content mt-3 bg-white p-0">

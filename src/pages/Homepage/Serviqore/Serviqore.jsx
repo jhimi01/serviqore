@@ -4,12 +4,12 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Serviqore = () => {
   return (
-    <div className="text-center md:w-10/12 w-11/12 mx-auto">
-      <div>
+    <div className="text-center md:w-10/12 w-11/12 mx-auto py-8">
+      <div className="">
         <h1 className="font-semibold text-[36px] text-black">
           Partner with Serviqore
         </h1>
-        <p className="font-normal my-3 text-[16px] leading-[16px] text-[#959595]">
+        <p className="font-normal my-3 text-[16px] leading-[16px] text-textMuted">
           Your Trusted Ally in Remote Security Supervision.
         </p>
         <img className="mx-auto my-5" src={group} />

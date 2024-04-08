@@ -12,9 +12,9 @@ import work3 from "/images/serviceicon/work3.png";
 import work4 from "/images/serviceicon/work4.png";
 
 const Services = () => {
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scroll(0, 0);
+  // }, []);
 
   const services = [
     {
@@ -52,10 +52,10 @@ const Services = () => {
       <div className="md:flex items-center py-10 bg-backgroundGray px-5 md:px-28 ">
         {/* content side */}
         <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-[64px] text-primary font-bold md:leading-[65px]">
+          <h1 className="text-4xl md:text-[60px] text-primary font-bold md:leading-[65px]">
             Your Remote Security Dispatch Center
           </h1>
-          <p className="text-secondary font-normal text-[16px] leading-[16px] md:mt-5">
+          <p className="text-secondary font-normal text-[16px] leading-[20px] md:mt-5">
             At Serviqore, we specialize in empowering Security Guard Companies
             with advanced remote monitoring and supervision solutions to enhance
             their operational efficiency and effectiveness.
@@ -69,30 +69,27 @@ const Services = () => {
 
       <div className="w-11/12 md:w-10/12 mx-auto my-20">
         <div className="text-center md:w-2/3 w-11/12 mx-auto my-10">
-          <h1 className="font-bold text-[30px] text-black">
+          <h1 className="font-semibold text-[30px] text-black">
             A customized plan of action
           </h1>
-          <p className="text-[#959595] font-normal  text-[16px] leading-[16px] md:w-3/4 mx-auto my-5">
+          <p className="text-textMuted font-normal  text-[16px] leading-[20px]  mx-auto my-5">
             With cutting-edge technology and a dedicated team of experienced
             security dispatchers, we offer comprehensive support and resources
             to help Security Guard Companies thrive in a competitive landscape.
             Here's what sets us apart:
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center lg:grid-cols-3 gap-7 md:gap-14">
+        <div className="mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((item, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="bg-[#D8E6D6] rounded-full p-3">
-                <img className="w-10" src={item.icon} alt="serviceicon" />
-              </div>
-              <div>
-                <h3 className="text-[30px] leading-[40px] py-1 text-secondary font-semibold text-center">
-                  {item.title}
-                </h3>
-                <p className="text-justify text-[14px] text-textMuted leading-[20px]">
-                  {item.text}
-                </p>
-              </div>
+            <div
+              key={index}
+              className="flex flex-col items-center bg-[#D8E6D6] rounded-lg py-4 px-6"
+            >
+              <img className="h-14 w-14 mt-2" src={item.icon} alt="serviceicon" />
+              <h3 className="text-lg font-semibold text-secondary mt-3 mb-2 text-center">
+                {item.title}
+              </h3>
+              <p className="text-sm text-textMuted text-justify">{item.text}</p>
             </div>
           ))}
         </div>
@@ -102,13 +99,13 @@ const Services = () => {
         <h1 className="text-center text-black py-8 font-bold text-[30px]">
           Why Choose Us?
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-10">
           <div className="flex flex-col items-center">
             <div className="p-3">
               <img className="w-10" src={work1} alt="serviceicon" />
             </div>
             <div>
-              <h3 className="text-[24px] leading-[40px] py-1 text-secondary font-semibold text-center">
+              <h3 className="text-[24px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Expertise
               </h3>
               <p className="text-justify text-[14px] text-textMuted leading-[20px]">
@@ -123,7 +120,7 @@ const Services = () => {
               <img className="w-10" src={work2} alt="serviceicon" />
             </div>
             <div>
-              <h3 className="text-[24px] leading-[40px] py-1 text-secondary font-semibold text-center">
+              <h3 className="text-[20px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Customized Solutions
               </h3>
               <p className="text-justify text-[14px] text-textMuted leading-[20px]">
@@ -137,7 +134,7 @@ const Services = () => {
               <img className="w-10" src={work3} alt="serviceicon" />
             </div>
             <div>
-              <h3 className="text-[24px] leading-[40px] py-1 text-secondary font-semibold text-center">
+              <h3 className="text-[20px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Efficiency
               </h3>
               <p className="text-justify text-[14px] text-textMuted leading-[20px]">
@@ -152,7 +149,7 @@ const Services = () => {
               <img className="w-10" src={work4} alt="serviceicon" />
             </div>
             <div>
-              <h3 className="text-[24px] leading-[40px] py-1 text-secondary font-semibold text-center">
+              <h3 className="text-[20px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Dedicated Support
               </h3>
               <p className="text-justify text-[14px] text-textMuted leading-[20px]">

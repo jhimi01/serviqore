@@ -8,7 +8,7 @@ const BpoParadiam = () => {
         <h1 className="font-semibold text-3xl sm:text-[36px] text-black">
           We transcend the traditional BPO paradigm by fostering collaborations
         </h1>
-        <p className="text-[#959595] font-normal  text-[16px] leading-[16px] md:w-3/4 mx-auto mt-3">
+        <p className="text-textMuted font-normal  text-[17px]  px-6 mx-auto mt-3">
           We understand that businesses require more than just solutions; they
           need a reliable ally committed to their growth journey. That's
           precisely who we are – a dependable team poised to add tangible value
@@ -26,7 +26,7 @@ const BpoParadiam = () => {
           <h1 className="font-semibold text-3xl sm:text-[36px] leading-[44px] text-secondary">
             With a proven track record of achievements
           </h1>
-          <p className="font-normal text-[14px] leading-[20px] text-justify text-textMuted mt-3">
+          <p className="font-normal text-[16px] leading-[20px] text-justify text-textMuted mt-3">
             we've successfully built and operated Remote Dispatch Centers for
             four clients in the USA. In the first year of operation, we
             implemented three Remote Dispatch Center solutions, driving

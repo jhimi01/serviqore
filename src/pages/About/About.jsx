@@ -11,9 +11,9 @@ import { Helmet } from "react-helmet";
 const About = () => {
   const [counter, setCounterOn] = useState(false);
 
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scroll(0, 0);
+  // }, []);
 
   return (
     <div className="mt-16">
@@ -22,11 +22,11 @@ const About = () => {
       </Helmet>
       <div className="md:flex items-center bg-backgroundGray py-8 px-5 md:px-28">
         <div className="md:w-1/2">
-          <h1 className="font-bold text-3xl sm:text-[54px] sm:leading-[61px] text-primary">
+          <h1 className="font-bold  text-3xl sm:text-[50px] sm:leading-[61px] text-primary">
             Your strategic success partner in scalability and seamless
             operations
           </h1>
-          <p className="text-[16px] text-textMuted leading-16px mt-4">
+          <p className="text-[17px] text-textMuted mt-4">
             We're a passionate team dedicated to excellence, integrity, and
             professional service. Our mission is simple yet impactful: to
             empower businesses of all sizes with solutions that foster long-term
@@ -43,18 +43,18 @@ const About = () => {
 
       {/* cunter section */}
       <div>
-        <div className="flex text-center flex-wrap px-1 items-center justify-center gap-20 mt-20 ">
+        <div className="flex text-center flex-wrap px-1 items-center justify-center gap-20 mt-28 ">
           <div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-5xl md:text-[90px] leading-[44px] text-primary mb-10">
-                {counter && <CountUp start={0} end={200} duration={2} />}+
+              <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
+                {counter && <CountUp start={0} end={200} duration={2} />}<sup>+</sup>
               </h1>
             </ScrollTrigger>
 
-            <h5 className="font-bold text-[14px] leading-[20px] text-center text-textMuted">
+            <h5 className="font-semibold text-[18px] leading-[20px] text-center text-textMuted">
               Security professionals collaborations
             </h5>
           </div>
@@ -63,11 +63,11 @@ const About = () => {
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-5xl md:text-[90px] leading-[44px] text-primary mb-10">
-                {counter && <CountUp start={0} end={50} duration={2} />}+
+              <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
+                {counter && <CountUp start={0} end={50} duration={2} />}<sup>+</sup>
               </h1>
             </ScrollTrigger>
-            <h5 className="font-bold text-[14px] leading-[20px] text-center text-textMuted">
+            <h5 className="font-semibold text-[18px] leading-[20px] text-center text-textMuted">
               Job Sites
             </h5>
           </div>
@@ -76,11 +76,11 @@ const About = () => {
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-5xl md:text-[90px] leading-[44px] text-primary mb-10">
-                {counter && <CountUp start={0} end={100} duration={2} />}+
+              <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
+                {counter && <CountUp start={0} end={100} duration={2} />}<sup>+</sup>
               </h1>
             </ScrollTrigger>
-            <h5 className="font-bold text-[14px] leading-[20px] text-center text-textMuted">
+            <h5 className="font-semibold text-[18px] leading-[20px] text-center text-textMuted">
               Incidents resolving every week
             </h5>
           </div>
