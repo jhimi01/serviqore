@@ -5,7 +5,7 @@ const BpoParadiam = () => {
   return (
     <div>
       <div className="text-center md:w-2/3 w-11/12 mx-auto my-10">
-        <h1 className="font-semibold text-[36px] text-black">
+        <h1 className="font-semibold text-3xl sm:text-[36px] text-black">
           We transcend the traditional BPO paradigm by fostering collaborations
         </h1>
         <p className="text-[#959595] font-normal  text-[16px] leading-[16px] md:w-3/4 mx-auto mt-3">
@@ -23,7 +23,7 @@ const BpoParadiam = () => {
         </div>
         {/* pera content */}
         <div className="md:w-1/2">
-          <h1 className="font-semibold text-[36px] leading-[44px] text-secondary">
+          <h1 className="font-semibold text-3xl sm:text-[36px] leading-[44px] text-secondary">
             With a proven track record of achievements
           </h1>
           <p className="font-normal text-[14px] leading-[20px] text-justify text-textMuted mt-3">

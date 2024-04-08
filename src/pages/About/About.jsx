@@ -22,7 +22,7 @@ const About = () => {
     </Helmet>
       <div className="md:flex items-center bg-backgroundGray py-8 px-5 md:px-28">
         <div className="md:w-1/2">
-          <h1 className="font-bold text-[54px] leading-[61px] text-primary">
+          <h1 className="font-bold text-3xl sm:text-[54px] sm:leading-[61px] text-primary">
             Your strategic success partner in scalability and seamless
             operations
           </h1>
@@ -43,13 +43,13 @@ const About = () => {
 
       {/* cunter section */}
       <div>
-        <div className="flex flex-wrap px-1 items-center justify-center gap-20 mt-20 ">
+        <div className="flex text-center flex-wrap px-1 items-center justify-center gap-20 mt-20 ">
           <div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-[90px] leading-[44px] text-primary mb-10">
+              <h1 className="font-bold text-5xl md:text-[90px] leading-[44px] text-primary mb-10">
                 {counter && <CountUp start={0} end={200} duration={2} />}+
               </h1>
             </ScrollTrigger>
@@ -63,7 +63,7 @@ const About = () => {
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-[90px] leading-[44px] text-primary mb-10">
+              <h1 className="font-bold text-5xl md:text-[90px] leading-[44px] text-primary mb-10">
                 {counter && <CountUp start={0} end={50} duration={2} />}+
               </h1>
             </ScrollTrigger>
@@ -76,7 +76,7 @@ const About = () => {
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-[90px] leading-[44px] text-primary mb-10">
+              <h1 className="font-bold text-5xl md:text-[90px] leading-[44px] text-primary mb-10">
                 {counter && <CountUp start={0} end={100} duration={2} />}+
               </h1>
             </ScrollTrigger>
