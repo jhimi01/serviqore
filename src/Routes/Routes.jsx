@@ -6,6 +6,7 @@ import Services from "../pages/Services/Services";
 import Blogs from "../pages/Blogs/Blogs";
 import Contact from "../pages/Contact/Contact";
 import BlogsDetails from "../pages/Blogs/BlogsDetails";
+import Erronpage from "../pages/Erronpage/Erronpage";
 
 
 
@@ -41,4 +42,8 @@ export const router = createBrowserRouter([
        
     ],
   },
+  {
+    path: '*',
+    element: <Erronpage></Erronpage>
+  }
 ]);

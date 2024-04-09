@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>serviqore</title>
+        <title>Serviqore</title>
       </Helmet>
       <div className="bg-backgroundGray px-5 md:px-28 mt-16 ">
         <Swiper

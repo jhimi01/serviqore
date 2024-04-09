@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
-import {
-  FaMagnifyingGlassLocation,
-  FaMapLocationDot,
-  FaPhoneVolume,
-} from "react-icons/fa6";
+import { FaMagnifyingGlassLocation } from "react-icons/fa6";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
-  const [wordCount, setWordCount] = useState(0);
-  const [limitedWord, setLimitedWord] = useState(300)
+  const [charCount, setCharCount] = useState(0);
+  const maxChars = 300;
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -20,14 +15,11 @@ const Contact = () => {
 
   const handleMessageChange = (event) => {
     let messageText = event.target.value;
-    // Limiting the message to 500 words
-    const words = messageText.trim().split(/\s+/);
-    if (words.length >= limitedWord) {
-      messageText = words.slice(0, limitedWord).join(" ");
+    if (messageText.length > maxChars) {
+      messageText = messageText.slice(0, maxChars);
     }
     setMessage(messageText);
-    // Update word count
-    setWordCount(words.length);
+    setCharCount(messageText.length);
   };
 
   return (
@@ -36,7 +28,6 @@ const Contact = () => {
         <title>contact | serviqore</title>
       </Helmet>
       <div className="md:flex justify-between gap-20">
-        {/* form side */}
         <div className="md:w-1/2">
           <h1 className="text-black relative font-semibold text-[36px] leading-[76px] ">
             Contact us
@@ -49,7 +40,6 @@ const Contact = () => {
             <label className="relative">
               <input
                 type="text"
-                // placeholder="Type here"
                 className="input rounded-none input-bordered w-full"
               />
               <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
@@ -73,7 +63,7 @@ const Contact = () => {
                 onChange={handleMessageChange}
               ></textarea>
               <span className="text-textMuted right-3 absolute tracking-wide bottom-3">
-                {wordCount}/{limitedWord}
+                {charCount}/{maxChars}
               </span>
               <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
                 message
@@ -87,7 +77,6 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* image side */}
         <div
           style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
           className="md:w-1/2 relative contactMap"
