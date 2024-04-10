@@ -30,7 +30,7 @@ const BlogsDetails = () => {
           src={blogPost.image}
           alt={blogPost.title}
         />
-        <h2 className="font-bold text-6xl absolute bottom-0 left-6 w-[40%]  py-5">
+        <h2 className="font-bold md:text-6xl absolute bottom-0 left-6 w-[40%]  py-5">
           {blogPost.title}
         </h2>
       </div>
