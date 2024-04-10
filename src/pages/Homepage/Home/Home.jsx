@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import bgSlider from "/images/bgslider.png";
 import "./Home.css";
-import "animate.css";
 
 // Import Swiper styles
 import "swiper/css";
