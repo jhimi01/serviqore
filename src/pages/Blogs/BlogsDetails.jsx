@@ -1,22 +1,21 @@
 import React, { useEffect } from "react";
-// import blogimg5 from "/images/blogimg5.png";
-import blogimg5 from "/images/blogimgtext.png";
+import blogimg6 from "/images/blogimgtext.png";
 import { Helmet } from "react-helmet";
 const BlogsDetails = () => {
   // useEffect(() => {
   //   window.scroll(0, 0);
   // }, []);
 
-  const blogPost = {
+  const blogPost =  {
     _id: 1,
-    image: blogimg5,
-    title: "The Impact of Artificial Intelligence on Society",
+    image: blogimg6,
+    title: " Elevating Security Standards: The Power of Experience and Technology in Guard Monitoring",
     description: (
       <div className="text-gray-900 space-y-3">
         <p>
           In the realm of security services, the perfect blend of human
-          expertise and tools is the cornerstone of excellence. At Serviqore, we
-          redefine security guard monitoring by seamlessly integrating our
+          expertise and tools is the cornerstone of excellence. At Serviqore,
+          we redefine security guard monitoring by seamlessly integrating our
           highly customer service-oriented, trained, and experienced team with
           cutting-edge monitoring systems and teamworking tools, setting new
           standards for security effectiveness and client satisfaction.
@@ -24,11 +23,11 @@ const BlogsDetails = () => {
         <h2 className="font-bold">Human Expertise at the Core </h2>
         <p>
           Our approach begins with our exceptional team of security
-          professionals who bring a wealth of experience and dedication to every
-          assignment. With years of industry experience under their belts, our
-          guards undergo rigorous training to ensure they are well-prepared to
-          handle a diverse range of security challenges with confidence and
-          professionalism.
+          professionals who bring a wealth of experience and dedication to
+          every assignment. With years of industry experience under their
+          belts, our guards undergo rigorous training to ensure they are
+          well-prepared to handle a diverse range of security challenges with
+          confidence and professionalism.
         </p>
         <p>
           What sets our team apart is their unwavering commitment to customer
@@ -38,62 +37,65 @@ const BlogsDetails = () => {
         </p>
         <h2 className="font-bold">Harnessing Cutting-Edge Technology</h2>
         <p>
-          While human expertise forms the backbone of our approach, we recognize
-          the importance of leveraging technology to enhance our capabilities
-          and deliver superior security outcomes. That's why we partner with
-          industry-leading monitoring system providers to access the latest in
-          surveillance technology and analytical solutions.
+          While human expertise forms the backbone of our approach, we
+          recognize the importance of leveraging technology to enhance our
+          capabilities and deliver superior security outcomes. That's why we
+          partner with industry-leading monitoring system providers to access
+          the latest in surveillance technology and analytical solutions.
         </p>
         <p>
           Through our partnerships, we gain access to cutting-edge monitoring
           systems that provide real-time visibility into client premises,
           enabling proactive threat detection and rapid response to security
-          incidents. These advanced systems, combined with our team's expertise,
-          allow us to provide comprehensive security solutions tailored to the
-          unique needs of each client.
+          incidents. These advanced systems, combined with our team's
+          expertise, allow us to provide comprehensive security solutions
+          tailored to the unique needs of each client.
         </p>
-        <h2 className="font-bold">Seamless Integration for Maximum Efficiency </h2>
+        <h2 className="font-bold">
+          Seamless Integration for Maximum Efficiency{" "}
+        </h2>
         <p>
           What truly sets us apart is our ability to seamlessly integrate our
           highly skilled team with cutting-edge monitoring systems and
-          teamworking tools. Our guards are equipped with the latest technology
-          and trained to utilize it effectively, enabling them to work
-          cohesively and efficiently to ensure the safety and security of our
-          clients.
+          teamworking tools. Our guards are equipped with the latest
+          technology and trained to utilize it effectively, enabling them to
+          work cohesively and efficiently to ensure the safety and security of
+          our clients.
         </p>
         <p>
           Our teamworking tools facilitate seamless communication and
           collaboration among our guards, supervisors, and clients, enabling
           real-time information sharing and coordinated response to security
-          incidents. This integration of human expertise and technology enables
-          us to deliver unparalleled security services that meet and exceed our
-          clients' expectations.
+          incidents. This integration of human expertise and technology
+          enables us to deliver unparalleled security services that meet and
+          exceed our clients' expectations.
         </p>
         <h3 className="font-bold text-base">
           Case Study: Enhancing Security Effectiveness Through Integration
         </h3>
         <h2 className="font-bold">
           Client Overview :
-          <span className="font-normal"> 
+          <span className="font-normal">
             A well-known furniture warehouse located in a suburban area in
-            Florida with a history of security concerns, including unauthorized
-            access and theft of catalytic converters worth thousands of dollars.
+            Florida with a history of security concerns, including
+            unauthorized access and theft of catalytic converters worth
+            thousands of dollars.
           </span>
         </h2>
         <h2 className="font-bold">
           Incident Overview:
-          <span className="font-normal"> 
-            At 1:30 AM EST on a Sunday, a security guard on duty at a warehouse
-            reported a concerning sighting—a white van parked at the premises
-            without a license plate. Given the warehouse's history of theft
-            incidents, including the recent loss of catalytic converters valued
-            at $30,000, immediate action was imperative to mitigate potential
-            risks.
+          <span className="font-normal">
+            At 1:30 AM EST on a Sunday, a security guard on duty at a
+            warehouse reported a concerning sighting—a white van parked at the
+            premises without a license plate. Given the warehouse's history of
+            theft incidents, including the recent loss of catalytic converters
+            valued at $30,000, immediate action was imperative to mitigate
+            potential risks.
           </span>
         </h2>
         <h2 className="font-bold">
           Actions Taken:
-          <span className="font-normal"> 
+          <span className="font-normal">
             Upon receiving the report, our remote security monitoring team
             swiftly initiated contact with the on-site guard to verify the
             situation thoroughly. The guard was directed to conduct a
@@ -110,14 +112,13 @@ const BlogsDetails = () => {
         </p>
         <h2 className="font-bold">
           Resolution:
-          <span className="font-normal"> 
-            
+          <span className="font-normal">
             Despite the van leaving the scene before authorities arrived, our
             remote security team immediately implemented heightened security
-            measures to prevent any potential theft or security breaches in the
-            future. This included reinforcing perimeter security, enhancing
-            surveillance coverage, and increasing patrol frequency around the
-            warehouse premises.
+            measures to prevent any potential theft or security breaches in
+            the future. This included reinforcing perimeter security,
+            enhancing surveillance coverage, and increasing patrol frequency
+            around the warehouse premises.
           </span>
         </h2>
         <p>
@@ -154,7 +155,7 @@ const BlogsDetails = () => {
           alt={blogPost.title}
         />
         <h2 className="font-bold md:text-6xl absolute bottom-0 left-6 w-[40%]  py-5">
-          {blogPost.title}
+          {blogPost.title.slice(0, 50)}
         </h2>
       </div>
       <div className="my-10">

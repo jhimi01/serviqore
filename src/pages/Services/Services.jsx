@@ -6,7 +6,7 @@ import serviceicon2 from "/images/serviceicon/servicicon2.png";
 import serviceicon3 from "/images/serviceicon/servicicon3.png";
 import serviceicon4 from "/images/serviceicon/servicicon4.png";
 import serviceicon5 from "/images/serviceicon/servicicon5.png";
-import serviceicon8 from "/images/serviceicon/serviceicon10.jpeg";
+import serviceicon10 from "/images/serviceicon/serviceicon10.jpeg";
 import work1 from "/images/serviceicon/work1.png";
 import work2 from "/images/serviceicon/work2.png";
 import work3 from "/images/serviceicon/work3.png";
@@ -44,7 +44,7 @@ const Services = () => {
       text: "Streamline your operations and optimize resource allocation with our advanced monitoring and dispatch solutions, enabling you to deliver exceptional service to your clients.",
     },
     {
-      icon: serviceicon8,
+      icon: serviceicon10,
       title: "Value for Money",
       text: "Unlock substantial cost savings for up to 50% and  seamlessly scale your operations to accommodate business growth and evolving needs.",
     }
