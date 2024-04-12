@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import blogimg6 from "/images/blogimgtext.png";
 import { Helmet } from "react-helmet";
 const BlogsDetails = () => {
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   const blogPost =  {
     _id: 1,
