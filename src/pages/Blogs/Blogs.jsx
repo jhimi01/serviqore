@@ -4,9 +4,9 @@ import blogimg6 from "/images/blogimgtext.png";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   const blogPosts = [
     {
@@ -836,13 +836,6 @@ const Blogs = () => {
       ),
     },
   ];
-
-  const truncateDescription = (description, maxLength) => {
-    if (description.length > maxLength) {
-      return `${description.slice(0, maxLength)}...`;
-    }
-    return description;
-  };
 
   return (
     <div className="mt-5 md:mt-20">
