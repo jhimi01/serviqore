@@ -12,7 +12,8 @@ const Blogs = () => {
     {
       _id: 1,
       image: blogimg6,
-      title: " Elevating Security Standards: The Power of Experience and Technology in Guard Monitoring",
+      title:
+        " Elevating Security Standards: The Power of Experience and Technology in Guard Monitoring",
       description: (
         <div className="text-gray-900 space-y-3">
           <p>
@@ -836,6 +837,13 @@ const Blogs = () => {
     },
   ];
 
+  const truncateDescription = (description, maxLength) => {
+    if (description.length > maxLength) {
+      return `${description.slice(0, maxLength)}...`;
+    }
+    return description;
+  };
+
   return (
     <div className="mt-5 md:mt-20">
       <Helmet>
@@ -871,7 +879,7 @@ const Blogs = () => {
                     {post.title.slice(0, 50)}...
                   </h2>
                 </div>
-                <p className="text-sm text-gray-700 mb-4">{post.description}</p>
+                <p className="text-lg text-gray-700 mb-4">{post.title}</p>
               </div>
             </Link>
           ))}
