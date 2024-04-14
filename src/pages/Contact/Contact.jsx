@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Contact.css";
 import { FaMagnifyingGlassLocation } from "react-icons/fa6";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 import { Helmet } from "react-helmet";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [charCount, setCharCount] = useState(0);
+  const [loading, setLoading] = useState(false); // State for loading indicator
   const maxChars = 300;
+  const form = useRef();
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -20,6 +25,56 @@ const Contact = () => {
     }
     setMessage(messageText);
     setCharCount(messageText.length);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs
+      .sendForm("service_xewxz8z", "template_a3kp633", form.current, {
+        publicKey: "YRD5OfDFzjYupKcFJ",
+      })
+      .then(
+        () => {
+          // Reset form fields
+          setMessage("");
+          setCharCount(0);
+          setLoading(false);
+
+          // Clear input fields
+          form.current.reset();
+
+          toast.success("Successfully sent!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          setLoading(false);
+          toast.error(error.text, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (
@@ -36,11 +91,17 @@ const Contact = () => {
             Reach out to us for any query
           </p>
 
-          <form className="flex flex-col gap-4 mt-5">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-4 mt-5"
+          >
             <label className="relative">
               <input
                 type="text"
                 className="input rounded-none input-bordered w-full"
+                name="from_name"
+                required
               />
               <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
                 full name
@@ -50,6 +111,8 @@ const Contact = () => {
               <input
                 type="email"
                 className="input rounded-none input-bordered w-full"
+                name="from_email"
+                required
               />
               <span className="absolute left-4 text-primary top-2 px-1  capitalize tracking-wide -translate-y-5 bg-white">
                 email
@@ -59,8 +122,10 @@ const Contact = () => {
               <textarea
                 className="textarea  rounded-none textarea-bordered leading-5 pt-3  resize-none w-full"
                 rows={6}
-                value={message}
                 onChange={handleMessageChange}
+                value={message}
+                name="message"
+                required
               ></textarea>
               <span className="text-textMuted right-3 absolute tracking-wide bottom-3">
                 {charCount}/{maxChars}
@@ -70,10 +135,20 @@ const Contact = () => {
               </span>
             </label>
 
-            <input
+            <button
               type="submit"
-              className="w-full bg-primary text-white rounded py-2 font-bold hover:opacity-90 cursor-pointer"
-            />
+              disabled={loading}
+              className={`w-full bg-primary text-white rounded py-2 font-bold hover:opacity-90 cursor-pointer relative ${
+                loading ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+            >
+              {loading && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white"></div>
+                </div>
+              )}
+              {loading ? "Sending..." : "Send"}
+            </button>
           </form>
         </div>
 
@@ -127,6 +202,19 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <ToastContainer />
     </div>
   );
 };
