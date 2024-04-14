@@ -11,6 +11,8 @@ import work1 from "/images/serviceicon/work1.png";
 import work2 from "/images/serviceicon/work2.png";
 import work3 from "/images/serviceicon/work3.png";
 import work4 from "/images/serviceicon/work4.png";
+import { Link } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Services = () => {
   useEffect(() => {
@@ -177,6 +179,9 @@ const Services = () => {
           today to learn more about our Virtual Resourcing Service and discover
           how we can help you build a winning team for your organization.
         </p>
+        <Link to='/contact'> <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
+          <span>CTA </span> <FaLongArrowAltRight />
+        </button></Link>
       </div>
     </div>
   );

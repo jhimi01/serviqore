@@ -7,6 +7,8 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import Testimonials from "../Homepage/Testimonials/Testimonials";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const About = () => {
   const [counter, setCounterOn] = useState(false);
@@ -32,6 +34,11 @@ const About = () => {
             empower businesses of all sizes with solutions that foster long-term
             partnerships, not just transactions.
           </p>
+
+          <Link to='/contact'>
+          <button className="flex items-center gap-3 bg-primary text-xl hover:opacity-90 text-white py-2 px-7 my-6 rounded">
+            <span>CTA </span> <FaLongArrowAltRight />
+          </button></Link>
         </div>
         {/* image content */}
         <div className="md:w-1/2">
@@ -50,7 +57,8 @@ const About = () => {
               onExit={() => setCounterOn(false)}
             >
               <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
-                {counter && <CountUp start={0} end={200} duration={2} />}<sup>+</sup>
+                {counter && <CountUp start={0} end={200} duration={2} />}
+                <sup>+</sup>
               </h1>
             </ScrollTrigger>
 
@@ -64,7 +72,8 @@ const About = () => {
               onExit={() => setCounterOn(false)}
             >
               <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
-                {counter && <CountUp start={0} end={50} duration={2} />}<sup>+</sup>
+                {counter && <CountUp start={0} end={50} duration={2} />}
+                <sup>+</sup>
               </h1>
             </ScrollTrigger>
             <h5 className="font-semibold text-[18px] leading-[20px] text-center text-textMuted">
@@ -77,7 +86,8 @@ const About = () => {
               onExit={() => setCounterOn(false)}
             >
               <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
-                {counter && <CountUp start={0} end={100} duration={2} />}<sup>+</sup>
+                {counter && <CountUp start={0} end={100} duration={2} />}
+                <sup>+</sup>
               </h1>
             </ScrollTrigger>
             <h5 className="font-semibold text-[18px] leading-[20px] text-center text-textMuted">
