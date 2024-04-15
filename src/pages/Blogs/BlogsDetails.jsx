@@ -41,14 +41,12 @@ const BlogsDetails = () => {
           </div>
         </div>
         <div className="mb-3">
-          <div className="text-textMuted my-3 text-justify">
-            <p> {blogDetails.description}</p>
+          <div className="text-black my-3 text-base text-justify">
+            <p className="mt-10"> {blogDetails.description}</p>
             {blogDetails?.sections.map((pera, index) => (
               <div key={index} className="mt-5">
-                <h3 className="font-semibold text-xl text-secondary">
-                  {pera.title}
-                </h3>
-                <p>{pera.content}</p>
+                <h3 className="font-semibold text-xl">{pera.title}</h3>
+                <p className="mt-3">{pera.content}</p>
               </div>
             ))}
           </div>
