@@ -8,42 +8,53 @@ import Contact from "../pages/Contact/Contact";
 import BlogsDetails from "../pages/Blogs/BlogsDetails";
 import Erronpage from "../pages/Erronpage/Erronpage";
 
-
-
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
     children: [
-        { 
-            path: "/", element: <Home /> 
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "/blog/:id",
+        element: <BlogsDetails />,
+        loader: async ({ params }) => {
+          try {
+            const response = await fetch(`../../public/data.json`);
+            const data = await response.json();
+            const blogDetails = data.find(
+              (blog) => blog._id === parseInt(params.id)
+            );
+            return blogDetails;
+          } catch (error) {
+            console.error("Error loading blog details:", error);
+            return null;
+          }
         },
-        {
-            path: '/about',
-            element: <About />
-        },
-       
-        {
-            path: '/services',
-            element: <Services />
-        },
-        {
-            path: '/blogs',
-            element: <Blogs />
-        },
-        {
-            path:'/blog/:id',
-            element: <BlogsDetails></BlogsDetails>
-          },
-        {
-            path: '/contact',
-            element: <Contact />
-        }
-       
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
     ],
   },
   {
-    path: '*',
-    element: <Erronpage></Erronpage>
-  }
+    path: "*",
+    element: <Erronpage></Erronpage>,
+  },
 ]);
