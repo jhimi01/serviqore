@@ -93,8 +93,8 @@ const Services = () => {
               key={index}
               className="flex hover:shadow-lg flex-col items-center bg-[#eef8ed] rounded-lg py-4 px-6"
             >
-              <img className="h-14 w-14 mt-2" src={item.icon} alt="serviceicon" />
-              <h3 className="text-lg font-semibold text-secondary mt-3 mb-2 text-center">
+              <img className="h-12 w-12 mt-2" src={item.icon} alt="serviceicon" />
+              <h3 className=" font-semibold text-secondary mt-3 mb-2 text-center">
                 {item.title}
               </h3>
               <p className="text-sm text-textMuted text-justify">{item.text}</p>

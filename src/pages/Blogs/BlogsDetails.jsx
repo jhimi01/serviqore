@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import blogimg6 from "/images/blogimgtext.png";
+import blogimg6 from "/images/blogimg.png";
 import { Helmet } from "react-helmet";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import useAllBlogs from "../../hook/useAllBlogs";
