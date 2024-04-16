@@ -11,3 +11,11 @@
 body {
     font-family: 'Poppins', sans-serif;
   }
+
+  .progress:indeterminate {
+    --progress-color: var(--fallback-bc, #008D66);
+    background-image: repeating-linear-gradient(90deg, var(--progress-color) -1%, var(--progress-color) 10%, transparent 10%, transparent 90%);
+    background-size: 205%;
+    background-position-x: 15%;
+    animation: progress-loading 5s ease-in-out infinite;
+}
