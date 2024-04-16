@@ -6,7 +6,6 @@ import useAllBlogs from "../../hook/useAllBlogs";
 
 const Blogs = () => {
   const { blogs } = useAllBlogs();
-  console.log(blogs);
 
   useEffect(() => {
     window.scroll(0, 0);

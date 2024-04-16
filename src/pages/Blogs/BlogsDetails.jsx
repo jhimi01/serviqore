@@ -3,59 +3,58 @@ import blogimg6 from "/images/blogimgtext.png";
 import { Helmet } from "react-helmet";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import useAllBlogs from "../../hook/useAllBlogs";
+
 const BlogsDetails = () => {
   const blogDetails = useLoaderData();
 
   const { blogs } = useAllBlogs();
 
-  const { id } = useParams();
+  const ownBlog = blogs.filter((blog) => blog?._id !== blogDetails?._id);
 
-  const ownBlog = blogs.filter((blog) => blog._id !== blogDetails._id);
-
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
-    <div className="flex gap-14 my-24 w-11/12 mx-auto">
-      <div className="w-[70%] mx-auto">
+    <div className="lg:flex gap-14 my-24 w-11/12 mx-auto">
+      <div className="lg:w-[70%] mx-auto">
         <Helmet>
           <title>Blog Details | serviqore</title>
         </Helmet>
-        <div className="w-full mx-auto">
+        <div className="w-full relative mx-auto">
           <h2 className="font-bold mx-auto text-2xl py-5">
-            {blogDetails.title} :
+            {blogDetails?.title} :
           </h2>
-          <div className="relative">
-            <img
-              className="w-full rounded hover:shadow-md"
-              src={blogimg6}
-              alt={blogDetails.title}
-            />
-            <h2
-              style={{ lineHeight: 1.3 }}
-              className="font-bold md:text-5xl absolute bottom-10 left-6 w-[60%]  py-5"
-            >
-              {blogDetails.title.slice(0, 70)}
-            </h2>
-          </div>
+          <img
+            className="w-full rounded hover:shadow-md"
+            src={blogimg6}
+            alt={blogDetails?.title}
+          />
+          <h2
+            style={{ lineHeight: 1.3 }}
+            className="font-bold text-2xl md:text-5xl absolute bottom-2 lg:bottom-10 left-6 w-[60%] lg:py-5"
+          >
+            {blogDetails?.title.slice(0, 70)}
+          </h2>
         </div>
         <div className="mb-3">
           <div className="text-black my-3 text-base text-justify">
-            <p className="mt-10"> {blogDetails.description}</p>
+            <p className="mt-10"> {blogDetails?.description}</p>
             {blogDetails?.sections.map((pera, index) => (
               <div key={index} className="mt-5">
-                <h3 className="font-semibold text-xl">{pera.title}</h3>
-                <p className="mt-3">{pera.content}</p>
+                <h3 className="font-semibold text-xl">{pera?.title}</h3>
+                <p className="mt-3">{pera?.content}</p>
+                <p className="mt-3">{pera?.content2}</p>
+                <p className="mt-3">{pera?.content3}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="w-[30%] mx-auto">
+      <div className="lg:w-[30%] mx-auto">
         <h4 className="text-2xl mt-10 mb-5 font-semibold">More Content</h4>
-        {ownBlog.map((blog) => (
-          <div key={blog._id}>
+        {ownBlog?.map((blog) => (
+          <div key={blog?._id}>
             <Link to={`/blog/${blog?._id}`}>
               <div className="flex items-center gap-2 mb-3 bg-base-200 hover:bg-base-300 cursor-pointer">
                 <img

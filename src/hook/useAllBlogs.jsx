@@ -8,7 +8,7 @@ const useAllBlogs = () => {
   } = useQuery({
     queryKey: ["blogs"],
     queryFn: async () => {
-      const response = await fetch("/public/data.json");
+      const response = await fetch("https://server-server.vercel.app/blogs");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
