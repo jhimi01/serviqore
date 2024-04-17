@@ -1,10 +1,29 @@
 import { NavLink } from "react-router-dom";
 import "./NavigationBar.css";
-import logo from "/images/Vector.png";
-import { TiThMenuOutline } from "react-icons/ti";
+import textlogo from "../../../../public/images/ServiqoreLogo/withouttextlogo.png";
+import logo from "../../../../public/images/ServiqoreLogo/withTextlogo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useEffect, useState } from "react";
 
 const NavigationBar = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const Navigation = () => (
     <>
       <NavLink
@@ -90,7 +109,6 @@ const NavigationBar = () => {
                   aria-label="close sidebar"
                   className="drawer-overlay"
                 ></label>
-                <img src={logo} />
                 <ul className="menu p-4 lg:w-[30%] md:2/3 sm:w-1/2 w-9/12 min-h-full bg-base-200 text-base-content">
                   <div className="h-[90px] w-[90px] object-cover">
                     <img className="object-cover" src={logo} />
@@ -102,7 +120,11 @@ const NavigationBar = () => {
             </div>
           </div>
           <a className="cursor-pointer" href="/">
-            <img src={logo} alt="Example" />
+            <img
+              className="w-20"
+              src={scrolling ? textlogo : logo}
+              alt="Example"
+            />
           </a>
         </div>
         <div className="navbar-end w-2/3 hidden lg:flex">
