@@ -12,6 +12,29 @@ body {
     font-family: 'Poppins', sans-serif;
   }
 
+  /* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  background: #e1e1e1; 
+  /* border-radius: 10px; */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #15b084; 
+  /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e664c; 
+}
+
   .progress:indeterminate {
     --progress-color: var(--fallback-bc, #008D66);
     background-image: repeating-linear-gradient(90deg, var(--progress-color) -1%, var(--progress-color) 10%, transparent 10%, transparent 90%);
