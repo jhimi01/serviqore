@@ -23,22 +23,20 @@ const About = () => {
         <title>about | serviqore</title>
       </Helmet>
       <div className="md:flex items-center bg-backgroundGray py-8 px-5 md:px-28">
-        <div className="md:w-1/2">
+        <div className="md:w-2/3">
           <h1 className="font-bold  text-3xl sm:text-[50px] sm:leading-[61px] text-primary">
-            Your strategic success partner in scalability and seamless
-            operations
+            Welcome to Serviqore! We're dedicated to excellence, integrity and
+            professional service.
           </h1>
           <p className="text-[17px] text-textMuted mt-4">
-            We're a passionate team dedicated to excellence, integrity, and
-            professional service. Our mission is simple yet impactful: to
-            empower businesses of all sizes with solutions that foster long-term
-            partnerships, not just transactions.
+          Our mission is to be the reliable ally that empowers businesses with scalable solutions and fosters enduring partnerships for sustained growth and success.
           </p>
 
-          <Link to='/contact'>
-          <button className="flex items-center gap-3 bg-primary text-xl hover:opacity-90 text-white py-2 px-7 my-6 rounded">
-            <span>CTA </span> <FaLongArrowAltRight />
-          </button></Link>
+          <Link to="/contact">
+            <button className="flex items-center gap-3 bg-primary text-xl hover:opacity-90 text-white py-2 px-7 my-6 rounded">
+              <span>CTA </span> <FaLongArrowAltRight />
+            </button>
+          </Link>
         </div>
         {/* image content */}
         <div className="md:w-1/2">
@@ -46,7 +44,10 @@ const About = () => {
         </div>
       </div>
 
-      <BpoParadiam />
+      <BpoParadiam headerText="ServiQore envisions itself as the catalyst for robust growth and long term success, both for our clients and our company, through our innovative approach and steadfast commitment to excellence in the BPO industry."
+      contentText="we go beyond traditional BPO paradigm of service delivery We're here to build collaborations We understand that businesses need more than solutions they need a reliable ally committed to their growth That's who we are a dependable team ready to add real value to your operations."
+      subcontentText="Our goal is simple empower businesses, no matter their size, with solutions that build long term partnerships, not just transactions."
+      />
 
       {/* cunter section */}
       <div>
@@ -141,8 +142,9 @@ const About = () => {
         </div>
       </div>
 
-      {/* testimonials section */}
-      <Testimonials />
+      <div>
+        
+      </div>
     </div>
   );
 };

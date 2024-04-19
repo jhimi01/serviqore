@@ -1,5 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import bgSlider from "/images/bgslider.png";
+import bgSlider1 from "../../../../public/images/HomeBanner/bg1.png";
+import bgSlider2 from "../../../../public/images/HomeBanner/bg2.png";
+import bgSlider3 from "../../../../public/images/HomeBanner/bg3.png";
+import bgSlider4 from "../../../../public/images/HomeBanner/bg4.png";
 import "./Home.css";
 
 // Import Swiper styles
@@ -73,7 +76,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img src={bgSlider} />
+                <img src={bgSlider1} />
               </div>
             </div>
           </SwiperSlide>
@@ -106,7 +109,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img src={bgSlider} />
+                <img src={bgSlider2} />
               </div>
             </div>
           </SwiperSlide>
@@ -140,7 +143,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img src={bgSlider} />
+                <img src={bgSlider3} />
               </div>
             </div>
           </SwiperSlide>
@@ -174,14 +177,28 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2 relative">
-                <img src={bgSlider} />
+                <img src={bgSlider4} />
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
 
-      <BpoParadiam />
+      <BpoParadiam
+        headerText="We transcend the traditional BPO paradigm
+by fostering collaborations"
+        peraText="We understand that businesses require more than just solutions; they
+need a reliable ally committed to their growth journey. That's
+precisely who we are – a dependable team poised to add tangible value
+to your operations."
+contentText="we've successfully built and operated Remote Dispatch Centers for
+four clients in the USA. In the first year of operation, we
+implemented three Remote Dispatch Center solutions, driving
+significant business expansion. Our cost-saving initiatives have
+optimized operational efficiency, resulting in savings of up to 50%
+for our clients."
+
+      />
 
       <ClientsLogo />
 
