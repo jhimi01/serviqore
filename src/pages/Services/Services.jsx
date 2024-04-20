@@ -13,6 +13,8 @@ import work3 from "/images/serviceicon/work3.png";
 import work4 from "/images/serviceicon/work4.png";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import bussinessgrowth from "/images/bussinessGrowth.png";
+import uniteforces from "/images/uniteforces.png";
 
 const Services = () => {
   useEffect(() => {
@@ -49,7 +51,7 @@ const Services = () => {
       icon: serviceicon10,
       title: "Value for Money",
       text: "Unlock substantial cost savings for up to 50% and  seamlessly scale your operations to accommodate business growth and evolving needs.",
-    }
+    },
   ];
 
   return (
@@ -75,6 +77,43 @@ const Services = () => {
         </div>
       </div>
 
+      {/* bussiness growth */}
+      <div className="py-8 px-5 md:px-28">
+        <div className="md:flex gap-16 items-center justify-center">
+          <div className="md:w-1/2">
+            <h2 className="text-secondary text-[36px] leading-[44px] font-semibold">
+              Business Growth
+            </h2>
+            <p className="text-[14px] mt-5 text-textMuted font-normal text-justify">
+              What sets us apart is our ability to deliver exceptional results.
+              We've achieved an outstanding{" "}
+              <span className="font-bold ">500%</span> business growth for our
+              clients, establishing ServiQore as an industry leader within a
+              remarkably short timeframe.
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            <img src={bussinessgrowth} />
+          </div>
+        </div>
+
+        <div className="md:flex mt-14 gap-16 items-center justify-center">
+          <div className="md:w-1/2">
+            <img src={uniteforces} />
+          </div>
+          <div className="md:w-1/2">
+            <h2 className="text-secondary text-[36px] leading-[44px] font-semibold">
+              Let's unite forces!
+            </h2>
+            <p className="text-[14px] mt-5 text-textMuted font-normal text-justify">
+              Together, we will enhance efficiency, forge enduring partnerships,
+              and strive towards shared success. Connect with ServiQore today to
+              explore how we can propel your business to new heights.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="w-11/12 md:w-10/12 mx-auto my-20">
         <div className="text-center md:w-2/3 w-11/12 mx-auto my-10">
           <h1 className="font-semibold text-[30px] text-black">
@@ -93,7 +132,11 @@ const Services = () => {
               key={index}
               className="flex hover:shadow-lg flex-col items-center bg-[#eef8ed] rounded-lg py-4 px-6"
             >
-              <img className="h-12 w-12 mt-2" src={item.icon} alt="serviceicon" />
+              <img
+                className="h-12 w-12 mt-2"
+                src={item.icon}
+                alt="serviceicon"
+              />
               <h3 className=" font-semibold text-secondary mt-3 mb-2 text-center">
                 {item.title}
               </h3>
@@ -179,9 +222,12 @@ const Services = () => {
           today to learn more about our Virtual Resourcing Service and discover
           how we can help you build a winning team for your organization.
         </p>
-        <Link to='/contact'> <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
-          <span>CTA </span> <FaLongArrowAltRight />
-        </button></Link>
+        <Link to="/contact">
+          {" "}
+          <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
+            <span>CTA </span> <FaLongArrowAltRight />
+          </button>
+        </Link>
       </div>
     </div>
   );

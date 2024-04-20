@@ -25,7 +25,7 @@ const BpoParadiam = ({headerText, peraText, contentText, subcontentText}) => {
           </h1>
           <p className="font-normal text-[16px] leading-[20px] text-justify text-textMuted mt-3">
             {contentText}
-           <p className="text-black mt-4">{subcontentText}</p>
+           <p className="text-black mt-2">{subcontentText}</p>
           </p>
         </div>
       </div>

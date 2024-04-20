@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
-import aboutpic from "/images/aboutside.png";
-import bussinessgrowth from "/images/bussinessGrowth.png";
-import uniteforces from "/images/uniteforces.png";
+import aboutpic from "/images/AboutImages/aboutside.png";
+import servic1 from "/images/AboutImages/digital_marketing.png";
+import servic2 from "/images/AboutImages/virtualresourcing.png";
+import servic3 from "/images/AboutImages/AccountingBookkeepingAccountingBookkeeping.png";
+import servic4 from "/images/AboutImages/GUARDACCOUNTIBILITY.png";
+import vector1 from "/images/AboutImages/Vector1.png";
+import vector2 from "/images/AboutImages/Vector2.png";
+import vector3 from "/images/AboutImages/Vector3.png";
+import vector4 from "/images/AboutImages/Vector4.png";
+
 import BpoParadiam from "../Homepage/BpoParadiam/BpoParadiam";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import Testimonials from "../Homepage/Testimonials/Testimonials";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -13,9 +19,9 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const About = () => {
   const [counter, setCounterOn] = useState(false);
 
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scroll(0, 0);
+  // }, []);
 
   return (
     <div className="mt-16">
@@ -29,7 +35,9 @@ const About = () => {
             professional service.
           </h1>
           <p className="text-[17px] text-textMuted mt-4">
-          Our mission is to be the reliable ally that empowers businesses with scalable solutions and fosters enduring partnerships for sustained growth and success.
+            Our mission is to be the reliable ally that empowers businesses with
+            scalable solutions and fosters enduring partnerships for sustained
+            growth and success.
           </p>
 
           <Link to="/contact">
@@ -44,9 +52,10 @@ const About = () => {
         </div>
       </div>
 
-      <BpoParadiam headerText="ServiQore envisions itself as the catalyst for robust growth and long term success, both for our clients and our company, through our innovative approach and steadfast commitment to excellence in the BPO industry."
-      contentText="we go beyond traditional BPO paradigm of service delivery We're here to build collaborations We understand that businesses need more than solutions they need a reliable ally committed to their growth That's who we are a dependable team ready to add real value to your operations."
-      subcontentText="Our goal is simple empower businesses, no matter their size, with solutions that build long term partnerships, not just transactions."
+      <BpoParadiam
+        headerText="ServiQore envisions itself as the catalyst for robust growth and long term success, both for our clients and our company, through our innovative approach and steadfast commitment to excellence in the BPO industry."
+        contentText="we go beyond traditional BPO paradigm of service delivery We're here to build collaborations We understand that businesses need more than solutions they need a reliable ally committed to their growth That's who we are a dependable team ready to add real value to your operations."
+        subcontentText="Our goal is simple empower businesses, no matter their size, with solutions that build long term partnerships, not just transactions."
       />
 
       {/* cunter section */}
@@ -105,45 +114,135 @@ const About = () => {
         </p>
       </div>
 
-      {/* bussiness growth */}
-      <div className="py-8 px-5 md:px-28">
-        <div className="md:flex gap-16 items-center justify-center">
-          <div className="md:w-1/2">
-            <h2 className="text-secondary text-[36px] leading-[44px] font-semibold">
-              Business Growth
-            </h2>
-            <p className="text-[14px] mt-5 text-textMuted font-normal text-justify">
-              What sets us apart is our ability to deliver exceptional results.
-              We've achieved an outstanding{" "}
-              <span className="font-bold ">500%</span> business growth for our
-              clients, establishing ServiQore as an industry leader within a
-              remarkably short timeframe.
-            </p>
+      <div className="text-center py-8 px-5 md:px-28">
+        <h2 className="text-[36px] text-secondary font-semibold">
+          What we do?
+        </h2>
+        <p className="text-textMuted mt-10">
+          Drawing from our collective expertise in Accounting, Virtual Resources
+          and Digital Marketing, we craft tailored strategies for every client.
+          Whether a startup or a big player, our mission remains constant: to
+          boost success with scalable solutions for smooth operations and
+          sustainable growth. Our diverse range of services includes:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-14 my-14">
+          <div>
+            <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
+              <img src={servic4} alt="service" />
+            </div>
+            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+              Security Guard Monitoring & Dispatch
+            </h3>
           </div>
-          <div className="md:w-1/2">
-            <img src={bussinessgrowth} />
+          <div>
+            <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
+              <img src={servic2} alt="service" />
+            </div>
+            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+              Virtual Resourcing
+            </h3>
           </div>
-        </div>
-
-        <div className="md:flex mt-14 gap-16 items-center justify-center">
-          <div className="md:w-1/2">
-            <img src={uniteforces} />
+          <div>
+            <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
+              <img src={servic3} alt="service" />
+            </div>
+            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+              Accounting & Bookkeeping
+            </h3>
           </div>
-          <div className="md:w-1/2">
-            <h2 className="text-secondary text-[36px] leading-[44px] font-semibold">
-              Let's unite forces!
-            </h2>
-            <p className="text-[14px] mt-5 text-textMuted font-normal text-justify">
-              Together, we will enhance efficiency, forge enduring partnerships,
-              and strive towards shared success. Connect with ServiQore today to
-              explore how we can propel your business to new heights.
-            </p>
+          <div>
+            <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
+              <img src={servic1} alt="service" />
+            </div>
+            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+              Digital Marketing
+            </h3>
           </div>
         </div>
       </div>
 
-      <div>
-        
+      <div className="text-center py-8 px-5 md:px-28">
+        <h2 className="text-[36px] text-secondary font-semibold">
+          Why Choose us??
+        </h2>
+        <p className="text-textMuted mt-10">
+          We work together to take your security business to its fullest
+          potential by:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-14 my-5">
+          <div>
+            <div className=" flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl ">
+              <img src={vector1} alt="service" />
+            </div>
+            <h3 className="text-[#717171] text-[16px] leading-[16px] mt-5">
+              Response on time to address issues within a{" "}
+              <span className="font-semibold">2 minute</span> timeframe.
+            </h3>
+          </div>
+          <div>
+            <div className=" flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl ">
+              <img src={vector2} alt="service" />
+            </div>
+            <h3 className="text-[#717171] text-[16px] leading-[16px] mt-5">
+              Enabling you to concentrate on essential business tasks and
+              expansion. We support clients in concentrating on core activities
+              while simplifying{" "}
+              <span className="font-semibold">
+                monitoring, communication, and documentation processes
+              </span>
+              .
+            </h3>
+          </div>
+          <div>
+            <div className=" flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl ">
+              <img src={vector3} alt="service" />
+            </div>
+            <h3 className="text-[#717171] text-[16px] leading-[16px] mt-5">
+              Having tech savvy and seasoned team to oversee guards round the
+              clock, ensuring{" "}
+              <span className="font-semibold">
+                tailored security strategies and compliance with protocols
+              </span>
+              .
+            </h3>
+          </div>
+        </div>
+        <div className="w-2/3 mx-auto">
+          <div className="flex items-center justify-center p-3 mx-auto rounded-3xl ">
+            <img src={vector4} alt="service" />
+          </div>
+          <h3 className="text-secondary font-semibold text-[30px] my-5">
+            Real value for money
+          </h3>
+          <ul className="list-disc text-start text-[#717171]">
+            <li>
+              We have a track record of helping clients grow their businesses
+              significantly,{" "}
+              <span className="font-semibold">
+                with growth rates ranging from 300% to 500%
+              </span>{" "}
+              in the first year.
+            </li>
+            <li>
+              Our services lead to significant{" "}
+              <span className="font-semibold">
+                savings on monthly staffing costs, up to 50%
+              </span>
+              , compared to traditional in house operations.
+            </li>
+            <li>
+              <span className="font-semibold">
+                Our staffing model is flexible
+              </span>
+              , allowing quick adjustments to meet changing demand
+            </li>
+            <li>
+              We consistently work towards streamlining processes , finding ways
+              to boost efficiency and cut costs for our clients, resulting in
+              long term savings and value creation.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
