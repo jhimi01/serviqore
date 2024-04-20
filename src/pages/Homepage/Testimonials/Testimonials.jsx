@@ -6,9 +6,6 @@ import "./Testimonials.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// Import custom icons
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 
@@ -50,7 +47,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[14px] font-normal my-2 pl-6">
+              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal my-2 pl-6">
                 Working with ServiQore has been an absolute game-changer for our
                 business. Their expertise in digital marketing helped us triple
                 our online visibility within just a few months. The team's
@@ -66,7 +63,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[14px] font-normal my-2 pl-6">
+              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal my-2 pl-6">
                 ServiQore's virtual resourcing services have been instrumental
                 in streamlining our operations. Their team seamlessly integrated
                 with ours, providing exceptional support and contributing to
@@ -82,7 +79,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[14px] font-normal my-2 pl-6">
+              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal my-2 pl-6">
                 We've been working with ServiQore for over a year now, and the
                 results speak for themselves. Their cost-saving initiatives have
                 helped us optimize operational efficiency and redirect resources
@@ -98,7 +95,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[14px] font-normal my-2 pl-6">
+              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal my-2 pl-6">
                 ServiQore's virtual resourcing services have been instrumental
                 in streamlining our operations. Their team seamlessly integrated
                 with ours, providing exceptional support and contributing to
