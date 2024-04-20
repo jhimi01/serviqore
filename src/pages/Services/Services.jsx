@@ -1,148 +1,300 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import serviceimg from "/images/serviceimg.png";
-import serviceicon1 from "/images/serviceicon/servicicon1.png";
-import serviceicon2 from "/images/serviceicon/servicicon2.png";
-import serviceicon3 from "/images/serviceicon/servicicon3.png";
-import serviceicon4 from "/images/serviceicon/servicicon4.png";
-import serviceicon5 from "/images/serviceicon/servicicon5.png";
-import serviceicon10 from "/images/serviceicon/serviceicon10.jpeg";
+import aboutmain from "/images/serviceicon/aboutmain.png";
+import Vector1 from "/images/serviceicon/Vector1.png";
+import Vector2 from "/images/serviceicon/Vector2.png";
+import Vector3 from "/images/serviceicon/Vector3.png";
+import Vector4 from "/images/serviceicon/Vector4.png";
+import Vector5 from "/images/serviceicon/Vector5.png";
+import remote from "/images/serviceicon/remote.png";
+import response from "/images/serviceicon/response.png";
+import realvalue from "/images/serviceicon/realvalue.png";
+import monitoring from "/images/serviceicon/monitoring.png";
+import training from "/images/serviceicon/training.png";
+import growth from "/images/serviceicon/growth.png";
+import reporting from "/images/serviceicon/reporting.png";
+import effeciency from "/images/serviceicon/effeciency.png";
 import work1 from "/images/serviceicon/work1.png";
 import work2 from "/images/serviceicon/work2.png";
 import work3 from "/images/serviceicon/work3.png";
 import work4 from "/images/serviceicon/work4.png";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import bussinessgrowth from "/images/bussinessGrowth.png";
-import uniteforces from "/images/uniteforces.png";
 
 const Services = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
-  const services = [
-    {
-      icon: serviceicon2,
-      title: "Real-Time Oversight",
-      text: "Equip your guards with the tools they need to monitor and protect client premises effectively, leverage remote monitoring systems to enhance your security operations with real-time visibility and proactive threat detection capabilities.",
-    },
-    {
-      icon: serviceicon1,
-      title: "Emergency Response Coordination",
-      text: "Access our highly trained & experienced dispatch team, available 24/7, to efficiently coordinate responses to security incidents, ensuring timely resolution, minimizing risks and maximizing client satisfaction.",
-    },
-    {
-      icon: serviceicon3,
-      title: "Guard Accountability Solutions",
-      text: "Ensure accountability and adherence to protocols among your security personnel with our monitoring and reporting solutions.",
-    },
-    {
-      icon: serviceicon4,
-      title: "Comprehensive Reporting",
-      text: "Gain valuable & actionable insights into your security team’s performance and operations with our detailed reports and analytics, enabling you to optimize resources, identify areas for improvement, and demonstrate value to your clients.",
-    },
-    {
-      icon: serviceicon5,
-      title: "Improved Operational Efficiency",
-      text: "Streamline your operations and optimize resource allocation with our advanced monitoring and dispatch solutions, enabling you to deliver exceptional service to your clients.",
-    },
-    {
-      icon: serviceicon10,
-      title: "Value for Money",
-      text: "Unlock substantial cost savings for up to 50% and  seamlessly scale your operations to accommodate business growth and evolving needs.",
-    },
-  ];
-
   return (
-    <div className="mt-8">
+    <div className="mt-16">
       <Helmet>
         <title>service | serviqore</title>
       </Helmet>
-      <div className="md:flex items-center py-10 bg-backgroundGray px-5 md:px-28 ">
+      <div className="md:flex items-center py-16 bg-backgroundGray px-5 md:px-28 ">
         {/* content side */}
-        <div className="md:w-1/2">
+        <div className="md:w-[55%] mx-auto">
           <h1 className="text-4xl md:text-[60px] text-primary font-bold md:leading-[65px]">
-            Your Remote Security Dispatch Center
+            Security Guard Monitoring Service
           </h1>
           <p className="text-secondary font-normal text-[16px] leading-[20px] md:mt-5">
-            At Serviqore, we specialize in empowering Security Guard Companies
-            with advanced remote monitoring and supervision solutions to enhance
-            their operational efficiency and effectiveness.
+            We're dedicated to excellence, integrity and professional service.
+            Our mission is to empower businesses of all sizes with collaborative
+            solutions for long term success. Beyond traditional BPO, we're your
+            reliable ally committed to growth. With over 3 years of experience
+            and expertise in Remote Security Monitoring and Dispatch we tailor
+            strategies for smooth operations and sustainable growth.
+          </p>
+          <p className="text-secondary font-normal text-[16px] leading-[20px] md:mt-5">
+            We provide Centralised Monitoring & Dispatch Centre services to
+            multiple security guard businesses in the USA. Our service ensure
+            streamline communication and coordination.
           </p>
         </div>
         {/* image side */}
-        <div className="md:w-1/2 mt-5 md:mt-0">
-          <img src={serviceimg} alt="service" />
-        </div>
-      </div>
-
-      {/* bussiness growth */}
-      <div className="py-8 px-5 md:px-28">
-        <div className="md:flex gap-16 items-center justify-center">
-          <div className="md:w-1/2">
-            <h2 className="text-secondary text-[36px] leading-[44px] font-semibold">
-              Business Growth
-            </h2>
-            <p className="text-[14px] mt-5 text-textMuted font-normal text-justify">
-              What sets us apart is our ability to deliver exceptional results.
-              We've achieved an outstanding{" "}
-              <span className="font-bold ">500%</span> business growth for our
-              clients, establishing ServiQore as an industry leader within a
-              remarkably short timeframe.
-            </p>
-          </div>
-          <div className="md:w-1/2">
-            <img src={bussinessgrowth} />
-          </div>
-        </div>
-
-        <div className="md:flex mt-14 gap-16 items-center justify-center">
-          <div className="md:w-1/2">
-            <img src={uniteforces} />
-          </div>
-          <div className="md:w-1/2">
-            <h2 className="text-secondary text-[36px] leading-[44px] font-semibold">
-              Let's unite forces!
-            </h2>
-            <p className="text-[14px] mt-5 text-textMuted font-normal text-justify">
-              Together, we will enhance efficiency, forge enduring partnerships,
-              and strive towards shared success. Connect with ServiQore today to
-              explore how we can propel your business to new heights.
-            </p>
-          </div>
+        <div className="md:w-[45%] mx-auto mt-5 md:mt-0">
+          <img src={aboutmain} alt="service" />
         </div>
       </div>
 
       <div className="w-11/12 md:w-10/12 mx-auto my-20">
-        <div className="text-center md:w-2/3 w-11/12 mx-auto my-10">
-          <h1 className="font-semibold text-[30px] text-black">
-            A customized plan of action
-          </h1>
-          <p className="text-textMuted font-normal  text-[16px] leading-[20px]  mx-auto my-5">
-            With cutting-edge technology and a dedicated team of experienced
-            security dispatchers, we offer comprehensive support and resources
-            to help Security Guard Companies thrive in a competitive landscape.
-            Here's what sets us apart:
-          </p>
-        </div>
-        <div className="mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((item, index) => (
-            <div
-              key={index}
-              className="flex hover:shadow-lg flex-col items-center bg-[#eef8ed] rounded-lg py-4 px-6"
-            >
-              <img
-                className="h-12 w-12 mt-2"
-                src={item.icon}
-                alt="serviceicon"
-              />
-              <h3 className=" font-semibold text-secondary mt-3 mb-2 text-center">
-                {item.title}
-              </h3>
-              <p className="text-sm text-textMuted text-justify">{item.text}</p>
+        <h1 className="text-center font-semibold text-[30px] text-black">
+          What you will get
+        </h1>
+
+        <div className="mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-secondtextMuted">
+          <div className="flex flex-col items-center text-center">
+            <div className="w-24 p-5 rounded-full items-center justify-center flex h-24 bg-[#D8E6D6]">
+              <img src={Vector1} alt="vector" />
             </div>
-          ))}
+            <p className="mt-5">
+              <span className="font-semibold">Contact Centre</span> for your
+              guards and clients
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <div className="w-24 p-5 rounded-full items-center justify-center flex h-24 bg-[#D8E6D6]">
+              <img src={Vector2} alt="vector" />
+            </div>
+            <p className="mt-5">
+              Response within <span className="font-semibold">2 minutes:</span>{" "}
+              incident response, resolution and documentation, as well as
+              clients’ requests
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <div className="w-24 p-5 rounded-full items-center justify-center flex h-24 bg-[#D8E6D6]">
+              <img src={Vector3} alt="vector" />
+            </div>
+            <p className="mt-5">
+              <span className="font-semibold">Real-time GPS</span> and Reports
+              monitoring
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <div className="w-24 p-5 rounded-full items-center justify-center flex h-24 bg-[#D8E6D6]">
+              <img src={Vector4} alt="vector" />
+            </div>
+            <p className="mt-5">
+              <span className="font-semibold">Fatigue</span> management
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <div className="w-24 p-5 rounded-full items-center justify-center flex h-24 bg-[#D8E6D6]">
+              <img src={Vector5} alt="vector" />
+            </div>
+            <p className="mt-5">
+              <span className="font-semibold">Customisable</span> according to
+              your business needs
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-8 space-y-20">
+        {/* 1st section */}
+        <div className="md:flex px-5 pb-6 md:px-28 items-center bg-[#F9FDFC]">
+          {/* img Connect */}
+          <div className="md:w-1/2 ">
+            <img src={remote} className="mx-auto" alt="img" />
+          </div>
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">A Remote Dispatch Center</h1>
+            <p className="my-3">
+              We act as a centralised hub for resource optimisation. Our daily
+              activities include:
+            </p>
+            <ul className="list-disc pl-10">
+              <li>Scheduling/Rostering</li>
+              <li>Multiple Guards</li>
+              <li>Multiple Clients</li>
+              <li>Multiple Job/Post Sites</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* 2nd section */}
+        <div className="md:flex-row flex-col-reverse flex px-5  pb-6 md:px-28 items-center">
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">Real value for money</h1>
+            <ul className="list-disc pl-5 mt-5">
+              <li>
+                We have a track record of helping clients grow their businesses
+                significantly,{" "}
+                <span className="font-semibold">
+                  with growth rates ranging from 300% to 500%
+                </span>{" "}
+                in the first year.
+              </li>
+              <li>
+                Our services lead to significant{" "}
+                <span className="font-semibold">
+                  savings on monthly staffing costs, up to 50%
+                </span>
+                , compared to traditional in house operations
+              </li>
+              <li>
+                <span className="font-semibold">
+                  Our staffing model is flexible,
+                </span>{" "}
+                allowing quick adjustments to meet changing demand
+              </li>
+              <li>
+                We consistently work towards streamlining processes , finding
+                ways to boost efficiency and cut costs for our clients,
+                resulting in long term savings and value creation
+              </li>
+            </ul>
+          </div>
+          {/* img Connect */}
+          <div className="md:w-1/2 mx-auto">
+            <img src={realvalue} className="mx-auto" alt="img" />
+          </div>
+        </div>
+
+        {/* 3rd section */}
+        <div className="md:flex px-5 py-6 md:px-28 items-center bg-[#F9FDFC]">
+          {/* img Connect */}
+          <div className="md:w-1/2 ">
+            <img src={response} className="mx-auto" alt="response" />
+          </div>
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">Efficient Response Management</h1>
+            <p className="my-3">
+              We pride ourselves on our rapid response time, ensuring that we
+              address all issues within 2 minutes. Swift Response:
+            </p>
+            <ul className="list-disc pl-10">
+              <li>Addressing incidents within a 2 minute time frame.</li>
+              <li>
+                Efficient Resolution: Minimizing disruptions with our skilled
+                team.
+              </li>
+              <li>
+                Comprehensive Documentation: Meticulously recording each
+                resolution
+              </li>
+              <li>
+                Client Centric Service: Prioritising prompt and effective
+                responses to clients' requests.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* 4th section */}
+        <div className="md:flex-row flex-col-reverse flex px-5 gap-20 pb-6 md:px-28 items-center">
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">Real time Monitoring:</h1>
+            <p className="my-3">
+              Through state-of-the-art security guard monitoring system, we
+              ensure guards are active round the clock
+            </p>
+            <ul className="list-disc pl-20 mt-5">
+              <li>Live GPS Location and</li>
+              <li>Tacking History</li>
+              <li>Firewatch Reports</li>
+              <li>Incidents Reports</li>
+              <li>Hourly Reports</li>
+              <li>30 Minutes Reports</li>
+            </ul>
+          </div>
+          {/* img Connect */}
+          <div className="md:w-1/2 mx-auto">
+            <img className="mx-auto" src={monitoring} alt="img" />
+          </div>
+        </div>
+
+        {/* 5th section */}
+        <div className="md:flex px-5 py-6 md:px-28 items-center bg-[#F9FDFC]">
+          {/* img Connect */}
+          <div className="md:w-1/2 ">
+            <img src={training} className="mx-auto" alt="training" />
+          </div>
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">Training and Development</h1>
+            <p className="my-3">Continuous training and evaluation to ensure</p>
+            <ul className="list-disc pl-10">
+              <li>Professional and efficient communications</li>
+              <li>Development and documentation of protocols and procedure</li>
+              <li>Protocols are strictly followed</li>
+              <li>Scopes of Improvement</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* 6th section */}
+      <div className="md:flex-row flex-col-reverse flex px-5 gap-20 pb-6 md:px-28 items-center">
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">Surge Capacity for Growth</h1>
+            <p className="my-3">
+              Utilization of cloud-based infrastructure allows to ensure
+            </p>
+            <ul className="list-disc pl-20 mt-5">
+              <li>Service continuity and</li>
+              <li>
+                scalability as business demand grows enable cost effective
+                scaling
+              </li>
+            </ul>
+          </div>
+          {/* img Connect */}
+          <div className="md:w-1/2 mx-auto">
+            <img src={growth} className="mx-auto" alt="img" />
+          </div>
+        </div>
+
+        {/* 7th section */}
+        <div className="md:flex md:text-start text-center px-5 py-6 md:px-28 items-center bg-[#F9FDFC]">
+          {/* img Connect */}
+          <div className="md:w-1/2 ">
+            <img src={reporting} className="mx-auto" alt="training" />
+          </div>
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">Comprehensive Reporting</h1>
+            <p className="my-3">
+              Gain valuable & actionable insights into your security team’s
+              performance and operations with our detailed reports and
+              analytics, enabling you to optimize resources, identify areas for
+              improvement, and demonstrate value to your clients.
+            </p>
+          </div>
+        </div>
+
+        {/* 8th section */}
+        <div className="md:flex-row flex-col-reverse md:text-start text-center flex px-5 gap-20 pb-6 md:px-28 items-center">
+          <div className="md:w-1/2 text-secondtextMuted ">
+            <h1 className="subheaderText">Improved Operational Efficiency</h1>
+            <p className="my-3">
+              Streamline your operations and optimize resource allocation with
+              our advanced monitoring and dispatch solutions, enabling you to
+              deliver exceptional service to your clients.
+            </p>
+          </div>
+          {/* img Connect */}
+          <div className="md:w-1/2 mx-auto">
+            <img src={effeciency} className="mx-auto" alt="effeciency img" />
+          </div>
         </div>
       </div>
 

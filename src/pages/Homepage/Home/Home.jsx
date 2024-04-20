@@ -191,13 +191,12 @@ by fostering collaborations"
 need a reliable ally committed to their growth journey. That's
 precisely who we are – a dependable team poised to add tangible value
 to your operations."
-contentText="we've successfully built and operated Remote Dispatch Centers for
+        contentText="we've successfully built and operated Remote Dispatch Centers for
 four clients in the USA. In the first year of operation, we
 implemented three Remote Dispatch Center solutions, driving
 significant business expansion. Our cost-saving initiatives have
 optimized operational efficiency, resulting in savings of up to 50%
 for our clients."
-
       />
 
       <ClientsLogo />

@@ -42,3 +42,12 @@ body {
     background-position-x: 15%;
     animation: progress-loading 5s ease-in-out infinite;
 }
+
+
+@layer components {
+  .subheaderText{
+    color: #008D66;
+    font-weight: 600;
+    font-size: 36px;  
+}
+}

@@ -8,6 +8,7 @@ export default {
         success: "#4CAF4F",
         secondary: "#4D4D4D",
         textMuted: "#6D6D6D",
+        secondtextMuted: "#717171",
         backgroundGray: "#F5F7FA",
       },
     },

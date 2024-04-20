@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Contact.css";
-import { FaMagnifyingGlassLocation } from "react-icons/fa6";
-import { MdEmail, MdLocalPhone } from "react-icons/md";
+import contactimg from "/images/Contact/contact.png";
+import location from "/images/Contact/location.png";
+import email from "/images/Contact/email.png";
+import phone from "/images/Contact/phone.png";
 import { Helmet } from "react-helmet";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
@@ -10,8 +12,8 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [charCount, setCharCount] = useState(0);
-  const [loading, setLoading] = useState(false); // State for loading indicator
-  const maxChars = 300;
+  const [loading, setLoading] = useState(false); 
+  const maxChars = 500;
   const form = useRef();
 
   useEffect(() => {
@@ -138,7 +140,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full bg-primary text-white rounded py-2 font-bold hover:opacity-90 cursor-pointer relative ${
+              className={`w-full bg-primary text-white rounded py-2 font-bold hover:bg-[#0785C2] cursor-pointer relative ${
                 loading ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
@@ -147,61 +149,63 @@ const Contact = () => {
                   <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white"></div>
                 </div>
               )}
-              {loading ? "Sending..." : "Send"}
+              {loading ? "Sending..." : "SUBMIT"}
             </button>
           </form>
         </div>
 
-        <div
-          style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
-          className="md:w-1/2 relative contactMap md:mt-0 mt-10"
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9741630735525!2d90.34285607122342!3d23.748300741743016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6fc9430681%3A0xb12344d77921dcdc!2sB7%2C%20House%2C%2019%20Rd%208%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1712336393258!5m2!1sen!2sbd"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="md:w-1/2 md:mt-0 mt-10">
+          <img src={contactimg} alt="contact img" />
+          <div className="flex flex-wrap mt-14">
+            <div className="flex p-4 items-start gap-6">
+              <img src={location} alt="location" />
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-semibold text-[16px] leading-[20px] text-black">
+                    Australia Office
+                  </h4>
+                  <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                    Unit B7, House 19, Road 8, Shekhertek,
+                    Mohammadpur, Dhaka - 1207
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-[16px] leading-[20px] text-black">
+                    Bangladesh Office
+                  </h4>
+                  <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                    Unit B7, House 19, Road 8, Shekhertek,
+                    Mohammadpur, Dhaka - 1207
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex p-4 items-center justify-center gap-3">
+              <img src={email} alt="email" />
+              <div>
+                <h4 className="font-semibold text-[16px] leading-[20px] text-black">
+                  Email
+                </h4>
+                <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                  info@serviqore.com
+                </p>
+              </div>
+            </div>
+            <div className="flex p-4 items-center justify-center gap-3">
+              <img src={phone} alt="phone" />
+              <div>
+                <h4 className="font-semibold text-[16px] leading-[20px] text-black">
+                  Phone
+                </h4>
+                <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                  +880 1896 191700
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="flex mt-14">
-        <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
-          <FaMagnifyingGlassLocation className="text-primary text-5xl" />
-          <div>
-            <h4 className="font-semibold text-[16px] leading-[20px] text-black">
-              Location
-            </h4>
-            <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
-              House 19, Road 8, Shekhertek, Mohammadpur, Dhaka - 1207
-            </p>
-          </div>
-        </div>
-        <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
-          <MdEmail className="text-primary text-5xl" />
-          <div>
-            <h4 className="font-semibold text-[16px] leading-[20px] text-black">
-              Email
-            </h4>
-            <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
-              info@serviqore.com
-            </p>
-          </div>
-        </div>
-        <div className="flex w-1/3 hover:shadow p-4 items-center justify-center gap-3">
-          <MdLocalPhone className="text-primary  text-5xl" />
-          <div>
-            <h4 className="font-semibold text-[16px] leading-[20px] text-black">
-              Phone
-            </h4>
-            <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
-              +880 1896 191700
-            </p>
-          </div>
-        </div>
-      </div>
+
       <ToastContainer
         position="top-right"
         autoClose={5000}

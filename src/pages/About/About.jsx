@@ -19,9 +19,9 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const About = () => {
   const [counter, setCounterOn] = useState(false);
 
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <div className="mt-16">
@@ -130,7 +130,7 @@ const About = () => {
             <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
               <img src={servic4} alt="service" />
             </div>
-            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+            <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
               Security Guard Monitoring & Dispatch
             </h3>
           </div>
@@ -138,7 +138,7 @@ const About = () => {
             <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
               <img src={servic2} alt="service" />
             </div>
-            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+            <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
               Virtual Resourcing
             </h3>
           </div>
@@ -146,7 +146,7 @@ const About = () => {
             <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
               <img src={servic3} alt="service" />
             </div>
-            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+            <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
               Accounting & Bookkeeping
             </h3>
           </div>
@@ -154,7 +154,7 @@ const About = () => {
             <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
               <img src={servic1} alt="service" />
             </div>
-            <h3 className="text-[#717171] font-semibold text-[28px] leading-[30px] mt-5">
+            <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
               Digital Marketing
             </h3>
           </div>
@@ -165,28 +165,28 @@ const About = () => {
         <h2 className="text-[36px] text-secondary font-semibold">
           Why Choose us??
         </h2>
-        <p className="text-textMuted mt-10">
+        <p className="text-textMuted mt-5">
           We work together to take your security business to its fullest
           potential by:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-14 my-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-14 mt-10 mb-5">
           <div>
-            <div className=" flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl ">
+            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl ">
               <img src={vector1} alt="service" />
             </div>
-            <h3 className="text-[#717171] text-[16px] leading-[16px] mt-5">
-              Response on time to address issues within a{" "}
+            <h3 className="text-secondtextMuted text-[16px] leading-[16px]">
+              Response on time to address issues within a
               <span className="font-semibold">2 minute</span> timeframe.
             </h3>
           </div>
           <div>
-            <div className=" flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl ">
+            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl ">
               <img src={vector2} alt="service" />
             </div>
-            <h3 className="text-[#717171] text-[16px] leading-[16px] mt-5">
+            <h3 className="text-secondtextMuted text-[16px] leading-[16px]">
               Enabling you to concentrate on essential business tasks and
               expansion. We support clients in concentrating on core activities
-              while simplifying{" "}
+              while simplifying
               <span className="font-semibold">
                 monitoring, communication, and documentation processes
               </span>
@@ -194,12 +194,12 @@ const About = () => {
             </h3>
           </div>
           <div>
-            <div className=" flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl ">
+            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl ">
               <img src={vector3} alt="service" />
             </div>
-            <h3 className="text-[#717171] text-[16px] leading-[16px] mt-5">
+            <h3 className="text-secondtextMuted text-[16px] leading-[16px] ">
               Having tech savvy and seasoned team to oversee guards round the
-              clock, ensuring{" "}
+              clock, ensuring
               <span className="font-semibold">
                 tailored security strategies and compliance with protocols
               </span>
@@ -207,24 +207,24 @@ const About = () => {
             </h3>
           </div>
         </div>
-        <div className="w-2/3 mx-auto">
-          <div className="flex items-center justify-center p-3 mx-auto rounded-3xl ">
+        <div className="px-10 md:px-0 md:w-2/3 mx-auto py-5">
+          <div className="flex items-center justify-center mx-auto rounded-3xl">
             <img src={vector4} alt="service" />
           </div>
           <h3 className="text-secondary font-semibold text-[30px] my-5">
             Real value for money
           </h3>
-          <ul className="list-disc text-start text-[#717171]">
+          <ul className="list-disc text-start text-secondtextMuted">
             <li>
               We have a track record of helping clients grow their businesses
-              significantly,{" "}
+              significantly,
               <span className="font-semibold">
                 with growth rates ranging from 300% to 500%
-              </span>{" "}
+              </span>
               in the first year.
             </li>
             <li>
-              Our services lead to significant{" "}
+              Our services lead to significant
               <span className="font-semibold">
                 savings on monthly staffing costs, up to 50%
               </span>
