@@ -1,11 +1,11 @@
 import React from "react";
-import areas from "/images/clientslogo/arseas.png";
-import amguards from "/images/clientslogo/amguards.png";
-import allstarts from "/images/clientslogo/all star.png";
-import trycker from "/images/clientslogo/try.png";
-import aoe from "/images/clientslogo/AOE.png";
-import boi from "/images/clientslogo/BOI.png";
-import thewlft from "/images/clientslogo/the weft.png";
+import one from "/images/clientslogo/1.png";
+import two from "/images/clientslogo/2.png";
+import three from "/images/clientslogo/3.png";
+import four from "/images/clientslogo/4.png";
+import five from "/images/clientslogo/9.png";
+// import six from "/images/clientslogo/6.png";
+import seven from "/images/clientslogo/11.png";
 import "./ClientsLogo.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,13 +15,20 @@ import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 
 const images = [
-  amguards,
-  allstarts,
-  trycker,
-  aoe,
-  boi,
-  thewlft,
-  areas
+  one,
+  two,
+  three,
+  four,
+  five,
+  // six,
+  seven,
+  one,
+  two,
+  three,
+  four,
+  five,
+  // six,
+  seven,
 ];
 
 const ClientsLogo = () => {
@@ -39,7 +46,7 @@ const ClientsLogo = () => {
             // 300: { slidesPerView: 2, spaceBetween: 0 },
             320: { slidesPerView: 3, spaceBetween: 0 },
             768: { slidesPerView: 5, spaceBetween: 40 },
-            1024: { slidesPerView: 6, spaceBetween: 30 },
+            1024: { slidesPerView: 6, spaceBetween: 80 },
           }}
           navigation={false}
           modules={[Autoplay]}
@@ -47,15 +54,7 @@ const ClientsLogo = () => {
         >
           {images.map((image, index) => (
             <SwiperSlide key={index} className="w-max">
-              <div className="w-full h-24">
-                <img
-                  className="w-full h-full object-contain"
-                  //  className="w-32 h-32 object-contain grayscale transition duration-300 hover:grayscale-0"
-             
-                  src={image}
-                  alt={`clients logo ${index}`}
-                />
-              </div>
+           <img src={image} alt="client logo"  />
             </SwiperSlide>
           ))}
         </Swiper>
