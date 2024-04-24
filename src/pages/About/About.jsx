@@ -244,15 +244,15 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="md:px-28 px-5 text-center mb-14">
-        {/* <h1 className="text-black text-[30px] font-bold py-4">
+      <div className="md:px-28 px-5 text-center mt-10 mb-14">
+        <h1 className="text-black text-[30px] font-bold py-4">
           Get Started Today
         </h1>
         <p className="text-textMuted text-[16px]">
           Ready to take your recruitment efforts to the next level? Contact us
           today to learn more about our Virtual Resourcing Service and discover
           how we can help you build a winning team for your organization.
-        </p> */}
+        </p>
         <Link to="/contact">
           <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
             <span>Contact us </span> <FaLongArrowAltRight />
