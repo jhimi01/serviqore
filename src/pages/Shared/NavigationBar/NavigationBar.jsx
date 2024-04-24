@@ -62,7 +62,7 @@ const NavigationBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box mt-2 mx-auto"
+            className="dropdown-content z-[1] -left-2 menu p-2 shadow bg-base-100 rounded-box mt-2 mx-auto"
           >
             <li className="text-primary text-center">
               Remote Dispatch Service

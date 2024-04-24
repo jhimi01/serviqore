@@ -10,8 +10,12 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
-import { RiTwitterXFill } from "react-icons/ri";
+import { RiGitRepositoryPrivateFill, RiGitRepositoryPrivateLine, RiTwitterXFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { CiMail } from "react-icons/ci";
+import { IoIosMail } from "react-icons/io";
+import { MdPrivacyTip } from "react-icons/md";
+import { BsCheck2Square } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -39,9 +43,13 @@ const Footer = () => {
       </nav>
       <nav>
         <h6 className="font-bold text-xl text-white">Support</h6>
-        <a className="link link-hover">Call us +01000000000</a>
-        <a className="link link-hover">Terms of Services</a>
-        <a className="link link-hover">Privacy Policy</a>
+        <a className="link link-hover flex items-center gap-1">
+          <IoIosMail className="font-bold text-xl" /> info@serviqore.com
+        </a>
+        <a className="link link-hover flex items-center gap-1">
+          <MdPrivacyTip className="font-bold text-xl" /> Privacy Statement
+        </a>
+        <a className="link link-hover flex items-center gap-1"><BsCheck2Square className="font-bold text-xl" /> Terms & Conditions</a>
       </nav>
       <form className="w-9/12">
         <h6 className="font-bold text-xl text-white">Stay up to date</h6>
@@ -63,21 +71,12 @@ const Footer = () => {
             </button>
           </div>
         </fieldset>
-        <div className="flex gap-4 w-full text-[20px] mt-5">
+        <div className="flex items-center justify-start gap-4 w-full text-[20px] mt-2">
           <a className="link link-hover">
             <FaFacebook />
           </a>
           <a className="link link-hover">
-            <RiTwitterXFill />
-          </a>
-          <a className="link link-hover">
             <FaInstagram />
-          </a>
-          <a className="link link-hover">
-            <FaTelegram />
-          </a>
-          <a className="link link-hover">
-            <FaYoutube />
           </a>
           <a className="link link-hover">
             <FaLinkedin />

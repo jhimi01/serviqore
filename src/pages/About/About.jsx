@@ -41,7 +41,7 @@ const About = () => {
           </p>
 
           <Link to="/contact">
-            <button className="flex gap-2 border-primary  hover:bg-primary text-primary border-2 hover:text-white py-2 px-4 my-3 items-center rounded">
+            <button className="flex gap-2 bg-primary hover:opacity-85 text-white py-2 px-4 my-3 items-center rounded">
               <span>Contact us </span> <FaLongArrowAltRight />
             </button>
           </Link>
@@ -161,7 +161,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="text-center py-8 px-5 md:px-28">
+      <div className="text-center pt-8  px-5 md:px-28">
         <h2 className="text-[36px] text-secondary font-semibold">
           Why Choose us??
         </h2>
@@ -243,6 +243,21 @@ const About = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="md:px-28 px-5 text-center mb-14">
+        {/* <h1 className="text-black text-[30px] font-bold py-4">
+          Get Started Today
+        </h1>
+        <p className="text-textMuted text-[16px]">
+          Ready to take your recruitment efforts to the next level? Contact us
+          today to learn more about our Virtual Resourcing Service and discover
+          how we can help you build a winning team for your organization.
+        </p> */}
+        <Link to="/contact">
+          <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
+            <span>Contact us </span> <FaLongArrowAltRight />
+          </button>
+        </Link>
       </div>
     </div>
   );

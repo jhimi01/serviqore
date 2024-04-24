@@ -375,9 +375,8 @@ const Services = () => {
           how we can help you build a winning team for your organization.
         </p>
         <Link to="/contact">
-          {" "}
           <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
-            <span>CTA </span> <FaLongArrowAltRight />
+            <span>Contact us </span> <FaLongArrowAltRight />
           </button>
         </Link>
       </div>
