@@ -41,8 +41,8 @@ const About = () => {
           </p>
 
           <Link to="/contact">
-            <button className="flex items-center gap-3 bg-primary text-xl hover:opacity-90 text-white py-2 px-7 my-6 rounded">
-              <span>CTA </span> <FaLongArrowAltRight />
+            <button className="flex gap-2 border-primary  hover:bg-primary text-primary border-2 hover:text-white py-2 px-4 my-3 rounded">
+              <span>Contact us </span> <FaLongArrowAltRight />
             </button>
           </Link>
         </div>

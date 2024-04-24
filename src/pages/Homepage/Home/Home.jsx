@@ -62,7 +62,7 @@ const Home = () => {
                   parties during critical moments.
                 </p>
                 <div className="flex gap-4">
-                  <Link to="/about">
+                  <Link to="/services">
                     <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
@@ -95,7 +95,7 @@ const Home = () => {
                   delivering top-tier security without the hefty price tag.
                 </p>
                 <div className="flex gap-4">
-                  <Link to="/about">
+                  <Link to="/services">
                     <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
@@ -129,7 +129,7 @@ const Home = () => {
                   against threats round-the-clock.
                 </p>
                 <div className="flex gap-4">
-                  <Link to="/about">
+                  <Link to="/services">
                     <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
@@ -163,7 +163,7 @@ const Home = () => {
                   enhanced security.
                 </p>
                 <div className="flex gap-4">
-                  <Link to="/about">
+                  <Link to="/services">
                     <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
