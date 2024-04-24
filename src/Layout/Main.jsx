@@ -6,31 +6,30 @@ import { useEffect, useState } from "react";
 import Preloader from "../components/Preloader";
 
 const Main = () => {
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
-
   return (
     <>
-     {isLoading ? (
+      {isLoading ? (
         <Preloader />
-      ) : (<div>
-        <NavigationBar />
-        <ScrollToTop />
-        <Outlet />
-        <Footer />
-      </div>)}
-</>
-  )
-
-}
+      ) : (
+        <div>
+          <NavigationBar />
+          <ScrollToTop />
+          <Outlet />
+          <Footer />
+        </div>
+      )}
+    </>
+  );
+};
 export default Main;
