@@ -29,7 +29,7 @@ const Services = () => {
   return (
     <div className="mt-16">
       <Helmet>
-        <title>service | serviqore</title>
+        <title>Remote Security Dispatch Service | serviqore</title>
       </Helmet>
       <div className="md:flex items-center py-16 bg-backgroundGray px-5 md:px-28 ">
         {/* content side */}

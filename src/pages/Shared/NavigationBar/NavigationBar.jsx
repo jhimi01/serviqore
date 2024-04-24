@@ -54,7 +54,7 @@ const NavigationBar = () => {
            }
            `}
       >
-        Services
+        Remote Security Dispatch Service
       </NavLink>
 
       <NavLink
@@ -87,7 +87,7 @@ const NavigationBar = () => {
       className=" mx-auto fixed top-0 left-0 right-0 z-50 bg-white"
     >
       <div className="md:w-10/12 w-11/12 mx-auto navbar">
-        <div className="navbar-start flex-row-reverse w-full lg:w-1/2 justify-between">
+        <div className="navbar-start flex-row-reverse w-full lg:w-[30%] justify-between">
           <div className="dropdown">
             <div className="drawer drawer-end">
               <input
@@ -127,7 +127,7 @@ const NavigationBar = () => {
             />
           </a>
         </div>
-        <div className="navbar-end w-2/3 hidden lg:flex">
+        <div className="navbar-end w-full hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <Navigation />
           </ul>
