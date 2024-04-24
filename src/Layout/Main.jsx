@@ -1,34 +1,25 @@
+import { lazy, Suspense } from "react";
 import { Outlet } from "react-router-dom";
-import NavigationBar from "../pages/Shared/NavigationBar/NavigationBar";
-import Footer from "../pages/Shared/Footer/Footer";
-import ScrollToTop from "../pages/Shared/ScrollToTop/ScrollToTop";
-import { useEffect, useState } from "react";
+
 import Preloader from "../components/Preloader";
+const LazyNavbar = lazy(() => import("../pages/Shared/NavigationBar/NavigationBar"));
+const LazyFooter = lazy(() => import("../pages/Shared/Footer/Footer"));
+const LazyScrollTop = lazy(() => import("../pages/Shared/ScrollToTop/ScrollToTop"));
+
 
 const Main = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading delay
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
-      {isLoading ? (
-        <Preloader />
-      ) : (
+      <Suspense fallback={<Preloader></Preloader>}>
         <div>
-          <NavigationBar />
-          <ScrollToTop />
-          <Outlet />
-          <Footer />
+        <LazyNavbar />
+        <Outlet />
+        <LazyScrollTop />
+        <LazyFooter />
         </div>
-      )}
+      </Suspense>
+     
     </>
   );
 };

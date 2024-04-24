@@ -30,7 +30,9 @@ const NavigationBar = () => {
         to="/"
         className={({ isActive }) => `
             navigationlink ${
-              isActive ? "text-white rounded bg-primary " : "hover:text-primary"
+              isActive
+                ? "text-white bg-primary rounded  "
+                : "hover:text-primary"
             }
             `}
       >
@@ -40,7 +42,7 @@ const NavigationBar = () => {
         to="/about"
         className={({ isActive }) => `
             navigationlink ${
-              isActive ? "text-white rounded bg-primary" : "hover:text-primary"
+              isActive ? "text-white bg-primary rounded " : "hover:text-primary"
             }
             `}
       >
@@ -50,18 +52,30 @@ const NavigationBar = () => {
         to="/services"
         className={({ isActive }) => `
            navigationlink ${
-             isActive ? "text-white rounded bg-primary" : "hover:text-primary"
+             isActive ? "text-white bg-primary rounded " : "hover:text-primary"
            }
            `}
       >
-        Remote Security Dispatch Service
+        <div className="dropdown dropdown-hover">
+          <div tabIndex={0} role="button" className="">
+            Service
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box mt-2 mx-auto"
+          >
+            <li className="text-primary text-center">
+              Remote Dispatch Service
+            </li>
+          </ul>
+        </div>
       </NavLink>
 
       <NavLink
         to="/blogs"
         className={({ isActive }) => `
           navigationlink ${
-            isActive ? "text-white rounded bg-primary" : "hover:text-primary"
+            isActive ? "text-white bg-primary rounded " : "hover:text-primary"
           }
           `}
       >
@@ -72,7 +86,7 @@ const NavigationBar = () => {
         to="/contact"
         className={({ isActive }) => `
            navigationlink ${
-             isActive ? "text-white rounded bg-primary" : "hover:text-primary"
+             isActive ? "text-white bg-primary rounded " : "hover:text-primary"
            }
            `}
       >
