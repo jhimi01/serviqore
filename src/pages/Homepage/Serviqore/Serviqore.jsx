@@ -23,9 +23,11 @@ const Serviqore = () => {
           Contact us today to explore how our solutions can support your
           Security Guard Company's success.
         </p>
-       <Link to='/contact'> <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
-          <span>Get a Quote </span> <FaLongArrowAltRight />
-        </button></Link>
+        <Link to="/contact">
+          <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
+            <span>Get a Quote </span> <FaLongArrowAltRight />
+          </button>
+        </Link>
       </div>
     </div>
   );

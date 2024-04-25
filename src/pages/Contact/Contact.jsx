@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [charCount, setCharCount] = useState(0);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
   const maxChars = 500;
   const form = useRef();
 
@@ -164,7 +164,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-[16px] leading-[20px] text-black">
                     Australia Office
                   </h4>
-                  <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                  <p className="text-[#646464] font-normal text-[16px] mt-1 ">
                     Unit B7, House 19, Road 8, Shekhertek,
                     Mohammadpur, Dhaka - 1207
                   </p>
@@ -173,7 +173,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-[16px] leading-[20px] text-black">
                     Bangladesh Office
                   </h4>
-                  <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                  <p className="text-[#646464] font-normal text-[16px] mt-1 ">
                     Unit B7, House 19, Road 8, Shekhertek,
                     Mohammadpur, Dhaka - 1207
                   </p>
@@ -186,7 +186,7 @@ const Contact = () => {
                 <h4 className="font-semibold text-[16px] leading-[20px] text-black">
                   Email
                 </h4>
-                <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                <p className="text-[#646464] font-normal text-[14px] ">
                   info@serviqore.com
                 </p>
               </div>

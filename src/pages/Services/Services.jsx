@@ -37,7 +37,7 @@ const Services = () => {
           <h1 className="text-4xl md:text-[60px] text-primary font-bold md:leading-[65px]">
             Security Guard Monitoring Service
           </h1>
-          <p className="text-secondary font-normal text-[16px] leading-[20px] mt-3 md:mt-5">
+          <p className="text-secondary font-normal text-[16px] mt-3 md:mt-5">
             We're dedicated to excellence, integrity and professional service.
             Our mission is to empower businesses of all sizes with collaborative
             solutions for long term success. Beyond traditional BPO, we're your
@@ -45,7 +45,7 @@ const Services = () => {
             and expertise in Remote Security Monitoring and Dispatch we tailor
             strategies for smooth operations and sustainable growth.
           </p>
-          <p className="text-secondary font-normal text-[16px] leading-[20px] md:mt-5">
+          <p className="text-secondary font-normal text-[16px] md:mt-5">
             We provide Centralised Monitoring & Dispatch Centre services to
             multiple security guard businesses in the USA. Our service ensure
             streamline communication and coordination.
@@ -77,7 +77,7 @@ const Services = () => {
               <img src={Vector2} alt="vector" />
             </div>
             <p className="mt-5">
-              Response within <span className="font-semibold">2 minutes:</span>{" "}
+              Response within <span className="font-semibold">2 minutes:</span>
               incident response, resolution and documentation, as well as
               clients’ requests
             </p>
@@ -244,7 +244,7 @@ const Services = () => {
         </div>
 
         {/* 6th section */}
-      <div className="md:flex-row flex-col-reverse flex px-5 gap-20 pb-6 md:px-28 items-center">
+        <div className="md:flex-row flex-col-reverse flex px-5 gap-20 pb-6 md:px-28 items-center">
           <div className="md:w-1/2 text-secondtextMuted ">
             <h1 className="subheaderText">Surge Capacity for Growth</h1>
             <p className="my-3">
@@ -311,7 +311,7 @@ const Services = () => {
               <h3 className="text-[24px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Expertise
               </h3>
-              <p className="text-justify text-[14px] text-textMuted leading-[20px]">
+              <p className="text-center text-[14px] text-textMuted mt-2">
                 With years of experience in the recruitment industry, our team
                 has the knowledge and expertise to deliver exceptional results
                 for our clients.
@@ -326,7 +326,7 @@ const Services = () => {
               <h3 className="text-[20px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Customized Solutions
               </h3>
-              <p className="text-justify text-[14px] text-textMuted leading-[20px]">
+              <p className="text-center text-[14px] text-textMuted mt-2">
                 We understand that every business is unique, which is why we
                 tailor our services to meet your specific needs and objectives.
               </p>
@@ -340,7 +340,7 @@ const Services = () => {
               <h3 className="text-[20px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Efficiency
               </h3>
-              <p className="text-justify text-[14px] text-textMuted leading-[20px]">
+              <p className="text-center text-[14px] text-textMuted mt-2">
                 Our streamlined processes and advanced technology enable us to
                 identify and secure top talent quickly and efficiently, saving
                 you time and resources.
@@ -355,7 +355,7 @@ const Services = () => {
               <h3 className="text-[20px] leading-[30px] py-1 text-secondary font-semibold text-center">
                 Dedicated Support
               </h3>
-              <p className="text-justify text-[14px] text-textMuted leading-[20px]">
+              <p className="text-center text-[14px] text-textMuted mt-2">
                 From initial consultation to post-placement follow-up, our team
                 is committed to providing personalized support and guidance
                 every step of the way.

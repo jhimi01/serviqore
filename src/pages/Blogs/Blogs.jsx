@@ -62,7 +62,7 @@ const Blogs = () => {
               </div>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
               {blogs.map((post, index) => (
                 <Link to={`/blog/${post._id}`} key={post._id}>
                   <div
@@ -75,8 +75,8 @@ const Blogs = () => {
                         alt={post.title}
                         className="w-full group-hover:scale-95 group-hover:shadow-md transition ease-linear   object-cover mb-2 rounded-lg"
                       />
-                      <h2 className="text-lg absolute bottom-3 left-4 w-1/2 text-[#353448] font-bold mb-2">
-                        {post.title.slice(0, 65)}...
+                      <h2 className="text-lg absolute top-4 left-4 w-1/2 text-[#353448] font-bold mb-2">
+                        {post.title.slice(0, 77)}...
                       </h2>
                     </div>
                     <p className="text-lg text-gray-700 mb-4">{post.title}</p>

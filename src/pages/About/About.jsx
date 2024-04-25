@@ -60,7 +60,7 @@ const About = () => {
 
       {/* cunter section */}
       <div>
-        <div className="flex text-center flex-wrap px-1 items-center justify-center gap-20 mt-28 ">
+        <div className="flex text-center flex-wrap px-1 items-center justify-center md:gap-20 gap-14 mt-28 ">
           <div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
@@ -68,7 +68,7 @@ const About = () => {
             >
               <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
                 {counter && <CountUp start={0} end={200} duration={2} />}
-                <sup>+</sup>
+                <sup className="font-[400]">+</sup>
               </h1>
             </ScrollTrigger>
 
@@ -83,7 +83,7 @@ const About = () => {
             >
               <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
                 {counter && <CountUp start={0} end={50} duration={2} />}
-                <sup>+</sup>
+                <sup className="font-[400]">+</sup>
               </h1>
             </ScrollTrigger>
             <h5 className="font-semibold text-[18px] leading-[20px] text-center text-textMuted">
@@ -96,8 +96,8 @@ const About = () => {
               onExit={() => setCounterOn(false)}
             >
               <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
-                {counter && <CountUp start={0} end={100} duration={2} />}
-                <sup>+</sup>
+                {counter && <CountUp start={0} end={50} duration={2} />}
+                <sup className="font-[400]">+</sup>
               </h1>
             </ScrollTrigger>
             <h5 className="font-semibold text-[18px] leading-[20px] text-center text-textMuted">
@@ -118,16 +118,16 @@ const About = () => {
         <h2 className="text-[36px] text-secondary font-semibold">
           What we do?
         </h2>
-        <p className="text-textMuted mt-10">
+        <p className="text-textMuted mt-5">
           Drawing from our collective expertise in Accounting, Virtual Resources
           and Digital Marketing, we craft tailored strategies for every client.
           Whether a startup or a big player, our mission remains constant: to
           boost success with scalable solutions for smooth operations and
           sustainable growth. Our diverse range of services includes:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-14 my-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 my-14 justify-center">
           <div>
-            <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
+            <div className="bg-[#F5F7FA] flex items-center justify-center p-3 mx-auto h-56 rounded-3xl">
               <img src={servic4} alt="service" />
             </div>
             <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
@@ -135,15 +135,15 @@ const About = () => {
             </h3>
           </div>
           <div>
-            <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
+            <div className="bg-[#F5F7FA] flex items-center justify-center p-3 mx-auto h-56 rounded-3xl">
               <img src={servic2} alt="service" />
             </div>
             <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
-              Virtual Resourcing
+              Virtual <br /> Resourcing
             </h3>
           </div>
           <div>
-            <div className="bg-[#F5F7FA] w- flex items-center justify-center p-3 mx-auto p- h-56 rounded-3xl">
+            <div className="bg-[#F5F7FA] flex items-center justify-center p-3 mx-auto h-56 rounded-3xl">
               <img src={servic3} alt="service" />
             </div>
             <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
@@ -155,7 +155,7 @@ const About = () => {
               <img src={servic1} alt="service" />
             </div>
             <h3 className="text-secondtextMuted font-semibold text-[28px] leading-[30px] mt-5">
-              Digital Marketing
+              Digital <br /> Marketing
             </h3>
           </div>
         </div>
@@ -169,44 +169,45 @@ const About = () => {
           We work together to take your security business to its fullest
           potential by:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-14 mt-10 mb-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-14 mt-10 mb-5">
           <div>
-            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl ">
+            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl h-36 ">
               <img src={vector1} alt="service" />
             </div>
-            <h3 className="text-secondtextMuted text-[16px] leading-[16px]">
+            <h3 className="text-secondtextMuted text-[16px] text-center">
               Response on time to address issues within a
-              <span className="font-semibold">2 minute</span> timeframe.
+              <span className="font-semibold"> 2 minute</span> timeframe.
             </h3>
           </div>
           <div>
-            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl ">
+            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl h-36 ">
               <img src={vector2} alt="service" />
             </div>
-            <h3 className="text-secondtextMuted text-[16px] leading-[16px]">
+            <h3 className="text-secondtextMuted text-[16px] text-center">
               Enabling you to concentrate on essential business tasks and
               expansion. We support clients in concentrating on core activities
               while simplifying
-              <span className="font-semibold">
+              <span className="font-semibold pl-1">
                 monitoring, communication, and documentation processes
               </span>
               .
             </h3>
           </div>
           <div>
-            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl ">
+            <div className=" flex items-center justify-center pb-9 mx-auto rounded-3xl h-36 ">
               <img src={vector3} alt="service" />
             </div>
-            <h3 className="text-secondtextMuted text-[16px] leading-[16px] ">
+            <h3 className="text-secondtextMuted text-[16px] text-center">
               Having tech savvy and seasoned team to oversee guards round the
               clock, ensuring
-              <span className="font-semibold">
+              <span className="font-semibold pl-1">
                 tailored security strategies and compliance with protocols
               </span>
               .
             </h3>
           </div>
         </div>
+        {/* real time value */}
         <div className="px-10 md:px-0 md:w-2/3 mx-auto py-5">
           <div className="flex items-center justify-center mx-auto rounded-3xl">
             <img src={vector4} alt="service" />
@@ -214,24 +215,24 @@ const About = () => {
           <h3 className="text-secondary font-semibold text-[30px] my-5">
             Real value for money
           </h3>
-          <ul className="list-disc text-start text-secondtextMuted">
+          <ul className="list-disc text-start text-secondtextMuted space-y-2">
             <li>
               We have a track record of helping clients grow their businesses
               significantly,
-              <span className="font-semibold">
+              <span className="font-semibold pl-1">
                 with growth rates ranging from 300% to 500%
               </span>
               in the first year.
             </li>
             <li>
               Our services lead to significant
-              <span className="font-semibold">
+              <span className="font-semibold pl-1">
                 savings on monthly staffing costs, up to 50%
               </span>
               , compared to traditional in house operations.
             </li>
             <li>
-              <span className="font-semibold">
+              <span className="font-semibold pl-1">
                 Our staffing model is flexible
               </span>
               , allowing quick adjustments to meet changing demand
