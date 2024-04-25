@@ -153,7 +153,7 @@ const Home = () => {
             <div className="md:flex items-center py-10">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="text-[60px] text-primary font-bold leading-[65px]">
+                <h1 className="md:text-[60px] text-[45px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Transparent Accountability
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
