@@ -31,13 +31,13 @@ const Services = () => {
       <Helmet>
         <title>Remote Dispatch Service | serviqore</title>
       </Helmet>
-      <div className="md:flex items-center py-16 bg-backgroundGray px-5 md:px-28 ">
+      <div className="md:flex items-center py-6 bg-backgroundGray px-5 md:px-28 ">
         {/* content side */}
         <div className="md:w-[55%] mx-auto">
           <h1 className="text-4xl md:text-[60px] text-primary font-bold md:leading-[65px]">
             Security Guard Monitoring Service
           </h1>
-          <p className="text-secondary font-normal text-[16px] leading-[20px] md:mt-5">
+          <p className="text-secondary font-normal text-[16px] leading-[20px] mt-3 md:mt-5">
             We're dedicated to excellence, integrity and professional service.
             Our mission is to empower businesses of all sizes with collaborative
             solutions for long term success. Beyond traditional BPO, we're your
