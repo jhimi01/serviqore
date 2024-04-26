@@ -19,11 +19,11 @@ const Blogs = () => {
         <title>blogs | serviqore</title>
       </Helmet>
 
-      <div className="bg-[#F9FDFC] py-14 px-5 md:px-20 text-center">
+      <div className="bg-[#F9FDFC] py-14 px-5 md:px-28 text-center">
         <h1 className="text-primary font-semibold text-[64px] leading-[76px] ">
           Blogs
         </h1>
-        <p className="text-textMuted text-[14px] font-normal mt-5">
+        <p className="text-textMuted text-[16px] font-normal mt-5">
           Our blog is where we share our expertise, insights, and latest updates
           with you. Whether you're a seasoned professional or just starting out,
           our blog is your go-to resource for valuable information, tips, and

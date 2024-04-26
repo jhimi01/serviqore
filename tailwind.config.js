@@ -4,11 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        black: "#333333",
         primary: "#008D66",
         success: "#4CAF4F",
-        secondary: "#3f3f3f",
-        textMuted: "#333",
-        secondtextMuted: "#333",
+        secondary: "#333333",
+        textMuted: "#333333",
+        secondtextMuted: "#333333",
         backgroundGray: "#F5F7FA",
       },
     },

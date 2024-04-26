@@ -164,7 +164,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-[16px] leading-[20px] text-black">
                     Australia Office
                   </h4>
-                  <p className="text-[#646464] font-normal text-[16px] mt-1 ">
+                  <p className="text-[#333] font-normal text-[16px] mt-1 ">
                     Unit B7, House 19, Road 8, Shekhertek,
                     Mohammadpur, Dhaka - 1207
                   </p>
@@ -173,7 +173,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-[16px] leading-[20px] text-black">
                     Bangladesh Office
                   </h4>
-                  <p className="text-[#646464] font-normal text-[16px] mt-1 ">
+                  <p className="text-[#333] font-normal text-[16px] mt-1 ">
                     Unit B7, House 19, Road 8, Shekhertek,
                     Mohammadpur, Dhaka - 1207
                   </p>
@@ -186,7 +186,7 @@ const Contact = () => {
                 <h4 className="font-semibold text-[16px] leading-[20px] text-black">
                   Email
                 </h4>
-                <p className="text-[#646464] font-normal text-[14px] ">
+                <p className="text-[#333] font-normal text-[14px] ">
                   info@serviqore.com
                 </p>
               </div>
@@ -197,7 +197,7 @@ const Contact = () => {
                 <h4 className="font-semibold text-[16px] leading-[20px] text-black">
                   Phone
                 </h4>
-                <p className="text-[#646464] font-normal text-[14px] leading-[18px]">
+                <p className="text-[#333] font-normal text-[14px] leading-[18px]">
                   +880 1896 191700
                 </p>
               </div>
