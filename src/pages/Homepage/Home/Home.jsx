@@ -38,10 +38,10 @@ const Home = () => {
             clickable: true,
           }}
           loop={true}
-          autoplay={{
-            delay: 8000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 8000,
+          //   disableOnInteraction: false,
+          // }}
           navigation={false}
           centeredSlides={false}
           modules={[Autoplay, Pagination]}
@@ -63,7 +63,7 @@ const Home = () => {
                 </p>
                 <div className="flex gap-4">
                   <Link to="/services">
-                    <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
+                    <button className="flex items-center justify-center gap-2 bg-primary border-primary       border-2 hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
                   </Link>
@@ -96,7 +96,10 @@ const Home = () => {
                 </p>
                 <div className="flex gap-4">
                   <Link to="/services">
-                    <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
+                    <button
+                      className="flex items-center justify-center gap-2 bg-primary border-primary
+                    border-2  hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto"
+                    >
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
                   </Link>
@@ -116,7 +119,7 @@ const Home = () => {
 
           {/* third slider */}
           <SwiperSlide>
-            <div className="md:flex items-center md:static relative  -top-12">
+            <div className="md:flex items-center md:static relative  -top-10">
               {/* content side */}
               <div className="md:w-1/2">
                 <h1 className="text-[45px] md:text-[60px]  text-primary font-bold leading-[50px] md:leading-[65px]">
@@ -130,12 +133,15 @@ const Home = () => {
                 </p>
                 <div className="flex gap-4">
                   <Link to="/services">
-                    <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
+                    <button
+                      className="flex items-center justify-center gap-2 bg-primary border-primary
+                    border-2  hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto"
+                    >
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
                   </Link>
                   <Link to="/contact">
-                    <button className="flex items-center justify-center gap-2 border-primary  hover:bg-primary text-primary border-2 hover:text-white py-2 px-4 my-6 rounded mx-auto">
+                    <button className="flex items-center justify-center gap-2 border-primary   hover:bg-primary text-primary border-2 hover:text-white py-2 px-4 my-6 rounded mx-auto">
                       <span>Contact us </span> <FaLongArrowAltRight />
                     </button>
                   </Link>
@@ -150,7 +156,7 @@ const Home = () => {
 
           {/* four slider */}
           <SwiperSlide>
-            <div className="md:flex items-center md:static relative -top-10">
+            <div className="md:flex items-center md:static relative -top-5">
               {/* content side */}
               <div className="md:w-1/2">
                 <h1 className="text-[45px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
@@ -164,7 +170,10 @@ const Home = () => {
                 </p>
                 <div className="flex gap-4">
                   <Link to="/services">
-                    <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
+                    <button
+                      className="flex items-center justify-center gap-2 bg-primary border-primary
+                    border-2  hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto"
+                    >
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
                   </Link>
