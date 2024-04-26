@@ -105,7 +105,7 @@ const About = () => {
             </h5>
           </div>
         </div>
-        <p className="mb-20 mt-10 px-5 md:px-28 text-center text-textMuted text-[14px] leading-[20px] font-normal">
+        <p className="mb-20 mt-10 px-5 md:px-28 text-center text-textMuted text-[15px] font-normal">
           We've cultivated collaborative partnerships with 200+ security
           professionals and 50+ job sites, enhancing service customization and
           client satisfaction. Through streamlined operations, we maximize

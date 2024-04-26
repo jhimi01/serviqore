@@ -24,18 +24,16 @@ const Testimonials = () => {
           spaceBetween={10}
           centeredSlides={true}
           loop={true}
-          // autoplay={{
-          //   delay: 4500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             640: {
               slidesPerView: 2,
-              // spaceBetween: 20,
             },
             768: {
               slidesPerView: 2,
-              // spaceBetween: 40,
             },
             1024: {
               slidesPerView: 3,

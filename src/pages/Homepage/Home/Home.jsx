@@ -52,7 +52,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] mt-10 md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
+                <h1 className="text-[35px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Response within 2 minutes
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -61,9 +61,9 @@ const Home = () => {
                   coordination and dispatching, including escalation to relevant
                   parties during critical moments.
                 </p>
-                <div className="flex gap-4">
+                <div className="flex gap-4 mt-5">
                   <Link to="/services">
-                    <button className="flex items-center justify-center gap-2 bg-primary border-primary       border-2 hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
+                    <button className="flex items-center justify-center gap-2 bg-primary border-primary  border-2 hover:opacity-90 text-white py-2 px-4 my-6 rounded mx-auto">
                       <span>Learn more </span> <FaLongArrowAltRight />
                     </button>
                   </Link>
@@ -86,7 +86,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] mt-10 md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
+                <h1 className="text-[35px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Save up to <br /> 50%
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -94,7 +94,7 @@ const Home = () => {
                   slashes expenses by up to 50% compared to in-house solutions,
                   delivering top-tier security without the hefty price tag.
                 </p>
-                <div className="flex gap-4">
+                <div className="flex gap-4 mt-5">
                   <Link to="/services">
                     <button
                       className="flex items-center justify-center gap-2 bg-primary border-primary
@@ -122,7 +122,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] mt-10 md:text-[60px]  text-primary font-bold leading-[50px] md:leading-[65px]">
+                <h1 className="text-[35px] md:text-[60px]  text-primary font-bold leading-[50px] md:leading-[65px]">
                   24/7 <br /> Vigilance
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -131,7 +131,7 @@ const Home = () => {
                   vigilance, eliminating vulnerabilities and safeguarding
                   against threats round-the-clock.
                 </p>
-                <div className="flex gap-4">
+                <div className="flex gap-4 mt-5">
                   <Link to="/services">
                     <button
                       className="flex items-center justify-center gap-2 bg-primary border-primary
@@ -159,7 +159,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] mt-10 md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
+                <h1 className="text-[35px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Transparent Accountability
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -168,7 +168,7 @@ const Home = () => {
                   guaranteeing adherence to protocols and efficient patrols for
                   enhanced security.
                 </p>
-                <div className="flex gap-4">
+                <div className="flex gap-4 mt-5">
                   <Link to="/services">
                     <button
                       className="flex items-center justify-center gap-2 bg-primary border-primary

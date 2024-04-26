@@ -6,9 +6,9 @@ export default {
       colors: {
         primary: "#008D66",
         success: "#4CAF4F",
-        secondary: "#4D4D4D",
-        textMuted: "#6D6D6D",
-        secondtextMuted: "#717171",
+        secondary: "#3f3f3f",
+        textMuted: "#333",
+        secondtextMuted: "#333",
         backgroundGray: "#F5F7FA",
       },
     },
