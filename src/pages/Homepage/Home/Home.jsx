@@ -31,7 +31,7 @@ const Home = () => {
       <Helmet>
         <title>Serviqore</title>
       </Helmet>
-      <div className="bg-backgroundGray px-5 md:px-28 mt-16 ">
+      <div className="bg-backgroundGray md:py-7 px-5 md:px-28 mt-16 ">
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -49,10 +49,10 @@ const Home = () => {
         >
           {/* firts slider */}
           <SwiperSlide>
-            <div className="md:flex items-center py-10">
+            <div className="md:flex items-center md:mt-0 mt-8">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="text-[60px] text-primary font-bold leading-[65px]">
+                <h1 className="text-[45px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Response within 2 minutes
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -83,11 +83,11 @@ const Home = () => {
 
           {/* second slider */}
           <SwiperSlide>
-            <div className="md:flex items-center py-10">
+            <div className="md:flex items-center md:static relative  -top-6">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className=" text-[55px] text-primary font-bold leading-[65px]">
-                  Save up to <br /> <span className="text-[80px]">50%</span>
+                <h1 className="text-[45px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
+                  Save up to <br /> 50%
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
                   Maximize efficiency, minimize costs. Our remote monitoring
@@ -116,11 +116,11 @@ const Home = () => {
 
           {/* third slider */}
           <SwiperSlide>
-            <div className="md:flex items-center py-10">
+            <div className="md:flex items-center md:static relative  -top-12">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="text-[60px] text-primary font-bold leading-[65px]">
-                  24/7 <br /> <span className="text-[50px]">Vigilance</span>
+                <h1 className="text-[45px] md:text-[60px]  text-primary font-bold leading-[50px] md:leading-[65px]">
+                  24/7 <br /> Vigilance
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
                   Rest easy knowing your security guards are performing duties
@@ -150,10 +150,10 @@ const Home = () => {
 
           {/* four slider */}
           <SwiperSlide>
-            <div className="md:flex items-center py-10">
+            <div className="md:flex items-center md:static relative -top-10">
               {/* content side */}
               <div className="md:w-1/2">
-                <h1 className="md:text-[60px] text-[45px] text-primary font-bold leading-[50px] md:leading-[65px]">
+                <h1 className="text-[45px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Transparent Accountability
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -176,7 +176,7 @@ const Home = () => {
                 </div>
               </div>
               {/* image side */}
-              <div className="md:w-1/2 relative">
+              <div className="md:w-1/2">
                 <img src={bgSlider4} />
               </div>
             </div>
