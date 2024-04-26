@@ -6,3 +6,7 @@
     background: #4CAF4F !important;
 }
 
+.homepage-slider .swiper-wrapper{
+    display: flex !important;
+   align-items: start !important;
+  }

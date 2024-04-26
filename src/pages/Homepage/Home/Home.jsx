@@ -31,7 +31,7 @@ const Home = () => {
       <Helmet>
         <title>Serviqore</title>
       </Helmet>
-      <div className="bg-backgroundGray md:py-7 px-5 md:px-28 mt-16 ">
+      <div className="homepage-slider bg-backgroundGray md:py-7 px-5 md:px-28 mt-16 ">
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -49,10 +49,10 @@ const Home = () => {
         >
           {/* firts slider */}
           <SwiperSlide>
-            <div className="md:flex items-center md:mt-0 mt-8">
+            <div className="md:flex mt-10">
               {/* content side */}
-              <div className="md:w-1/2">
-                <h1 className="text-[45px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
+              <div className="md:w-1/2 ">
+                <h1 className="text-[35px] mt-10 md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Response within 2 minutes
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -83,10 +83,10 @@ const Home = () => {
 
           {/* second slider */}
           <SwiperSlide>
-            <div className="md:flex items-center md:static relative  -top-6">
+            <div className="md:flex mt-10">
               {/* content side */}
-              <div className="md:w-1/2">
-                <h1 className="text-[45px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
+              <div className="md:w-1/2 ">
+                <h1 className="text-[35px] mt-10 md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Save up to <br /> 50%
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -119,10 +119,10 @@ const Home = () => {
 
           {/* third slider */}
           <SwiperSlide>
-            <div className="md:flex items-center md:static relative  -top-10">
+            <div className="md:flex mt-10">
               {/* content side */}
-              <div className="md:w-1/2">
-                <h1 className="text-[45px] md:text-[60px]  text-primary font-bold leading-[50px] md:leading-[65px]">
+              <div className="md:w-1/2 ">
+                <h1 className="text-[35px] mt-10 md:text-[60px]  text-primary font-bold leading-[50px] md:leading-[65px]">
                   24/7 <br /> Vigilance
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">
@@ -156,10 +156,10 @@ const Home = () => {
 
           {/* four slider */}
           <SwiperSlide>
-            <div className="md:flex items-center md:static relative -top-5">
+            <div className="md:flex mt-10">
               {/* content side */}
-              <div className="md:w-1/2">
-                <h1 className="text-[45px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
+              <div className="md:w-1/2 ">
+                <h1 className="text-[35px] mt-10 md:text-[60px] text-primary font-bold leading-[50px] md:leading-[65px]">
                   Transparent Accountability
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] leading-[20px] mt-5">

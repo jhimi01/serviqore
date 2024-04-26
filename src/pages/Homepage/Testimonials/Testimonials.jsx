@@ -12,7 +12,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 const Testimonials = () => {
   return (
     <div className="my-10">
-      <div className="md:w-10/12 mx-auto">
+      <div className="md:w-10/12 mx-auto w-11/12">
         <h2 className="font-semibold text-[36px] leading-[44px] text-secondary pb-3 border-b-[1px] border-[#B4B4B4] ">
           Testimonials
         </h2>
