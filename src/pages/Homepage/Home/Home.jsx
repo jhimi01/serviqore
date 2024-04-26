@@ -38,10 +38,10 @@ const Home = () => {
             clickable: true,
           }}
           loop={true}
-          // autoplay={{
-          //   delay: 8000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 8000,
+            disableOnInteraction: false,
+          }}
           navigation={false}
           centeredSlides={false}
           modules={[Autoplay, Pagination]}
