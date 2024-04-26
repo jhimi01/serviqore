@@ -47,7 +47,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full pl-5 pr-8 pb-10 ">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
+              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
                 Working with ServiQore has been an absolute game-changer for our
                 business. Their expertise in digital marketing helped us triple
                 our online visibility within just a few months. The team's
@@ -63,7 +63,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full pl-5 pr-8 pb-10">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
+              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
                 ServiQore's virtual resourcing services have been instrumental
                 in streamlining our operations. Their team seamlessly integrated
                 with ours, providing exceptional support and contributing to
@@ -79,7 +79,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full pl-5 pr-8 pb-10">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
+              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
                 We've been working with ServiQore for over a year now, and the
                 results speak for themselves. Their cost-saving initiatives have
                 helped us optimize operational efficiency and redirect resources
@@ -95,7 +95,7 @@ const Testimonials = () => {
           <SwiperSlide className="w-full pl-5 pr-8 pb-10">
             <div className="w-full">
               <img src={mark} />
-              <p className="text-justify leading-[18px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
+              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
                 ServiQore's virtual resourcing services have been instrumental
                 in streamlining our operations. Their team seamlessly integrated
                 with ours, providing exceptional support and contributing to
