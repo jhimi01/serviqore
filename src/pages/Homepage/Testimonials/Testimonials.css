@@ -2,13 +2,18 @@
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  font-size: 15px !important;
-  background-color: #008d66 !important;
-  padding: 5px 10px !important;
-  border-radius: 50%;
-  color: #fff !important;
+  font-size: 40px !important;
+  /* background-color: #008d66 !important; */
+  /* padding: 5px 10px !important; */
+  /* border-radius: 50%; */
+  color: #008d66 !important;
   font-weight: 900;
   position: absolute !important;
+}
+
+.testimonials .swiper-wrapper{
+  display: flex !important;
+ align-items: start !important;
 }
 
 .swiper-button-prev:after {
