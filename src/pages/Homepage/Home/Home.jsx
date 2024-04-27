@@ -52,7 +52,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[70px]">
+                <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
                   Response within 2 minutes
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] mt-8">
@@ -86,7 +86,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[70px]">
+                <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
                   Save up to <br /> 50%
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] mt-8">
@@ -122,7 +122,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[70px]">
+                <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
                   24/7 <br /> Vigilance
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] mt-8">
@@ -159,7 +159,7 @@ const Home = () => {
             <div className="md:flex mt-10">
               {/* content side */}
               <div className="md:w-1/2 ">
-                <h1 className="text-[35px] md:text-[60px] text-primary font-bold leading-[50px] md:leading-[70px]">
+                <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
                   Transparent Accountability
                 </h1>
                 <p className="text-textMuted font-normal text-[16px] mt-8">

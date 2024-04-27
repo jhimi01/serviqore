@@ -10,6 +10,37 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 
 const Testimonials = () => {
+  const testimonials = [
+    {
+      name: "Wg Cdr Rana Hasan",
+      title: "CEO",
+      company: "AMGUARDS Security Services",
+      feedback:
+        "Serviqore's remote security guard monitoring and dispatch service has been an invaluable asset to our organization. Their team is reliable and operates with professionalism, ensuring that our job sites are monitored and secured around the clock. Their prompt response to incidents and thorough handling of situations have exceeded our expectations. We're very happy to be in partnership.",
+    },
+    {
+      name: "Haas Prince",
+      title: "CEO",
+      company: "All Star Security USA",
+      feedback:
+        "Working with Serviqore for our security guards and activities monitoring needs has been a seamless experience from day one. They consistently deliver timely and effective responses to incidents, demonstrating their commitment to our security business. Serviqore has become an integral part of our security team.",
+    },
+    {
+      name: "Jose Jiminez",
+      title: "CEO",
+      company: "Cheaters PI Investigations",
+      feedback:
+        "Serviqore has been an invaluable ally for my Private Investigator Business. Their support services have significantly enhanced our investigative operations, providing real-time updates and invaluable insights during surveillance missions. Their admin assistance has streamlined our day-to-day tasks, allowing us to focus on core investigative activities, keeping our investigations on track. Overall, their reliable and indispensable support has played a crucial role in our success.",
+    },
+    {
+      name: "Ifty Waset",
+      title: "CEO",
+      company: "The Weft Advisory, Australia",
+      feedback:
+        "Partnering with Serviqore's Digital Marketing team has been a game-changer for The Weft Advisory. Their professionalism and expertise have propelled our firm's online presence to new heights. Their strategic approach and tailored solutions have not only increased our visibility but also boosted our client acquisition. Serviqore's team is a valuable asset, and we highly recommend their services to any business looking to elevate their digital marketing efforts.",
+    },
+  ];
+
   return (
     <div className="my-10">
       <div className="md:w-10/12 mx-auto w-11/12">
@@ -44,70 +75,22 @@ const Testimonials = () => {
           modules={[Autoplay, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide className="w-full pl-5 pr-8 pb-10 ">
-            <div className="w-full">
-              <img src={mark} />
-              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
-                Working with ServiQore has been an absolute game-changer for our
-                business. Their expertise in digital marketing helped us triple
-                our online visibility within just a few months. The team's
-                dedication and strategic approach truly set them apart. We're
-                grateful for their partnership and highly recommend their
-                services.
-              </p>
-              <h3 className="pl-6 text-[20px] font-semibold leading-[22px] text-secondary">
-                - John Smith, CEO, XYZ Corporation
-              </h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="w-full pl-5 pr-8 pb-10">
-            <div className="w-full">
-              <img src={mark} />
-              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
-                ServiQore's virtual resourcing services have been instrumental
-                in streamlining our operations. Their team seamlessly integrated
-                with ours, providing exceptional support and contributing to
-                significant cost savings. Their commitment to excellence and
-                responsiveness exceeded our expectations. We're thrilled with
-                the results and look forward to continuing our partnership.
-              </p>
-              <h3 className="pl-6 text-[20px] font-semibold leading-[22px] text-secondary">
-                - Sarah Johnson, Manager, ABC Enterprises
-              </h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="w-full pl-5 pr-8 pb-10">
-            <div className="w-full">
-              <img src={mark} />
-              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
-                We've been working with ServiQore for over a year now, and the
-                results speak for themselves. Their cost-saving initiatives have
-                helped us optimize operational efficiency and redirect resources
-                towards growth initiatives. Their commitment to our success is
-                evident in everything they do. ServiQore has truly become an
-                indispensable partner in our journey towards business expansion.
-              </p>
-              <h3 className="pl-6 text-[20px] font-semibold leading-[22px] text-secondary">
-                - Mark Davis, Founder, PQR Ventures
-              </h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="w-full pl-5 pr-8 pb-10">
-            <div className="w-full">
-              <img src={mark} />
-              <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-2 pl-3">
-                ServiQore's virtual resourcing services have been instrumental
-                in streamlining our operations. Their team seamlessly integrated
-                with ours, providing exceptional support and contributing to
-                significant cost savings. Their commitment to excellence and
-                responsiveness exceeded our expectations. We're thrilled with
-                the results and look forward to continuing our partnership.
-              </p>
-              <h3 className="pl-6 text-[20px] font-semibold leading-[22px] text-secondary">
-                - Sarah Johnson, Manager, ABC Enterprises
-              </h3>
-            </div>
-          </SwiperSlide>
+          {testimonials.map((testi, index) => (
+            <SwiperSlide key={index} className="w-full pl-5 pr-8 pb-10 ">
+              <div className="w-full">
+                <img src={mark} />
+                <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-1 pl-3">
+                  {testi.feedback}
+                </p>
+                <h3 className="pl-6 text-[17px] font-semibold leading-[22px] text-secondary">
+                  -{" "}
+                  <span>
+                    {testi.name}, {testi.title}, {testi.company}
+                  </span>
+                </h3>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
