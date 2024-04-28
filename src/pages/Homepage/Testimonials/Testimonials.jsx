@@ -83,7 +83,7 @@ const Testimonials = () => {
                   {testi.feedback}
                 </p>
                 <h3 className="pl-6 text-[17px] font-semibold leading-[22px] text-secondary">
-                  -{" "}
+                  -
                   <span>
                     {testi.name}, {testi.title}, {testi.company}
                   </span>

@@ -140,14 +140,14 @@ const Services = () => {
             <ul className="list-disc pl-5 mt-5">
               <li>
                 We have a track record of helping clients grow their businesses
-                significantly,{" "}
+                significantly,
                 <span className="font-semibold">
                   with growth rates ranging from 300% to 500%
-                </span>{" "}
+                </span>
                 in the first year.
               </li>
               <li>
-                Our services lead to significant{" "}
+                Our services lead to significant
                 <span className="font-semibold">
                   savings on monthly staffing costs, up to 50%
                 </span>
@@ -156,7 +156,7 @@ const Services = () => {
               <li>
                 <span className="font-semibold">
                   Our staffing model is flexible,
-                </span>{" "}
+                </span>
                 allowing quick adjustments to meet changing demand
               </li>
               <li>
