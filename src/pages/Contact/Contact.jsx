@@ -165,8 +165,7 @@ const Contact = () => {
                     Australia Office
                   </h4>
                   <p className="text-[#333] font-normal text-[16px] mt-1 ">
-                    Unit B7, House 19, Road 8, Shekhertek,
-                    Mohammadpur, Dhaka - 1207
+                    Office 1/2, Erica Lane Minto, NSW 2566 Australia
                   </p>
                 </div>
                 <div>
