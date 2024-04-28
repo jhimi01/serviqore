@@ -10,7 +10,11 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
-import { RiGitRepositoryPrivateFill, RiGitRepositoryPrivateLine, RiTwitterXFill } from "react-icons/ri";
+import {
+  RiGitRepositoryPrivateFill,
+  RiGitRepositoryPrivateLine,
+  RiTwitterXFill,
+} from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { CiMail } from "react-icons/ci";
 import { IoIosMail } from "react-icons/io";
@@ -49,7 +53,9 @@ const Footer = () => {
         <a className="link link-hover flex items-center gap-1">
           <MdPrivacyTip className="font-bold text-xl" /> Privacy Statement
         </a>
-        <a className="link link-hover flex items-center gap-1"><BsCheck2Square className="font-bold text-xl" /> Terms & Conditions</a>
+        <a className="link link-hover flex items-center gap-1">
+          <BsCheck2Square className="font-bold text-xl" /> Terms & Conditions
+        </a>
       </nav>
       <form className="w-9/12">
         <h6 className="font-bold text-xl text-white">Stay up to date</h6>
