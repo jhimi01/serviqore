@@ -23,10 +23,10 @@ const BpoParadiam = ({ headerText, peraText, contentText, subcontentText }) => {
           <h1 className="font-semibold text-3xl sm:text-[30px] leading-[42px] text-secondary">
             With a proven track record of achievements
           </h1>
-          <p className="font-normal text-[16px] leading-[20px] text-justify text-textMuted mt-3">
-            {contentText}
-            <p className="text-black mt-2">{subcontentText}</p>
-          </p>
+          <div className="font-normal text-[16px] leading-[20px] text-justify text-textMuted mt-3">
+            <p>{contentText}</p>
+            <p className=" mt-2">{subcontentText}</p>
+          </div>
         </div>
       </div>
     </div>
