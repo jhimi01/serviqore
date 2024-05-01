@@ -28,8 +28,8 @@ const About = () => {
       <Helmet>
         <title>about | serviqore</title>
       </Helmet>
-      <div className="md:flex items-center bg-backgroundGray py-8 px-5 md:px-28">
-        <div className="md:w-2/3">
+      <div className="md:flex items-center gap-10 justify-between bg-backgroundGray py-8 px-5 md:px-28">
+        <div className="md:w-2/3 mx-auto">
           <h1 className="font-bold  text-3xl sm:text-[50px] sm:leading-[61px] text-primary">
             Welcome to Serviqore! We're dedicated to excellence, integrity and
             professional service.
@@ -47,8 +47,8 @@ const About = () => {
           </Link>
         </div>
         {/* image content */}
-        <div className="md:w-1/2">
-          <img src={aboutpic} alt="about img" />
+        <div className="md:w-1/2 ml-auto">
+          <img src={aboutpic} className="w-full h-full" alt="about img" />
         </div>
       </div>
 
@@ -249,13 +249,8 @@ const About = () => {
         <h1 className="text-black text-[30px] font-bold py-4">
           Get Started Today
         </h1>
-        <p className="text-textMuted text-[16px]">
-          Ready to take your recruitment efforts to the next level? Contact us
-          today to learn more about our Virtual Resourcing Service and discover
-          how we can help you build a winning team for your organization.
-        </p>
         <Link to="/contact">
-          <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
+          <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 mb-6 rounded mx-auto">
             <span>Contact us </span> <FaLongArrowAltRight />
           </button>
         </Link>

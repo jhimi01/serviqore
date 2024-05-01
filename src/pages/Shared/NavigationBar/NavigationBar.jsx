@@ -133,7 +133,7 @@ const NavigationBar = () => {
               </div>
             </div>
           </div>
-          <a className="cursor-pointer" href="/">
+          <a className="cursor-pointer py-[5px]" href="/">
             <img
               className="w-20"
               src={scrolling ? textlogo : logo}

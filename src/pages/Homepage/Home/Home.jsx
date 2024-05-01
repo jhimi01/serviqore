@@ -49,9 +49,9 @@ const Home = () => {
         >
           {/* firts slider */}
           <SwiperSlide>
-            <div className="md:flex mt-10">
+            <div className="md:flex mt-10 gap-20 justify-between">
               {/* content side */}
-              <div className="md:w-1/2 ">
+              <div className="md:w-1/2 mx-auto">
                 <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
                   Response within 2 minutes
                 </h1>
@@ -75,15 +75,15 @@ const Home = () => {
                 </div>
               </div>
               {/* image side */}
-              <div className="md:w-1/2">
-                <img src={bgSlider1} />
+              <div className="md:w-1/2 mx-auto">
+                <img className="w-full h-full" src={bgSlider1} />
               </div>
             </div>
           </SwiperSlide>
 
           {/* second slider */}
           <SwiperSlide>
-            <div className="md:flex mt-10">
+            <div className="md:flex mt-10 gap-20 justify-between">
               {/* content side */}
               <div className="md:w-1/2 ">
                 <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
@@ -112,14 +112,14 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img src={bgSlider2} />
+                <img className="w-full h-full" src={bgSlider2} />
               </div>
             </div>
           </SwiperSlide>
 
           {/* third slider */}
           <SwiperSlide>
-            <div className="md:flex mt-10">
+            <div className="md:flex mt-10 gap-20 justify-between">
               {/* content side */}
               <div className="md:w-1/2 ">
                 <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
@@ -149,14 +149,14 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img src={bgSlider3} />
+                <img className="w-full h-full" src={bgSlider3} />
               </div>
             </div>
           </SwiperSlide>
 
           {/* four slider */}
           <SwiperSlide>
-            <div className="md:flex mt-10">
+            <div className="md:flex mt-10 gap-20 justify-between">
               {/* content side */}
               <div className="md:w-1/2 ">
                 <h1 className="text-[35px] md:text-[60px] text-secondary font-bold leading-[50px] md:leading-[70px]">
@@ -186,7 +186,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img src={bgSlider4} />
+                <img className="w-full h-full" src={bgSlider4} />
               </div>
             </div>
           </SwiperSlide>

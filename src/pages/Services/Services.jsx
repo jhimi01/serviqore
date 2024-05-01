@@ -31,7 +31,7 @@ const Services = () => {
       <Helmet>
         <title>Remote Dispatch Service | serviqore</title>
       </Helmet>
-      <div className="md:flex items-center py-6 bg-backgroundGray px-5 md:px-28 ">
+      <div className="md:flex items-center gap-10 py-6 bg-backgroundGray px-5 md:px-28 ">
         {/* content side */}
         <div className="md:w-[55%] mx-auto">
           <h1 className="text-4xl md:text-[60px] text-primary font-bold md:leading-[65px]">
@@ -369,13 +369,8 @@ const Services = () => {
         <h1 className="text-black text-[30px] font-bold py-4">
           Get Started Today
         </h1>
-        <p className="text-textMuted text-[16px]">
-          Ready to take your recruitment efforts to the next level? Contact us
-          today to learn more about our Virtual Resourcing Service and discover
-          how we can help you build a winning team for your organization.
-        </p>
         <Link to="/contact">
-          <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 my-6 rounded mx-auto">
+          <button className="flex items-center justify-center gap-2 bg-primary hover:opacity-90 text-white py-2 px-6 mb-6 rounded mx-auto">
             <span>Contact us </span> <FaLongArrowAltRight />
           </button>
         </Link>
