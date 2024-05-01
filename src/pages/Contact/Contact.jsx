@@ -80,11 +80,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="md:w-9/12 contactsection my-20 w-11/12 mt-32 mx-auto">
+    <div className="md:w-10/12 w-11/12 contactsection my-20 mt-20 mx-auto">
       <Helmet>
         <title>contact | serviqore</title>
       </Helmet>
-      <div className="md:flex justify-between gap-20">
+      <div className="md:flex items-center justify-between gap-20">
         <div className="md:w-1/2">
           <h1 className="text-black relative font-semibold text-[36px] leading-[76px] ">
             Contact us
@@ -154,9 +154,9 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="md:w-1/2 md:mt-0 mt-10">
-          <img src={contactimg} alt="contact img" />
-          <div className="flex flex-wrap mt-14">
+        <div className="md:w-1/2 md:mt-0 mt-10 flex items-center justify-end">
+          {/* <img src={contactimg} alt="contact img" /> */}
+          <div className="flex items-center flex-wrap mt-14">
             <div className="flex p-4 items-start gap-6">
               <img src={location} alt="location" />
               <div className="space-y-3">

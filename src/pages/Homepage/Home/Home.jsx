@@ -31,7 +31,7 @@ const Home = () => {
       <Helmet>
         <title>Serviqore</title>
       </Helmet>
-      <div className="homepage-slider bg-backgroundGray md:py-7 px-5 md:px-28 mt-16 ">
+      <div className="homepage-slider bg-backgroundGray md:py-7 mt-16 ">
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -45,7 +45,7 @@ const Home = () => {
           navigation={false}
           centeredSlides={false}
           modules={[Autoplay, Pagination]}
-          className="mySwiper"
+          className="mySwiper md:w-10/12 w-11/12"
         >
           {/* firts slider */}
           <SwiperSlide>
@@ -76,7 +76,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2 mx-auto">
-                <img className="w-full h-full" src={bgSlider1} />
+                <img className="ml-auto" src={bgSlider1} />
               </div>
             </div>
           </SwiperSlide>
@@ -112,7 +112,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img className="w-full h-full" src={bgSlider2} />
+                <img className="ml-auto" src={bgSlider2} />
               </div>
             </div>
           </SwiperSlide>
@@ -149,7 +149,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img className="w-full h-full" src={bgSlider3} />
+                <img className="ml-auto" src={bgSlider3} />
               </div>
             </div>
           </SwiperSlide>
@@ -186,7 +186,7 @@ const Home = () => {
               </div>
               {/* image side */}
               <div className="md:w-1/2">
-                <img className="w-full h-full" src={bgSlider4} />
+                <img className="ml-auto" src={bgSlider4} />
               </div>
             </div>
           </SwiperSlide>

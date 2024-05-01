@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import useAllBlogs from "../../hook/useAllBlogs";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Subheader from "../../components/Subheader";
 
 const Blogs = () => {
   const { blogs, isLoading } = useAllBlogs();
@@ -18,18 +19,13 @@ const Blogs = () => {
       <Helmet>
         <title>blogs | serviqore</title>
       </Helmet>
-
-      <div className="bg-[#F9FDFC] py-14 px-5 md:px-28 text-center">
-        <h1 className="text-primary font-semibold text-[64px] leading-[76px] ">
-          Blogs
-        </h1>
-        <p className="text-textMuted text-[16px] font-normal mt-5">
-          Our blog is where we share our expertise, insights, and latest updates
+      <Subheader
+        title="Blogs"
+        text=" Our blog is where we share our expertise, insights, and latest updates
           with you. Whether you're a seasoned professional or just starting out,
           our blog is your go-to resource for valuable information, tips, and
-          inspiration.
-        </p>
-      </div>
+          inspiration."
+      />
       <div className="lg:w-10/12 w-11/12 mx-auto my-10">
         <h1 className="text-black font-semibold text-[36px] mb-5">
           Recent Blog posts

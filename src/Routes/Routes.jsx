@@ -7,6 +7,8 @@ import Blogs from "../pages/Blogs/Blogs";
 import Contact from "../pages/Contact/Contact";
 import BlogsDetails from "../pages/Blogs/BlogsDetails";
 import Erronpage from "../pages/Erronpage/Erronpage";
+import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
+import TermsConditions from "../pages/TermsConditions/TermsConditions";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +42,14 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/privacystatements",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms&conditions",
+        element: <TermsConditions />,
       },
     ],
   },

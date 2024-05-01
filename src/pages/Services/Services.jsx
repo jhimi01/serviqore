@@ -31,9 +31,10 @@ const Services = () => {
       <Helmet>
         <title>Remote Dispatch Service | serviqore</title>
       </Helmet>
-      <div className="md:flex items-center gap-10 py-6 bg-backgroundGray px-5 md:px-28 ">
-        {/* content side */}
-        <div className="md:w-[55%] mx-auto">
+      <div className="py-6 bg-backgroundGray">
+      <div className="md:flex items-center gap-10 mx-auto md:w-10/12 w-11/12">
+          {/* content side */}
+          <div className="md:w-[55%] mx-auto">
           <h1 className="text-4xl md:text-[60px] text-primary font-bold md:leading-[65px]">
             Security Guard Monitoring Service
           </h1>
@@ -53,8 +54,9 @@ const Services = () => {
         </div>
         {/* image side */}
         <div className="md:w-[45%] mx-auto mt-5 md:mt-0">
-          <img src={aboutmain} alt="service" />
+          <img src={aboutmain} className="ml-auto" alt="service" />
         </div>
+      </div>
       </div>
 
       <div className="w-11/12 md:w-10/12 mx-auto my-20">

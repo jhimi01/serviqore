@@ -50,12 +50,12 @@ const Footer = () => {
         <a className="link link-hover flex items-center gap-1">
           <IoIosMail className="font-bold text-xl" /> info@serviqore.com
         </a>
-        <a className="link link-hover flex items-center gap-1">
+        <Link to='/privacystatements' className="link link-hover flex items-center gap-1">
           <MdPrivacyTip className="font-bold text-xl" /> Privacy Statement
-        </a>
-        <a className="link link-hover flex items-center gap-1">
+        </Link>
+        <Link to="/terms&conditions" className="link link-hover flex items-center gap-1">
           <BsCheck2Square className="font-bold text-xl" /> Terms & Conditions
-        </a>
+        </Link>
       </nav>
       <form className="w-9/12">
         <h6 className="font-bold text-xl text-white">Stay up to date</h6>

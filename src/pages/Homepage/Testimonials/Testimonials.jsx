@@ -79,15 +79,21 @@ const Testimonials = () => {
             <SwiperSlide key={index} className="w-full pl-5 pr-8 pb-10 ">
               <div className="w-full">
                 <img src={mark} />
-                <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-1 pl-3">
-                  {testi.feedback}
-                </p>
-                <h3 className="pl-6 text-[17px] font-semibold leading-[22px] text-secondary">
-                  -
-                  <span>
-                    {testi.name}, {testi.title}, {testi.company}
-                  </span>
-                </h3>
+                <div className="flex items-center flex-col justify-center">
+                  <div className="h-[290px] overflow-hidden">
+                    <p className="text-justify leading-[21px] text-textMuted text-[15px] font-normal mt-4 mb-1 pl-3">
+                      {testi.feedback}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="pl-6 text-[17px] font-semibold leading-[22px] text-secondary">
+                      -
+                      <span>
+                        {testi.name}, {testi.title}, {testi.company}
+                      </span>
+                    </h3>
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           ))}

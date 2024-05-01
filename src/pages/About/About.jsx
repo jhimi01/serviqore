@@ -28,8 +28,9 @@ const About = () => {
       <Helmet>
         <title>about | serviqore</title>
       </Helmet>
-      <div className="md:flex items-center gap-10 justify-between bg-backgroundGray py-8 px-5 md:px-28">
-        <div className="md:w-2/3 mx-auto">
+      <div className=" bg-backgroundGray py-8">
+       <div className="md:flex items-center gap-10 justify-between w-11/12 md:w-10/12 mx-auto">
+       <div className="md:w-2/3 mx-auto">
           <h1 className="font-bold  text-3xl sm:text-[50px] sm:leading-[61px] text-primary">
             Welcome to Serviqore! We're dedicated to excellence, integrity and
             professional service.
@@ -48,8 +49,9 @@ const About = () => {
         </div>
         {/* image content */}
         <div className="md:w-1/2 ml-auto">
-          <img src={aboutpic} className="w-full h-full" alt="about img" />
+          <img src={aboutpic} className="ml-auto" alt="about img" />
         </div>
+       </div>
       </div>
 
       <BpoParadiam
