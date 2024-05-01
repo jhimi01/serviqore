@@ -31,7 +31,7 @@ const About = () => {
       <div className=" bg-backgroundGray py-8">
        <div className="md:flex items-center gap-10 justify-between w-11/12 md:w-10/12 mx-auto">
        <div className="md:w-2/3 mx-auto">
-          <h1 className="font-bold  text-3xl sm:text-[50px] sm:leading-[61px] text-primary">
+          <h1 className="font-bold  text-3xl sm:text-[50px] sm:leading-[61px] text-secondary">
             Welcome to Serviqore! We're dedicated to excellence, integrity and
             professional service.
           </h1>

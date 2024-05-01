@@ -35,7 +35,7 @@ const Services = () => {
       <div className="md:flex items-center gap-10 mx-auto md:w-10/12 w-11/12">
           {/* content side */}
           <div className="md:w-[55%] mx-auto">
-          <h1 className="text-4xl md:text-[60px] text-primary font-bold md:leading-[65px]">
+          <h1 className="text-4xl md:text-[60px] text-secondary font-bold md:leading-[65px]">
             Security Guard Monitoring Service
           </h1>
           <p className="text-secondary font-normal text-[16px] mt-3 md:mt-5">
