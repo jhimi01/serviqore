@@ -3,7 +3,7 @@ import "./FaqSection.css";
 
 const FaqSection = () => {
   return (
-    <div className="md:w-10/12 w-11/12 mx-auto my-14">
+    <div className="md:w-10/12 w-11/12 mx-auto mt-14 mb-48">
       <h1 className="text-[64px] my-4 leading-[76px] font-semibold text-primary text-center">
         FAQ
       </h1>
@@ -40,13 +40,13 @@ const FaqSection = () => {
         <div className="collapse-content mt-3 bg-white p-0">
           <div
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
-            className="text-textMuted rounded-xl p-5 space-y-3"
+            className="space-y-3 text-textMuted rounded-xl p-5"
           >
             <p>
               Outsourcing security monitoring to a Remote Security Dispatch
               Center offers several benefits:
             </p>
-            <ol className="space-y-3 list-disc pl-5">
+            <ol className="list-disc pl-5 space-y-1">
               <li>
                 <span className="font-semibold">Enhanced Efficiency</span>: By
                 leveraging specialized expertise and technology, a Remote
@@ -113,7 +113,7 @@ const FaqSection = () => {
         <div className="collapse-content mt-3 bg-white p-0">
           <div
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
-            className="text-textMuted rounded-xl p-5 space-y-3"
+            className="space-y-3 text-textMuted rounded-xl p-5"
           >
             <p>
               The Remote Security Dispatch Center may operate differently
@@ -156,10 +156,10 @@ const FaqSection = () => {
           What types of security incidents can the remote Security Dispatch
           Center handle? Write me FAQ answer for this question
         </div>
-        <div className="collapse-content mt-3 bg-white p-0">
+        <div className="collapse-content mt-3  bg-white p-0">
           <div
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
-            className="text-textMuted rounded-xl p-5 space-y-3"
+            className="space-y-3 text-textMuted rounded-xl p-5"
           >
             <p>
               The Remote Security Dispatch Center is equipped to handle a wide
@@ -168,7 +168,7 @@ const FaqSection = () => {
               manage include:
             </p>
 
-            <ol className="space-y-3 list-disc pl-5">
+            <ol className="list-disc pl-5 space-y-1">
               <li>
                 Emergency Situations such as Fire and Flood as well as Medical
                 emergencies
@@ -196,15 +196,64 @@ const FaqSection = () => {
           How does the remote Security Dispatch Center respond to incidents?
         </div>
         <div className="collapse-content mt-3 bg-white p-0">
-          <p
+          <div
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
-            className="text-textMuted rounded-xl p-5"
+            className="space-y-3 text-textMuted rounded-xl p-5"
           >
-            The Remote Security Dispatch Center can handle various security
-            incidents, including but not limited to, intrusions, thefts,
-            vandalism, suspicious activities, and emergency situations such as
-            fires or medical emergencies.
-          </p>
+            <p>
+              The Remote Security Dispatch Center employs a proactive and
+              systematic approach to respond to security incidents promptly and
+              effectively. Our response process includes the following steps:
+            </p>
+            <p>
+              <span className="font-semibold">
+                Identification and Verification:
+              </span>{" "}
+              When an incident is reported, our trained personnel immediately
+              assess the situation and verify the nature and severity of the
+              incident using advanced monitoring technology and communication
+              systems.
+            </p>
+            <p>
+              <span className="font-semibold">Escalations: </span> Based on the
+              assessment, our remote dispatch center coordinates the dispatch of
+              appropriate resources according to protocols, including security
+              guards, emergency responders, or law enforcement personnel, towing
+              companies to the location of the incident.
+            </p>
+            <p>
+              <span className="font-semibold">
+                Communication and Coordination:{" "}
+              </span>
+              Throughout the incident response process, our dispatch center
+              maintains constant communication with all parties involved,
+              including security personnel on the ground, clients, emergency
+              services, and other stakeholders. This ensures a coordinated and
+              cohesive response effort.
+            </p>
+            <p>
+              <span className="font-semibold">Monitoring and Follow-Up: </span>{" "}
+              : Our dispatch center continues to monitor the situation closely,
+              providing real-time updates and support to on-site personnel as
+              needed. After the incident has been resolved, we conduct thorough
+              follow-up procedures, including documentation of actions taken.
+            </p>
+            <p>
+              <span className="font-semibold">
+                Documentation and Reporting:{" "}
+              </span>{" "}
+              : All incidents are meticulously documented, including details of
+              the incident, response actions, and outcomes. This documentation
+              serves as valuable information for post-incident analysis and
+              reporting to clients and regulatory authorities as required.
+            </p>
+            <p>
+              By adhering to this structured incident response process, the
+              Remote Security Dispatch Center ensures swift, efficient, and
+              coordinated responses to security incidents, ultimately enhancing
+              the safety and security of our clients' premises and personnel.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -219,7 +268,7 @@ const FaqSection = () => {
         <div className="collapse-content mt-3 bg-white p-0">
           <div
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
-            className="text-textMuted rounded-xl p-5 space-y-3"
+            className="space-y-3 text-textMuted rounded-xl p-5"
           >
             <p>
               The Remote Security Dispatch Center prioritizes the privacy and
