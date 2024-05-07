@@ -18,7 +18,7 @@ const images = [one, two, three, four, five, six, seven];
 
 const ClientsLogo = () => {
   return (
-    <div className="text-center mx-auto  pt-10 pb-8 my-24 bg-primary">
+    <div className="text-center mx-auto  pt-10 pb-3 my-24 bg-primary">
       <h2 className="font-semibold text-4xl leading-10 text-white">
         We’re Trusted By
       </h2>
