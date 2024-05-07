@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Serviqore = () => {
   return (
-    <div className="text-center md:w-10/12 w-11/12 mx-auto py-8">
+    <div className="text-center md:w-10/12 w-11/12 mx-auto py-10">
       <div className="">
         <h1 className="font-semibold text-[36px] text-black">
           Partner with Serviqore

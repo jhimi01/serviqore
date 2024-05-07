@@ -3,7 +3,7 @@ import "./FaqSection.css";
 
 const FaqSection = () => {
   return (
-    <div className="md:w-10/12 w-11/12 mx-auto mt-14 mb-48">
+    <div className="md:w-10/12 w-11/12 mx-auto mt-14 mb-20">
       <h1 className="text-[64px] my-4 leading-[76px] font-semibold text-primary text-center">
         FAQ
       </h1>

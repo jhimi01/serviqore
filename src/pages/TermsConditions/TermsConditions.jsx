@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Subheader from "../../components/Subheader";
 
 export default function TermsConditions() {
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
+
   return (
     <div className="mt-5 md:mt-20 mb-10">
       <Subheader title="Terms & Conditions" />
