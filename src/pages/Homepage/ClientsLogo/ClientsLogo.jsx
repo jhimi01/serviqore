@@ -18,9 +18,9 @@ const images = [one, two, three, four, five, six, seven];
 
 const ClientsLogo = () => {
   return (
-    <div className="text-center mx-auto my-24">
-      <h2 className="font-semibold text-3xl leading-10 text-primary">
-        Some of Our Key Clients
+    <div className="text-center mx-auto  pt-10 pb-8 my-24 bg-primary">
+      <h2 className="font-semibold text-4xl leading-10 text-white">
+        We’re Trusted By
       </h2>
       <div className="bg-primary mt-8 py-6">
         <Swiper
@@ -28,9 +28,9 @@ const ClientsLogo = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 1500, disableOnInteraction: false }}
           breakpoints={{
-            320: { slidesPerView: 3, spaceBetween: 30 },
-            768: { slidesPerView: 5, spaceBetween: 40 },
-            1024: { slidesPerView: 6, spaceBetween: 90 },
+            320: { slidesPerView: 2, spaceBetween: 80 },
+            768: { slidesPerView: 3, spaceBetween: 100 },
+            1024: { slidesPerView: 5, spaceBetween: 130 },
           }}
           navigation={false}
           modules={[Autoplay]}
