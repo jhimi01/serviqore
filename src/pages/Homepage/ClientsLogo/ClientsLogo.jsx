@@ -28,7 +28,7 @@ const ClientsLogo = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 1500, disableOnInteraction: false }}
           breakpoints={{
-            320: { slidesPerView: 2, spaceBetween: 80 },
+            320: { slidesPerView: 2, spaceBetween: 85 },
             768: { slidesPerView: 3, spaceBetween: 100 },
             1024: { slidesPerView: 5, spaceBetween: 130 },
           }}
