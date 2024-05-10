@@ -211,10 +211,11 @@ const Home = () => {
       <ClientsLogo />
 
       <Testimonials />
+      
+      <Serviqore />
 
       <FaqSection />
       
-      <Serviqore />
 
     </>
   );

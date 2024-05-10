@@ -3,7 +3,7 @@ import "./FaqSection.css";
 
 const FaqSection = () => {
   return (
-    <div className="md:w-10/12 w-11/12 mx-auto mt-14 mb-20">
+    <div className="md:w-10/12 w-11/12 mx-auto mt-14 mb-0 md:mb-48">
       <h1 className="text-[64px] my-4 leading-[76px] font-semibold text-primary text-center">
         FAQ
       </h1>
@@ -257,7 +257,7 @@ const FaqSection = () => {
         </div>
       </div>
 
-      <div className="collapse overflow-visible collapse-plus rounded-none mb-1">
+      <div className="collapse overflow-visible collapse-plus rounded-none mb-1 ">
         <input type="radio" name="my-accordion-3" />
         <div
           style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
@@ -265,10 +265,10 @@ const FaqSection = () => {
         >
           How does the remote security dispatch center secure data privacy?
         </div>
-        <div className="collapse-content mt-3 bg-white p-0">
+        <div className="collapse-content mt-3 bg-white p-0 md:h-full h-[1250px]">
           <div
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
-            className="space-y-3 text-textMuted rounded-xl p-5"
+            className="space-y-3 text-textMuted rounded-xl p-5 "
           >
             <p>
               The Remote Security Dispatch Center prioritizes the privacy and
