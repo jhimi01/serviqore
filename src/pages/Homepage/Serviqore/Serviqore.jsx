@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Serviqore = () => {
   return (
-    <div className="md:w-10/12 w-11/12 mx-auto py-10 my-10">
+    <div className="md:w-10/12 w-11/12 mx-auto py-10 mb-10">
       <div className="md:flex items-center justify-center mt-12">
         <div className="md:w-1/2">
           <img className="mx-auto my-5" src={group} />
