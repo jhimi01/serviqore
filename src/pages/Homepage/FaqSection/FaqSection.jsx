@@ -3,7 +3,7 @@ import "./FaqSection.css";
 
 const FaqSection = () => {
   return (
-    <div className="md:w-10/12 w-11/12 mx-auto mt-14 mb-0 md:mb-48">
+    <div className="md:w-10/12 w-11/12 mx-auto mt-14 ">
       <h1 className="text-[64px] my-4 leading-[76px] font-semibold text-primary text-center">
         FAQ
       </h1>
@@ -265,7 +265,7 @@ const FaqSection = () => {
         >
           How does the remote security dispatch center secure data privacy?
         </div>
-        <div className="collapse-content mt-3 bg-white p-0 md:h-full h-[1250px]">
+        <div className="collapse-content mt-6 bg-white p-0 ">
           <div
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
             className="space-y-3 text-textMuted rounded-xl p-5 "

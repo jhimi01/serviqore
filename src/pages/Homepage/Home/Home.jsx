@@ -212,9 +212,9 @@ const Home = () => {
 
       <Testimonials />
       
+      <FaqSection />
       <Serviqore />
 
-      <FaqSection />
       
 
     </>
