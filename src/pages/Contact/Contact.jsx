@@ -179,7 +179,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="flex p-4 items-center justify-center gap-3">
+            <div className="flex p-4 items-center justify-center gap-6">
               <img src={email} alt="email" />
               <div>
                 <h4 className="font-semibold text-[16px] leading-[20px] text-black">
@@ -190,17 +190,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div className="flex p-4 items-center justify-center gap-3">
-              <img src={phone} alt="phone" />
-              <div>
-                <h4 className="font-semibold text-[16px] leading-[20px] text-black">
-                  Phone
-                </h4>
-                <p className="text-[#333] font-normal text-[14px] leading-[18px]">
-                  +880 1896 191700
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
