@@ -8,7 +8,7 @@ const Serviqore = () => {
     <div className="md:w-10/12 w-11/12 mx-auto py-10 mb-10">
       <div className="md:flex justify-center mt-12">
         <div className="md:w-1/2">
-          <img className="mx-auto my-5" src={group} />
+          <img className="mx-auto my-5 max-w-60" src={group} />
         </div>
         <div className="md:w-1/2 text-start space-y-3 md:space-y-6">
           <h1 className="font-semibold text-2xl sm:text-[26px] leading-[30px] text-black md:leading-[42px]">
