@@ -68,7 +68,7 @@ const About = () => {
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
+              <h1 className="font-semibold text-center text-5xl md:text-[80px] leading-[44px] text-textMuted mb-10">
                 {counter && <CountUp start={0} end={200} duration={2} />}
                 <sup className="font-[400]">+</sup>
               </h1>
@@ -83,7 +83,7 @@ const About = () => {
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
+              <h1 className="font-semibold text-center text-5xl md:text-[80px] leading-[44px] text-textMuted mb-10">
                 {counter && <CountUp start={0} end={50} duration={2} />}
                 <sup className="font-[400]">+</sup>
               </h1>
@@ -97,7 +97,7 @@ const About = () => {
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
-              <h1 className="font-bold text-center text-5xl md:text-[80px] leading-[44px] text-primary mb-10">
+              <h1 className="font-semibold text-center text-5xl md:text-[80px] leading-[44px] text-textMuted mb-10">
                 {counter && <CountUp start={0} end={50} duration={2} />}
                 <sup className="font-[400]">+</sup>
               </h1>

@@ -26,7 +26,11 @@ const Footer = () => {
     <footer className=" bg-primary text-white px-5 md:px-28">
       <div className="footer pb-10 pt-14 justify-between">
         <nav>
+          <div>
           <img src={footerLogo} alt="Footer Logo" />
+          <h3 className="text-[10px] font-semibold pl-1">Service Excellence Assured</h3>
+          </div>
+          
         </nav>
         <nav>
           <Link to="/" className="font-bold text-xl text-white">
@@ -99,7 +103,6 @@ const Footer = () => {
           </div>
         </form>
       </div>
-      <hr />
       <div className="text-center py-3 text-sm ">
         <p>Copyright © 2024 Serviqore All rights reserved</p>
       </div>

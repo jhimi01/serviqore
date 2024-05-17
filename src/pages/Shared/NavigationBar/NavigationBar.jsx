@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavigationBar.css";
 import textlogo from "../../../../public/images/ServiqoreLogo/withouttextlogo.png";
 import logo from "../../../../public/images/ServiqoreLogo/withTextlogo.png";
@@ -48,27 +48,41 @@ const NavigationBar = () => {
       >
         About us
       </NavLink>
+      <div className="dropdown dropdown-bottom hidden md:block">
+        <div
+          tabIndex={0}
+          role="button"
+          className="navigationlink hover:text-primary"
+        >
+          Service
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li>
+            <NavLink
+              to="/services"
+              className={({ isActive }) => `
+          navigationlink ${
+            isActive ? "text-white bg-primary rounded " : "hover:text-primary"
+          }
+          `}
+            >
+              Remote dispatch service
+            </NavLink>
+          </li>
+        </ul>
+      </div>
       <NavLink
         to="/services"
         className={({ isActive }) => `
-           navigationlink ${
-             isActive ? "text-white bg-primary rounded " : "hover:text-primary"
-           }
-           `}
+          navigationlink md:hidden block ${
+            isActive ? "text-white bg-primary rounded " : "hover:text-primary"
+          }
+          `}
       >
-        <div className="dropdown dropdown-hover">
-          <div tabIndex={0} role="button" className="">
-            Service
-          </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content z-[1] -left-2 menu p-2 shadow bg-base-100 rounded-box mt-2 mx-auto hidden lg:block"
-          >
-            <li className="text-primary text-center">
-              Remote Dispatch Service
-            </li>
-          </ul>
-        </div>
+        Remote dispatch service
       </NavLink>
 
       <NavLink
