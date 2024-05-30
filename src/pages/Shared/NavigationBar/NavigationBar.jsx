@@ -48,7 +48,7 @@ const NavigationBar = () => {
       >
         About us
       </NavLink>
-      <div className="dropdown dropdown-bottom hidden md:block">
+      <div className="dropdown dropdown-hover hidden md:block">
         <div
           tabIndex={0}
           role="button"
@@ -58,13 +58,13 @@ const NavigationBar = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-64"
         >
           <li>
             <NavLink
               to="/services"
               className={({ isActive }) => `
-          navigationlink ${
+          navigationlink  ${
             isActive ? "text-white bg-primary rounded " : "hover:text-primary"
           }
           `}
