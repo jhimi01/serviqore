@@ -61,7 +61,7 @@ const About = () => {
       />
 
       {/* cunter section */}
-      <div className="wrapper">
+      <div className="md:w-10/12 w-11/12 mx-auto">
         <div className="flex text-center flex-wrap px-1 items-center justify-center md:gap-20 gap-14 mt-28 ">
           <div>
             <ScrollTrigger
