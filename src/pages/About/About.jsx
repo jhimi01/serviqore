@@ -29,7 +29,7 @@ const About = () => {
         <title>about | serviqore</title>
       </Helmet>
       <div className=" bg-backgroundGray py-8">
-       <div className="md:flex items-center gap-10 justify-between w-11/12 md:w-10/12 mx-auto">
+       <div className="md:flex wrapper items-center gap-10 justify-between w-11/12 md:w-10/12 mx-auto">
        <div className="md:w-2/3 mx-auto">
           <h1 className="font-bold  text-3xl sm:text-[50px] sm:leading-[61px] text-secondary">
             Welcome to Serviqore! We're dedicated to excellence, integrity and
@@ -61,7 +61,7 @@ const About = () => {
       />
 
       {/* cunter section */}
-      <div>
+      <div className="wrapper">
         <div className="flex text-center flex-wrap px-1 items-center justify-center md:gap-20 gap-14 mt-28 ">
           <div>
             <ScrollTrigger
@@ -107,7 +107,7 @@ const About = () => {
             </h5>
           </div>
         </div>
-        <p className="mb-20 mt-10 px-5 md:px-28 text-center text-textMuted text-[15px] font-normal">
+        <p className="mb-20 mt-10 text-center text-textMuted text-[15px] font-normal">
           We've cultivated collaborative partnerships with 200+ security
           professionals and 50+ job sites, enhancing service customization and
           client satisfaction. Through streamlined operations, we maximize
@@ -116,7 +116,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="text-center py-8 px-5 md:px-28">
+      <div className="text-center wrapper py-8 md:w-10/12 mx-auto w-11/12">
         <h2 className="text-[36px] text-secondary font-semibold">
           What we do?
         </h2>
@@ -163,7 +163,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="text-center pt-8  px-5 md:px-28">
+      <div className="text-center pt-8  md:w-10/12 mx-auto w-11/12">
         <h2 className="text-[36px] text-secondary font-semibold">
           Why Choose us??
         </h2>

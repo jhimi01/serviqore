@@ -22,9 +22,9 @@ import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Services = () => {
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scroll(0, 0);
+  // }, []);
 
   return (
     <div className="mt-16">
@@ -115,7 +115,7 @@ const Services = () => {
 
       <div className="py-8 space-y-20">
         {/* 1st section */}
-        <div className="md:flex px-5 pb-6 md:px-28 items-center bg-[#F9FDFC]">
+        <div className="md:flex md:w-10/12 mx-auto w-11/12 pb-6  items-center bg-[#F9FDFC]">
           {/* img Connect */}
           <div className="md:w-1/2 ">
             <img src={remote} className="mx-auto" alt="img" />
@@ -136,7 +136,7 @@ const Services = () => {
         </div>
 
         {/* 2nd section */}
-        <div className="md:flex-row flex-col-reverse flex px-5  pb-6 md:px-28 items-center">
+        <div className="md:flex-row flex-col-reverse flex   pb-6 md:w-10/12 mx-auto w-11/12 items-center">
           <div className="md:w-1/2 text-secondtextMuted ">
             <h1 className="subheaderText">Real value for money</h1>
             <ul className="list-disc pl-5 mt-5">
@@ -175,7 +175,7 @@ const Services = () => {
         </div>
 
         {/* 3rd section */}
-        <div className="md:flex px-5 py-6 md:px-28 items-center bg-[#F9FDFC]">
+        <div className="md:flex  py-6 md:w-10/12 mx-auto w-11/12 items-center bg-[#F9FDFC]">
           {/* img Connect */}
           <div className="md:w-1/2 ">
             <img src={response} className="mx-auto" alt="response" />
@@ -205,7 +205,7 @@ const Services = () => {
         </div>
 
         {/* 4th section */}
-        <div className="md:flex-row flex-col-reverse flex px-5 gap-20 pb-6 md:px-28 items-center">
+        <div className="md:flex-row flex-col-reverse flex  gap-20 pb-6 md:w-10/12 mx-auto w-11/12 items-center">
           <div className="md:w-1/2 text-secondtextMuted ">
             <h1 className="subheaderText">Real time Monitoring:</h1>
             <p className="my-3">
@@ -228,7 +228,7 @@ const Services = () => {
         </div>
 
         {/* 5th section */}
-        <div className="md:flex px-5 py-6 md:px-28 items-center bg-[#F9FDFC]">
+        <div className="md:flex  py-6 md:w-10/12 mx-auto w-11/12 items-center bg-[#F9FDFC]">
           {/* img Connect */}
           <div className="md:w-1/2 ">
             <img src={training} className="mx-auto" alt="training" />
@@ -246,7 +246,7 @@ const Services = () => {
         </div>
 
         {/* 6th section */}
-        <div className="md:flex-row flex-col-reverse flex px-5 gap-20 pb-6 md:px-28 items-center">
+        <div className="md:flex-row flex-col-reverse flex md:w-10/12 mx-auto w-11/12 gap-20 pb-6 items-center">
           <div className="md:w-1/2 text-secondtextMuted ">
             <h1 className="subheaderText">Surge Capacity for Growth</h1>
             <p className="my-3">
@@ -267,7 +267,7 @@ const Services = () => {
         </div>
 
         {/* 7th section */}
-        <div className="md:flex md:text-start text-center px-5 py-6 md:px-28 items-center bg-[#F9FDFC]">
+        <div className="md:flex md:text-start text-center  py-6 md:w-10/12 mx-auto w-11/12 items-center bg-[#F9FDFC]">
           {/* img Connect */}
           <div className="md:w-1/2 ">
             <img src={reporting} className="mx-auto" alt="training" />
@@ -284,7 +284,7 @@ const Services = () => {
         </div>
 
         {/* 8th section */}
-        <div className="md:flex-row flex-col-reverse md:text-start text-center flex px-5 gap-20 pb-6 md:px-28 items-center">
+        <div className="md:flex-row flex-col-reverse md:text-start text-center flex  gap-20 pb-6 md:w-10/12 mx-auto w-11/12items-center">
           <div className="md:w-1/2 text-secondtextMuted ">
             <h1 className="subheaderText">Improved Operational Efficiency</h1>
             <p className="my-3">

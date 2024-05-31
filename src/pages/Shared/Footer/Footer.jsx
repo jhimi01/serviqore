@@ -23,8 +23,8 @@ import { BsCheck2Square } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className=" bg-primary text-white px-5 md:px-28">
-      <div className="footer pb-10 pt-14 justify-between">
+    <footer className=" bg-primary text-white ">
+      <div className="footer pb-10 pt-14 justify-between md:w-10/12 w-11/12 mx-auto">
         <nav>
           <div>
           <img src={footerLogo} alt="Footer Logo" />

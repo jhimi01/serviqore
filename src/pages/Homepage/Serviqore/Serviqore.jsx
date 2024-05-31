@@ -10,7 +10,7 @@ const Serviqore = () => {
         <div className="md:w-1/2">
           <img className="mx-auto my-5 max-w-60" src={group} />
         </div>
-        <div className="md:w-1/2 text-start space-y-3 md:space-y-4">
+        <div className="md:w-1/2 text-start space-y-3 md:space-y-6">
           <h1 className="font-semibold text-2xl sm:text-[26px] leading-[30px] text-black md:leading-[42px]">
             Ready to elevate your security services to the next level?
           </h1>
