@@ -14,7 +14,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 
-const images = [one, two, three, four, five, six, seven];
+const images = [one, two, three,  five, six, four, seven];
 
 const ClientsLogo = () => {
   return (
@@ -33,12 +33,14 @@ const ClientsLogo = () => {
             1024: { slidesPerView: 5, spaceBetween: 130 },
           }}
           navigation={false}
-          modules={[Autoplay]}
+          // modules={[Autoplay]}
           className="mySwiper w-11/12 md:w-10/12 h-full mx-auto"
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
-              <img src={image} alt="client logo" />
+              <div className=" flex items-center justify-between">
+              <img src={image} className="object-cover" alt="client logo" />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

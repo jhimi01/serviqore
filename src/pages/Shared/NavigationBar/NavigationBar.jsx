@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./NavigationBar.css";
 import textlogo from "../../../../public/images/ServiqoreLogo/withouttextlogo.png";
 import logo from "../../../../public/images/ServiqoreLogo/withTextlogo.png";
@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 
 const NavigationBar = () => {
   const [scrolling, setScrolling] = useState(false);
+  const pathname = useLocation()
+  console.log(pathname.pathname)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +31,7 @@ const NavigationBar = () => {
       <NavLink
         to="/"
         className={({ isActive }) => `
-            navigationlink ${
+            navigationlink hover:text-white hover:bg-primary rounded ${
               isActive
                 ? "text-white bg-primary rounded  "
                 : "hover:text-primary"
@@ -41,7 +43,7 @@ const NavigationBar = () => {
       <NavLink
         to="/about"
         className={({ isActive }) => `
-            navigationlink ${
+            navigationlink hover:text-white hover:bg-primary rounded ${
               isActive ? "text-white bg-primary rounded " : "hover:text-primary"
             }
             `}
@@ -52,7 +54,7 @@ const NavigationBar = () => {
         <div
           tabIndex={0}
           role="button"
-          className="navigationlink hover:text-primary"
+          className={`navigationlink hover:text-white hover:bg-primary rounded ${pathname.pathname==='/services' ? "bg-primary text-white":"bg-transparent text-secondary" }`}
         >
           Service
         </div>
@@ -88,7 +90,7 @@ const NavigationBar = () => {
       <NavLink
         to="/blogs"
         className={({ isActive }) => `
-          navigationlink ${
+          navigationlink hover:text-white hover:bg-primary rounded ${
             isActive ? "text-white bg-primary rounded " : "hover:text-primary"
           }
           `}
@@ -99,7 +101,7 @@ const NavigationBar = () => {
       <NavLink
         to="/contact"
         className={({ isActive }) => `
-           navigationlink ${
+           navigationlink hover:text-white hover:bg-primary rounded ${
              isActive ? "text-white bg-primary rounded " : "hover:text-primary"
            }
            `}
