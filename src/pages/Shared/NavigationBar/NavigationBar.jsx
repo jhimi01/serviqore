@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 
 const NavigationBar = () => {
   const [scrolling, setScrolling] = useState(false);
-  const pathname = useLocation()
-  console.log(pathname.pathname)
+  const pathname = useLocation();
+  console.log(pathname.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,24 +54,25 @@ const NavigationBar = () => {
         <div
           tabIndex={0}
           role="button"
-          className={`navigationlink hover:text-white hover:bg-primary rounded ${pathname.pathname==='/services' ? "bg-primary text-white":"bg-transparent text-secondary" }`}
+          className={`navigationlink hover:text-white hover:bg-primary rounded ${
+            pathname.pathname === "/services"
+              ? "bg-primary text-white"
+              : "bg-transparent text-secondary"
+          }`}
         >
           Service
         </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-64"
-        >
+        <ul tabIndex={0} className="dropdown-content z-[1] menu  w-64 pl-0">
           <li>
             <NavLink
               to="/services"
               className={({ isActive }) => `
-          navigationlink  ${
+          navigationlink bg-primary text-white  ${
             isActive ? "text-white bg-primary rounded " : "hover:text-primary"
           }
           `}
             >
-              Remote dispatch service
+              Remote Dispatch Service
             </NavLink>
           </li>
         </ul>
