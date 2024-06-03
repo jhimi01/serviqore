@@ -62,7 +62,7 @@ const NavigationBar = () => {
         >
           Service
         </div>
-        <ul tabIndex={0} className="dropdown-content z-[1] menu  w-64 pl-0">
+        <ul tabIndex={0} className="dropdown-content z-[1] menu  w-64 pl-0 pt-1">
           <li>
             <NavLink
               to="/services"
