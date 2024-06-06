@@ -21,7 +21,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-
 const Home = () => {
   useEffect(() => {
     window.scroll(0, 0);

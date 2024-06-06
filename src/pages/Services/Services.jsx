@@ -22,9 +22,9 @@ import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Services = () => {
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <div className="mt-16">
@@ -32,31 +32,32 @@ const Services = () => {
         <title>Remote Dispatch Service | serviqore</title>
       </Helmet>
       <div className="py-6 bg-backgroundGray">
-      <div className="md:flex items-center gap-10 mx-auto md:w-10/12 w-11/12">
+        <div className="md:flex items-center gap-10 mx-auto md:w-10/12 w-11/12">
           {/* content side */}
           <div className="md:w-[55%] mx-auto">
-          <h1 className="text-4xl md:text-[60px] text-secondary font-bold md:leading-[65px]">
-            Security Guard Monitoring Service
-          </h1>
-          <p className="text-secondary font-normal text-[16px] mt-3 md:mt-5">
-            We're dedicated to excellence, integrity and professional service.
-            Our mission is to empower businesses of all sizes with collaborative
-            solutions for long term success. Beyond traditional BPO, we're your
-            reliable ally committed to growth. With over 3 years of experience
-            and expertise in Remote Security Monitoring and Dispatch we tailor
-            strategies for smooth operations and sustainable growth.
-          </p>
-          <p className="text-secondary font-normal text-[16px] md:mt-5">
-            We provide Centralised Monitoring & Dispatch Centre services to
-            multiple security guard businesses in the USA. Our service ensure
-            streamline communication and coordination.
-          </p>
+            <h1 className="text-4xl md:text-[60px] text-secondary font-bold md:leading-[65px]">
+              Security Guard Monitoring Service
+            </h1>
+            <p className="text-secondary font-normal text-[16px] mt-3 md:mt-5">
+              We're dedicated to excellence, integrity and professional service.
+              Our mission is to empower businesses of all sizes with
+              collaborative solutions for long term success. Beyond traditional
+              BPO, we're your reliable ally committed to growth. With over 3
+              years of experience and expertise in Remote Security Monitoring
+              and Dispatch we tailor strategies for smooth operations and
+              sustainable growth.
+            </p>
+            <p className="text-secondary font-normal text-[16px] md:mt-5">
+              We provide Centralised Monitoring & Dispatch Centre services to
+              multiple security guard businesses in the USA. Our service ensure
+              streamline communication and coordination.
+            </p>
+          </div>
+          {/* image side */}
+          <div className="md:w-[45%] mx-auto mt-5 md:mt-0">
+            <img src={aboutmain} className="ml-auto" alt="service" />
+          </div>
         </div>
-        {/* image side */}
-        <div className="md:w-[45%] mx-auto mt-5 md:mt-0">
-          <img src={aboutmain} className="ml-auto" alt="service" />
-        </div>
-      </div>
       </div>
 
       <div className="w-11/12 md:w-10/12 mx-auto my-20">
